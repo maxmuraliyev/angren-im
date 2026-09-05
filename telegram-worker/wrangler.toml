@@ -16,7 +16,7 @@ database_id = "42a4736d-7ebd-46fc-bebd-721676786f1c"
 [vars]
 TG_CHANNEL_USERNAME = "@angrenimuzsite"
 TG_CHAT_ID = "-1002750755644"
-ALLOWED_ORIGIN = "https://angren-im.uz"
+ALLOWED_ORIGIN = "https://angren-im.vercel.app/"
 
 # SENSITIVE SECRETS — Set these via CLI, NOT in this file:
 # wrangler secret put TELEGRAM_BOT_TOKEN
