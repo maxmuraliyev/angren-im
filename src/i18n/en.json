@@ -1,0 +1,205 @@
+{
+  "nav": {
+    "about": "About Us",
+    "news": "News",
+    "admission": "Admission",
+    "education": "Education",
+    "achievements": "Achievements",
+    "timetable": "Timetable",
+    "gallery": "Gallery",
+    "contact": "Contact"
+  },
+  "topbar": {
+    "phone": "+998 94 125 79 79",
+    "email": "info@angren-im.uz"
+  },
+  "lang": {
+    "uz": "O'z",
+    "en": "En"
+  },
+  "events": {
+    "title": "Upcoming Events",
+    "no_events": "No upcoming events scheduled."
+  },
+  "hero": {
+    "title": "Angren City\nSpecialized School",
+    "subtitle": "\"The future begins today\"",
+    "card_students": "Student Achievements",
+    "card_students_desc": "Achievements of our talented students",
+    "card_teachers": "Teachers",
+    "card_teachers_desc": "Experienced educators",
+    "card_admission": "Admission",
+    "card_admission_desc": "How to enroll"
+  },
+  "about": {
+    "section_title": "About Us",
+    "section_subtitle": "Learn more about our school",
+    "director_greeting": "Dear parents and students!",
+    "director_text": "Angren City Specialized School is a state specialized school under Uzbekistan's specialized education system. Our school focuses on providing advanced education, particularly in STEM-related subjects such as mathematics, physics, information technology, and other specialized disciplines.",
+    "director_name": "Nazirov Abror Urinbayevich",
+    "mission_title": "Our Mission",
+    "mission_text": "To prepare talented students for national and international Olympiads and university admission. We use the most advanced teaching methods to unlock every student's potential.",
+    "stat_students": "Students",
+    "stat_teachers": "Teachers",
+    "stat_years": "Years of Experience",
+    "stat_subjects": "Subjects"
+  },
+  "whyus": {
+    "section_title": "Why Choose Us",
+    "section_subtitle": "We offer the best opportunities for quality education",
+    "item1_title": "STEM Focus",
+    "item1_desc": "Advanced education in mathematics, physics, IT and natural sciences",
+    "item2_title": "Olympiad Preparation",
+    "item2_desc": "Professional preparation for national and international olympiads",
+    "item3_title": "Free Education",
+    "item3_desc": "Education is free for all students admitted through the official selection process",
+    "item4_title": "Experienced Teachers",
+    "item4_desc": "Highly qualified and experienced teaching staff"
+  },
+  "education": {
+    "section_title": "Educational Programs",
+    "section_subtitle": "Core subjects and specializations taught at our school",
+    "math_title": "Mathematics",
+    "math_desc": "Algebra, geometry, mathematical analysis and olympiad mathematics",
+    "physics_title": "Physics",
+    "physics_desc": "Theoretical and applied physics, laboratory sessions",
+    "it_title": "Computer Science",
+    "it_desc": "Programming, algorithms, fundamentals of computer science",
+    "biology_title": "Biology",
+    "biology_desc": "General biology, genetics and biotechnology fundamentals",
+    "languages_title": "Languages",
+    "languages_desc": "Uzbek, Russian, English — advanced language instruction"
+  },
+  "admission": {
+    "section_title": "Admission Process",
+    "section_subtitle": "How to apply: from online application to entrance exams",
+    "step1_title": "Online Application",
+    "step1_desc": "Submit your application through the my.gov.uz portal",
+    "step2_title": "Upload Documents",
+    "step2_desc": "Passport photo, birth certificate, school report card",
+    "step3_title": "Entrance Exams",
+    "step3_desc": "Exams in mathematics, native language, and logical reasoning",
+    "step4_title": "Results & Enrollment",
+    "step4_desc": "Students are admitted based on their exam scores and available places",
+    "apply_btn": "Apply Now",
+    "apply_next_cohort_btn": "Apply next cohort",
+    "grades_title": "Accepted Grades",
+    "grades_text": "Admission is available for grades 5–11. Some science-focused programs begin from Grade 7.",
+    "free_title": "Free Education",
+    "free_text": "Education is completely free for all students admitted through the official selection process."
+  },
+  "news": {
+    "section_title": "School News",
+    "section_subtitle": "The latest news and exciting highlights from our school community"
+  },
+  "gallery": {
+    "section_title": "Gallery",
+    "section_subtitle": "A visual introduction to our school",
+    "filter_all": "All",
+    "filter_building": "Building",
+    "filter_classroom": "Classrooms",
+    "filter_lab": "Labs",
+    "filter_library": "Library",
+    "filter_cafeteria": "Cafeteria",
+    "filter_sports": "Sports",
+    "filter_events": "Events",
+    "filter_olympiad": "Olympiads"
+  },
+  "footer": {
+    "subscribe_title": "Subscribe to our pages",
+    "subscribe_highlight": "on social networks",
+    "subscribe_desc": "Follow the latest news about us",
+    "phone_label": "Phone number",
+    "email_label": "Email",
+    "address": "Mustaqillik Street 1B, Angren city",
+    "address_label": "Location",
+    "copyright": "© 2026 Angren City Specialized School. All Rights Reserved.",
+    "school_tagline": "Angren City Specialized School: Shaping the future, starting today."
+  },
+  "subjects": {
+    "all": "All",
+    "management": "Management & Advisors",
+    "matematika": "Mathematics",
+    "informatika": "Computer Science",
+    "robototexnika": "Robotics",
+    "fizika": "Physics",
+    "kimyo": "Chemistry",
+    "biologiya": "Biology",
+    "science": "Science",
+    "geografiya": "Geography",
+    "tarix": "History",
+    "tarbiya": "Upbringing",
+    "ona_tili_adabiyot": "Native Language & Literature",
+    "ozbek_tili": "Uzbek Language",
+    "rus_tili": "Russian Language",
+    "ingliz_tili": "English Language",
+    "jismoniy_tarbiya": "Physical Education",
+    "chqbt": "Pre-Military Training",
+    "sanat": "Art",
+    "musiqa": "Music",
+    "other": "Other Subjects"
+  },
+  "teachers": {
+    "loading": "Loading...",
+    "empty": "No teacher data added yet."
+  },
+  "students": {
+    "loading": "Loading...",
+    "empty": "No student photos added yet.",
+    "read_more": "Read more",
+    "close": "Close"
+  },
+  "timetable": {
+    "loading": "Loading timetable...",
+    "subtitle": "Select grade and day",
+    "grade": "Grade:",
+    "day": "Day:",
+    "empty": "No timetable added for this day.",
+    "col_num": "#",
+    "col_time": "Time",
+    "col_subject": "Subject",
+    "col_room": "Room",
+    "col_teacher": "Teacher"
+  },
+  "news_misc": {
+    "loading": "Loading latest news...",
+    "views": "views",
+    "likes": "likes",
+    "copied": "Copied!",
+    "share": "Share",
+    "telegram_post": "Telegram message",
+    "school_news": "School News"
+  },
+  "days": {
+    "Dushanba": "Monday",
+    "Seshanba": "Tuesday",
+    "Chorshanba": "Wednesday",
+    "Payshanba": "Thursday",
+    "Juma": "Friday",
+    "Shanba": "Saturday"
+  },
+  "contact_page": {
+    "subtitle": "Contact us and get answers to your questions",
+    "working_hours": "Working hours",
+    "working_hours_val": "Monday - Saturday: 08:00 - 18:00",
+    "socials_title": "Our Social Networks",
+    "socials_desc": "Follow our school life on our official pages",
+    "success_title": "Your message was sent successfully!",
+    "success_desc": "Thank you for your message. The administration will contact you shortly.",
+    "btn_resend": "Send another message",
+    "form_title": "Have questions or suggestions?",
+    "form_subtitle": "Fill out the form below and send us a message",
+    "label_name": "Your name *",
+    "placeholder_name": "Enter your full name",
+    "label_contact": "Phone number or Email *",
+    "placeholder_contact": "+998 90 123 45 67 or email",
+    "label_subject": "Subject",
+    "placeholder_subject": "Message subject",
+    "label_message": "Your message *",
+    "placeholder_message": "Write your detailed message...",
+    "btn_sending": "Sending...",
+    "btn_send": "Send Message",
+    "err_server": "An error occurred. Please try again later.",
+    "err_network": "Network error. Please check your internet connection."
+  }
+}

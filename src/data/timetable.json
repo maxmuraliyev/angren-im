@@ -1,0 +1,6002 @@
+{
+  "5-sinf": {
+    "Dushanba": [
+      {
+        "class": "5A",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Tarbiya",
+            "room": "405",
+            "teacher": "Salomov X"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Adabiyot",
+            "room": "",
+            "teacher": "Matkarimova G"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "San'at",
+            "room": "",
+            "teacher": "Yuldasheva D"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Algebra",
+            "room": "| 404",
+            "teacher": "Karimova F | Abdullaxonova I"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Rus Tili",
+            "room": "| 401",
+            "teacher": "Bobomatova M | Xunarova B"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Ingliz Tili",
+            "room": "| 401",
+            "teacher": "Xudayberdiyeva K | Xolmuratova D"
+          }
+        ]
+      },
+      {
+        "class": "5B",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Algebra",
+            "room": "108 |",
+            "teacher": "Berkishova L | Xolmatov D"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Ingliz Tili",
+            "room": "| 402",
+            "teacher": "Xasanov L | Samatova M"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Ona Tili",
+            "room": "404",
+            "teacher": "Nasriddinova M"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Algebra",
+            "room": "108 |",
+            "teacher": "Berkishova L | Xolmatov D"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Science",
+            "room": "303",
+            "teacher": "Jumanova K"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Ona Tili",
+            "room": "404",
+            "teacher": "Nasriddinova M"
+          }
+        ]
+      }
+    ],
+    "Seshanba": [
+      {
+        "class": "5A",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Jismoniy Tarbiya",
+            "room": "spo. z",
+            "teacher": "Xidirov A"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Tarix",
+            "room": "",
+            "teacher": "Soidiqov J"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Ingliz Tili",
+            "room": "109 | 110",
+            "teacher": "Xudayberdiyeva K | Xolmuratova D"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Ona Tili",
+            "room": "",
+            "teacher": "Matkarimova G"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Algebra",
+            "room": "| 401",
+            "teacher": "Karimova F | Abdullaxonova I"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Algebra",
+            "room": "112 |",
+            "teacher": "Karimova F | Abdullaxonova I"
+          }
+        ]
+      },
+      {
+        "class": "5B",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Science",
+            "room": "303",
+            "teacher": "Jumanova K"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Algebra",
+            "room": "108 |",
+            "teacher": "Berkishova L | Xolmatov D"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "San'at",
+            "room": "",
+            "teacher": "Yuldasheva D"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Ingliz Tili",
+            "room": "| 301",
+            "teacher": "Xasanov L | Samatova M"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Adabiyot",
+            "room": "",
+            "teacher": "Nasriddinova M"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Rus Tili",
+            "room": "106 | 304",
+            "teacher": "Tashmatova D | Yuldasheva S"
+          }
+        ]
+      }
+    ],
+    "Chorshanba": [
+      {
+        "class": "5A",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Algebra",
+            "room": "| 403",
+            "teacher": "Karimova F | Abdullaxonova I"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Algebra",
+            "room": "| 403",
+            "teacher": "Karimova F | Abdullaxonova I"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Ingliz Tili",
+            "room": "| 404",
+            "teacher": "Xudayberdiyeva K | Xolmuratova D"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Ona Tili",
+            "room": "",
+            "teacher": "Matkarimova G"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Science",
+            "room": "303",
+            "teacher": "Avezov S"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Tarix",
+            "room": "407",
+            "teacher": "Soidiqov J"
+          }
+        ]
+      },
+      {
+        "class": "5B",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Algebra",
+            "room": "108 |",
+            "teacher": "Berkishova L | Xolmatov D"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Ingliz Tili",
+            "room": "| 301",
+            "teacher": "Xasanov L | Samatova M"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "San'at",
+            "room": "",
+            "teacher": "Yuldasheva D"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Jismoniy Tarbiya",
+            "room": "spo. z",
+            "teacher": "Xidirov A"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Fakultativ",
+            "room": "",
+            "teacher": "Fozilova D"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Tarix",
+            "room": "408",
+            "teacher": "Boboxonov J"
+          }
+        ]
+      }
+    ],
+    "Payshanba": [
+      {
+        "class": "5A",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Informatika",
+            "room": "| 401",
+            "teacher": "Dushayeva D | Sharapova D"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Jismoniy Tarbiya",
+            "room": "",
+            "teacher": "Xidirov A"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Rus Tili",
+            "room": "| 404",
+            "teacher": "Bobomatova M | Xunarova B"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Algebra",
+            "room": "| 404",
+            "teacher": "Karimova F | Abdullaxonova I"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Science",
+            "room": "",
+            "teacher": "Avezov S"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Ingliz Tili",
+            "room": "| 404",
+            "teacher": "Xudayberdiyeva K | Xolmuratova D"
+          }
+        ]
+      },
+      {
+        "class": "5B",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Tarbiya",
+            "room": "",
+            "teacher": "Salomov X"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Informatika",
+            "room": "| 403",
+            "teacher": "Amanova Z | Sharapova D"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Rus Tili",
+            "room": "| 402",
+            "teacher": "Tashmatova D | Yuldasheva S"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Ingliz Tili",
+            "room": "| 301",
+            "teacher": "Xasanov L | Samatova M"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Algebra",
+            "room": "108 |",
+            "teacher": "Berkishova L | Xolmatov D"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Algebra",
+            "room": "108 |",
+            "teacher": "Berkishova L | Xolmatov D"
+          }
+        ]
+      }
+    ],
+    "Juma": [
+      {
+        "class": "5A",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Ingliz Tili",
+            "room": "| 206",
+            "teacher": "Xudayberdiyeva K | Xolmuratova D"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "San'at",
+            "room": "",
+            "teacher": "Yuldasheva D"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Informatika",
+            "room": "| 402",
+            "teacher": "Dushayeva D | Sharapova D"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Fakultativ",
+            "room": "",
+            "teacher": "Fozilova D"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Algebra",
+            "room": "| 401",
+            "teacher": "Karimova F | Abdullaxonova I"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Adabiyot",
+            "room": "",
+            "teacher": "Matkarimova G"
+          }
+        ]
+      },
+      {
+        "class": "5B",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Ingliz Tili",
+            "room": "| 402",
+            "teacher": "Xasanov L | Samatova M"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Tarix",
+            "room": "408",
+            "teacher": "Boboxonov J"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Adabiyot",
+            "room": "",
+            "teacher": "Nasriddinova M"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Algebra",
+            "room": "108 |",
+            "teacher": "Berkishova L | Xolmatov D"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Informatika",
+            "room": "| 401",
+            "teacher": "Amanova Z | Sharapova D"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Jismoniy Tarbiya",
+            "room": "",
+            "teacher": "Xidirov A"
+          }
+        ]
+      }
+    ]
+  },
+  "6-sinf": {
+    "Dushanba": [
+      {
+        "class": "6A",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Rus Tili",
+            "room": "| 401",
+            "teacher": "Tashmatova D | Yuldasheva S"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "San'at",
+            "room": "",
+            "teacher": "Yuldasheva D"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Algebra",
+            "room": "211 | 112",
+            "teacher": "Abdullaxonova I | Karimova F"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Ingliz Tili",
+            "room": "| 403",
+            "teacher": "Umarova S | Abriyev L"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Science",
+            "room": "",
+            "teacher": "Avezov S"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Ona Tili",
+            "room": "",
+            "teacher": "Matkarimova G"
+          }
+        ]
+      },
+      {
+        "class": "6B",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "San'at",
+            "room": "",
+            "teacher": "Yuldasheva D"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Ingliz Tili",
+            "room": "205 | 207",
+            "teacher": "Shadiyeva U | Abriyev L"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Algebra",
+            "room": "213 |",
+            "teacher": "Madusmanova N | Jo'rayev T"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Algebra",
+            "room": "213 |",
+            "teacher": "Madusmanova N | Jo'rayev T"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Ingliz Tili",
+            "room": "| 404",
+            "teacher": "Shadiyeva U | Abriyev L"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Science",
+            "room": "303",
+            "teacher": "Avezov S"
+          }
+        ]
+      }
+    ],
+    "Seshanba": [
+      {
+        "class": "6A",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Rus Tili",
+            "room": "| 404",
+            "teacher": "Tashmatova D | Yuldasheva S"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Ingliz Tili",
+            "room": "| 404",
+            "teacher": "Umarova S | Abriyev L"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Algebra",
+            "room": "| 402",
+            "teacher": "Abdullaxonova I | Karimova F"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Science",
+            "room": "",
+            "teacher": "Avezov S"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Ona Tili",
+            "room": "",
+            "teacher": "Matkarimova G"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Informatika",
+            "room": "212 | 211",
+            "teacher": "Fozilova D | Sharapova D"
+          }
+        ]
+      },
+      {
+        "class": "6B",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "San'at",
+            "room": "",
+            "teacher": "Yuldasheva D"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Tarbiya",
+            "room": "405",
+            "teacher": "Salomov X"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Algebra",
+            "room": "213 |",
+            "teacher": "Madusmanova N | Jo'rayev T"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Algebra",
+            "room": "213 |",
+            "teacher": "Madusmanova N | Jo'rayev T"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Informatika",
+            "room": "| 403",
+            "teacher": "Fozilova D | Sharapova D"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Adabiyot",
+            "room": "403",
+            "teacher": "Kulboyeva D"
+          }
+        ]
+      }
+    ],
+    "Chorshanba": [
+      {
+        "class": "6A",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Science",
+            "room": "",
+            "teacher": "Avezov S"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "San'at",
+            "room": "",
+            "teacher": "Yuldasheva D"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Jismoniy Tarbiya",
+            "room": "",
+            "teacher": "Xidirov A"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Algebra",
+            "room": "| 401",
+            "teacher": "Abdullaxonova I | Karimova F"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Ingliz Tili",
+            "room": "| 403",
+            "teacher": "Umarova S | Abriyev L"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Tarbiya",
+            "room": "405",
+            "teacher": "Salomov X"
+          }
+        ]
+      },
+      {
+        "class": "6B",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Algebra",
+            "room": "213 |",
+            "teacher": "Madusmanova N | Jo'rayev T"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Tarix",
+            "room": "408",
+            "teacher": "Boboxonov J"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Ona Tili",
+            "room": "403",
+            "teacher": "Kulboyeva D"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Science",
+            "room": "",
+            "teacher": "Avezov S"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Jismoniy Tarbiya",
+            "room": "",
+            "teacher": "Xidirov A"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Rus Tili",
+            "room": "110 | 107",
+            "teacher": "Bobomatova M | Xunarova B"
+          },
+          {
+            "number": 7,
+            "time": "13:30-14:15",
+            "subject": "Ingliz Tili",
+            "room": "205 | 207",
+            "teacher": "Shadiyeva U | Abriyev L"
+          }
+        ]
+      }
+    ],
+    "Payshanba": [
+      {
+        "class": "6A",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Adabiyot",
+            "room": "",
+            "teacher": "Matkarimova G"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Ingliz Tili",
+            "room": "208 | 207",
+            "teacher": "Umarova S | Abriyev L"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Algebra",
+            "room": "211 | 112",
+            "teacher": "Abdullaxonova I | Karimova F"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Tarix",
+            "room": "",
+            "teacher": "Soidiqov J"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Fakultativ",
+            "room": "212",
+            "teacher": "Fozilova D"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Algebra",
+            "room": "211 | 112",
+            "teacher": "Abdullaxonova I | Karimova F"
+          }
+        ]
+      },
+      {
+        "class": "6B",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Fakultativ",
+            "room": "",
+            "teacher": "Fozilova D"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Rus Tili",
+            "room": "| 401",
+            "teacher": "Bobomatova M | Xunarova B"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Adabiyot",
+            "room": "",
+            "teacher": "Kulboyeva D"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Ingliz Tili",
+            "room": "| 206",
+            "teacher": "Shadiyeva U | Abriyev L"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Jismoniy Tarbiya",
+            "room": "spo. z",
+            "teacher": "Xidirov A"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Algebra",
+            "room": "213 |",
+            "teacher": "Madusmanova N | Jo'rayev T"
+          }
+        ]
+      }
+    ],
+    "Juma": [
+      {
+        "class": "6A",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Algebra",
+            "room": "211 | 112",
+            "teacher": "Abdullaxonova I | Karimova F"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Algebra",
+            "room": "| 401",
+            "teacher": "Abdullaxonova I | Karimova F"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Tarix",
+            "room": "",
+            "teacher": "Soidiqov J"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Ingliz Tili",
+            "room": "| 206",
+            "teacher": "Umarova S | Abriyev L"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Adabiyot",
+            "room": "",
+            "teacher": "Matkarimova G"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Informatika",
+            "room": "212 | 211",
+            "teacher": "Fozilova D | Sharapova D"
+          },
+          {
+            "number": 7,
+            "time": "13:30-14:15",
+            "subject": "Jismoniy Tarbiya",
+            "room": "spo. z",
+            "teacher": "Xidirov A"
+          }
+        ]
+      },
+      {
+        "class": "6B",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Tarix",
+            "room": "408",
+            "teacher": "Boboxonov J"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Informatika",
+            "room": "212 | 211",
+            "teacher": "Fozilova D | Sharapova D"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Ingliz Tili",
+            "room": "| 403",
+            "teacher": "Shadiyeva U | Abriyev L"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Algebra",
+            "room": "213 |",
+            "teacher": "Madusmanova N | Jo'rayev T"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Science",
+            "room": "",
+            "teacher": "Avezov S"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Ona Tili",
+            "room": "",
+            "teacher": "Kulboyeva D"
+          }
+        ]
+      }
+    ]
+  },
+  "7-sinf": {
+    "Dushanba": [
+      {
+        "class": "7A",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Biologiya",
+            "room": "215",
+            "teacher": "Jumanova K"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Informatika",
+            "room": "210 | 211",
+            "teacher": "Amanova Z | Sharapova D"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Adabiyot",
+            "room": "",
+            "teacher": "Xabibullayeva X"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "O'zbek Tili",
+            "room": "406",
+            "teacher": "Rahmatova R"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Algebra",
+            "room": "| 404",
+            "teacher": "Karimova F | Abdullaxonova I"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Ingliz Tili",
+            "room": "| 206",
+            "teacher": "Samatova M | Shadiyeva U"
+          },
+          {
+            "number": 7,
+            "time": "13:30-14:15",
+            "subject": "Tarbiya",
+            "room": "405",
+            "teacher": "Salomov X"
+          }
+        ]
+      },
+      {
+        "class": "7B",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Jismoniy Tarbiya",
+            "room": "spo. z",
+            "teacher": "Xidirov A"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Biologiya",
+            "room": "216",
+            "teacher": "Jumanova K"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Ingliz Tili",
+            "room": "208 | 207",
+            "teacher": "Umarova S | Abriyev L"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Fakultativ",
+            "room": "",
+            "teacher": "Fozilova D"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Adabiyot",
+            "room": "",
+            "teacher": "Nasriddinova M"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Informatika",
+            "room": "| 401",
+            "teacher": "Dushayeva D | Sharapova D"
+          },
+          {
+            "number": 7,
+            "time": "13:30-14:15",
+            "subject": "Ona Tili",
+            "room": "",
+            "teacher": "Nasriddinova M"
+          }
+        ]
+      },
+      {
+        "class": "7V",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Ixtisoslashtirilgan Biologiya",
+            "room": "| 402",
+            "teacher": "Tashmatova M | Rahmonova N"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Fakultativ",
+            "room": "",
+            "teacher": "Fozilova D"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Tarbiya",
+            "room": "",
+            "teacher": "Salomov X"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "O'zbek Tili",
+            "room": "",
+            "teacher": "Boboxonov J"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Ingliz Tili",
+            "room": "| 403",
+            "teacher": "Xudayberdiyeva K | Xolmuratova D"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Algebra",
+            "room": "",
+            "teacher": "Madusmanova N"
+          },
+          {
+            "number": 7,
+            "time": "13:30-14:15",
+            "subject": "Adabiyot",
+            "room": "",
+            "teacher": "Xabibullayeva X"
+          }
+        ]
+      }
+    ],
+    "Seshanba": [
+      {
+        "class": "7A",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Algebra",
+            "room": "| 402",
+            "teacher": "Karimova F | Abdullaxonova I"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Tarix",
+            "room": "406",
+            "teacher": "Rahmatova R"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "O'zbek Tili",
+            "room": "406",
+            "teacher": "Rahmatova R"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Algebra",
+            "room": "112 | 211",
+            "teacher": "Karimova F | Abdullaxonova I"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Ixtisoslashtirilgan Fizika",
+            "room": "204 |",
+            "teacher": "Xalmatov U | Niyozov I"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Biologiya",
+            "room": "215",
+            "teacher": "Jumanova K"
+          },
+          {
+            "number": 7,
+            "time": "13:30-14:15",
+            "subject": "San'at",
+            "room": "",
+            "teacher": "Yuldasheva D"
+          }
+        ]
+      },
+      {
+        "class": "7B",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Kimyo",
+            "room": "202",
+            "teacher": "Iriskulov S"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "O'zbek Tili",
+            "room": "",
+            "teacher": "Boboxonov J"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Biologiya",
+            "room": "216",
+            "teacher": "Jumanova K"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Algebra",
+            "room": "| 206",
+            "teacher": "Berkishova L | DushayevaLobar A"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Ixtisoslashtirilgan Fizika",
+            "room": "| 404",
+            "teacher": "Norova S | Dusyorov J"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Tarbiya",
+            "room": "405",
+            "teacher": "Salomov X"
+          },
+          {
+            "number": 7,
+            "time": "13:30-14:15",
+            "subject": "Ingliz Tili",
+            "room": "208 | 207",
+            "teacher": "Umarova S | Abriyev L"
+          }
+        ]
+      },
+      {
+        "class": "7V",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Ixtisoslashtirilgan Fizika",
+            "room": "201",
+            "teacher": "Xalmatov U"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Ixtisoslashtirilgan Biologiya",
+            "room": "| 402",
+            "teacher": "Tashmatova M | Rahmonova N"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Tarix",
+            "room": "",
+            "teacher": "Boboxonov J"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Ixtisoslashtirilgan Kimyo",
+            "room": "| 402",
+            "teacher": "Hasanova M | Iriskulov S"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Ona Tili",
+            "room": "402",
+            "teacher": "Xabibullayeva X"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Jismoniy Tarbiya",
+            "room": "spo. z",
+            "teacher": "Xidirov A"
+          },
+          {
+            "number": 7,
+            "time": "13:30-14:15",
+            "subject": "Rus Tili",
+            "room": "110 | 107",
+            "teacher": "Bobomatova M | Xunarova B"
+          }
+        ]
+      }
+    ],
+    "Chorshanba": [
+      {
+        "class": "7A",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Adabiyot",
+            "room": "",
+            "teacher": "Xabibullayeva X"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Ixtisoslashtirilgan Fizika",
+            "room": "| 404",
+            "teacher": "Xalmatov U | Niyozov I"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Fakultativ",
+            "room": "212",
+            "teacher": "Fozilova D"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Ingliz Tili",
+            "room": "301 | 205",
+            "teacher": "Samatova M | Shadiyeva U"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Algebra",
+            "room": "112 | 211",
+            "teacher": "Karimova F | Abdullaxonova I"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Informatika",
+            "room": "210 | 211",
+            "teacher": "Amanova Z | Sharapova D"
+          },
+          {
+            "number": 7,
+            "time": "13:30-14:15",
+            "subject": "Ona Tili",
+            "room": "",
+            "teacher": "Xabibullayeva X"
+          }
+        ]
+      },
+      {
+        "class": "7B",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "San'at",
+            "room": "",
+            "teacher": "Yuldasheva D"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Ixtisoslashtirilgan Fizika",
+            "room": "| 404",
+            "teacher": "Norova S | Dusyorov J"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Geometriya",
+            "room": "| 402",
+            "teacher": "Berkishova L | DushayevaLobar A"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Kimyo",
+            "room": "",
+            "teacher": "Iriskulov S"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "O'zbek Tili",
+            "room": "",
+            "teacher": "Boboxonov J"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Algebra",
+            "room": "| 404",
+            "teacher": "Berkishova L | DushayevaLobar A"
+          },
+          {
+            "number": 7,
+            "time": "13:30-14:15",
+            "subject": "Geometriya",
+            "room": "108 | 308",
+            "teacher": "Berkishova L | DushayevaLobar A"
+          }
+        ]
+      },
+      {
+        "class": "7V",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Ixtisoslashtirilgan Kimyo",
+            "room": "| 401",
+            "teacher": "Hasanova M | Iriskulov S"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Jismoniy Tarbiya",
+            "room": "",
+            "teacher": "Xidirov A"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Adabiyot",
+            "room": "",
+            "teacher": "Xabibullayeva X"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Ixtisoslashtirilgan Fizika",
+            "room": "201",
+            "teacher": "Xalmatov U"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Rus Tili",
+            "room": "| 404",
+            "teacher": "Bobomatova M | Xunarova B"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Algebra",
+            "room": "",
+            "teacher": "Madusmanova N"
+          },
+          {
+            "number": 7,
+            "time": "13:30-14:15",
+            "subject": "Ingliz Tili",
+            "room": "| 402",
+            "teacher": "Xudayberdiyeva K | Xolmuratova D"
+          }
+        ]
+      }
+    ],
+    "Payshanba": [
+      {
+        "class": "7A",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Algebra",
+            "room": "| 403",
+            "teacher": "Karimova F | Abdullaxonova I"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Geografiya",
+            "room": "303",
+            "teacher": "Avezov S"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Kimyo",
+            "room": "105",
+            "teacher": "Hasanova M"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Ixtisoslashtirilgan Fizika",
+            "room": "| 402",
+            "teacher": "Xalmatov U | Niyozov I"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Algebra",
+            "room": "112 | 211",
+            "teacher": "Karimova F | Abdullaxonova I"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Rus Tili",
+            "room": "| 206",
+            "teacher": "Bobomatova M | Xunarova B"
+          },
+          {
+            "number": 7,
+            "time": "13:30-14:15",
+            "subject": "Ingliz Tili",
+            "room": "| 205",
+            "teacher": "Samatova M | Shadiyeva U"
+          }
+        ]
+      },
+      {
+        "class": "7B",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Ingliz Tili",
+            "room": "208 | 207",
+            "teacher": "Umarova S | Abriyev L"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Algebra",
+            "room": "| 403",
+            "teacher": "Berkishova L | DushayevaLobar A"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Informatika",
+            "room": "| 401",
+            "teacher": "Dushayeva D | Sharapova D"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Ixtisoslashtirilgan Fizika",
+            "room": "| 206",
+            "teacher": "Norova S | Dusyorov J"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Adabiyot",
+            "room": "",
+            "teacher": "Nasriddinova M"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Rus Tili",
+            "room": "| 206",
+            "teacher": "Tashmatova D | Yuldasheva S"
+          },
+          {
+            "number": 7,
+            "time": "13:30-14:15",
+            "subject": "Tarix",
+            "room": "408",
+            "teacher": "Boboxonov J"
+          }
+        ]
+      },
+      {
+        "class": "7V",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Geografiya",
+            "room": "",
+            "teacher": "Avezov S"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Algebra",
+            "room": "213",
+            "teacher": "Madusmanova N"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Ixtisoslashtirilgan Biologiya",
+            "room": "| 401",
+            "teacher": "Tashmatova M | Rahmonova N"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Algebra",
+            "room": "",
+            "teacher": "Madusmanova N"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Ingliz Tili",
+            "room": "| 401",
+            "teacher": "Xudayberdiyeva K | Xolmuratova D"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "O'zbek Tili",
+            "room": "",
+            "teacher": "Boboxonov J"
+          },
+          {
+            "number": 7,
+            "time": "13:30-14:15",
+            "subject": "Ixtisoslashtirilgan Kimyo",
+            "room": "| 206",
+            "teacher": "Hasanova M | Iriskulov S"
+          }
+        ]
+      }
+    ],
+    "Juma": [
+      {
+        "class": "7A",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Jismoniy Tarbiya",
+            "room": "spo. z",
+            "teacher": "Xidirov A"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Kimyo",
+            "room": "105",
+            "teacher": "Hasanova M"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Ona Tili",
+            "room": "",
+            "teacher": "Xabibullayeva X"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Algebra",
+            "room": "112 | 211",
+            "teacher": "Karimova F | Abdullaxonova I"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Ingliz Tili",
+            "room": "301 | 205",
+            "teacher": "Samatova M | Shadiyeva U"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "San'at",
+            "room": "",
+            "teacher": "Yuldasheva D"
+          },
+          {
+            "number": 7,
+            "time": "13:30-14:15",
+            "subject": "Rus Tili",
+            "room": "110 | 107",
+            "teacher": "Bobomatova M | Xunarova B"
+          }
+        ]
+      },
+      {
+        "class": "7B",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Ingliz Tili",
+            "room": "| 401",
+            "teacher": "Umarova S | Abriyev L"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Geometriya",
+            "room": "| 206",
+            "teacher": "Berkishova L | DushayevaLobar A"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "San'at",
+            "room": "",
+            "teacher": "Yuldasheva D"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Rus Tili",
+            "room": "| 206",
+            "teacher": "Tashmatova D | Yuldasheva S"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Ona Tili",
+            "room": "",
+            "teacher": "Nasriddinova M"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Algebra",
+            "room": "| 206",
+            "teacher": "Berkishova L | DushayevaLobar A"
+          },
+          {
+            "number": 7,
+            "time": "13:30-14:15",
+            "subject": "Geografiya",
+            "room": "303",
+            "teacher": "Avezov S"
+          }
+        ]
+      },
+      {
+        "class": "7V",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Algebra",
+            "room": "",
+            "teacher": "Madusmanova N"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Ingliz Tili",
+            "room": "| 403",
+            "teacher": "Xudayberdiyeva K | Xolmuratova D"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Ixtisoslashtirilgan Biologiya",
+            "room": "| 404",
+            "teacher": "Tashmatova M | Rahmonova N"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "San'at",
+            "room": "",
+            "teacher": "Yuldasheva D"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Ona Tili",
+            "room": "",
+            "teacher": "Xabibullayeva X"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Ixtisoslashtirilgan Kimyo",
+            "room": "| 402",
+            "teacher": "Hasanova M | Iriskulov S"
+          },
+          {
+            "number": 7,
+            "time": "13:30-14:15",
+            "subject": "Informatika",
+            "room": "212 | 211",
+            "teacher": "Fozilova D | Sharapova D"
+          }
+        ]
+      }
+    ]
+  },
+  "8-sinf": {
+    "Dushanba": [
+      {
+        "class": "8A",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Adabiyot",
+            "room": "",
+            "teacher": "Xabibullayeva X"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Tarix",
+            "room": "",
+            "teacher": "Soidiqov J"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Geometriya",
+            "room": "| 401",
+            "teacher": "Kimsanov M | Nurmatova N"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Algebra",
+            "room": "| 401",
+            "teacher": "Kimsanov M | Nurmatova N"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Ixtisoslashtirilgan Fizika",
+            "room": "| 401",
+            "teacher": "Norova S | Niyozov I"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Tarbiya",
+            "room": "",
+            "teacher": "Salomov X"
+          },
+          {
+            "number": 7,
+            "time": "13:30-14:15",
+            "subject": "Kimyo",
+            "room": "",
+            "teacher": "Salomov A"
+          }
+        ]
+      },
+      {
+        "class": "8B",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Geometriya",
+            "room": "| 402",
+            "teacher": "Madusmanova N | Jo'rayev T"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Ixtisoslashtirilgan Fizika",
+            "room": "203 | 302",
+            "teacher": "Norova S | Niyozov I"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Biologiya",
+            "room": "",
+            "teacher": "Tashmatova M"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Kimyo",
+            "room": "104",
+            "teacher": "Salomov A"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Algebra",
+            "room": "| 404",
+            "teacher": "Madusmanova N | Jo'rayev T"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "San'at",
+            "room": "",
+            "teacher": "Yuldasheva D"
+          },
+          {
+            "number": 7,
+            "time": "13:30-14:15",
+            "subject": "Rus Tili",
+            "room": "| 206",
+            "teacher": "Tashmatova D | Yuldasheva S"
+          }
+        ]
+      },
+      {
+        "class": "8V",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Informatika",
+            "room": "209 | 211",
+            "teacher": "Dushayeva D | Sharapova D"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Kimyo",
+            "room": "104",
+            "teacher": "Salomov A"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Algebra",
+            "room": "|",
+            "teacher": "Adizov S | DushayevaLobar A"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Geografiya",
+            "room": "303",
+            "teacher": "Avezov S"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "O'zbek Tili",
+            "room": "408",
+            "teacher": "Boboxonov J"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Ingliz Tili",
+            "room": "208 | 207",
+            "teacher": "Umarova S | Abriyev L"
+          },
+          {
+            "number": 7,
+            "time": "13:30-14:15",
+            "subject": "Geometriya",
+            "room": "217 |",
+            "teacher": "Adizov S | DushayevaLobar A"
+          }
+        ]
+      },
+      {
+        "class": "8G",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Ona Tili",
+            "room": "",
+            "teacher": "Matkarimova G"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Ixtisoslashtirilgan Kimyo",
+            "room": "| 206",
+            "teacher": "Hasanova M | Iriskulov S"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Geografiya",
+            "room": "303",
+            "teacher": "Avezov S"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Fizika",
+            "room": "",
+            "teacher": "Dusyorov J"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Ixtisoslashtirilgan Biologiya",
+            "room": "| 401",
+            "teacher": "Tashmatova M | Rahmonova N"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Rus Tili",
+            "room": "| 403",
+            "teacher": "Tashmatova D | Yuldasheva S"
+          },
+          {
+            "number": 7,
+            "time": "13:30-14:15",
+            "subject": "Ingliz Tili",
+            "room": "109 | 110",
+            "teacher": "Xudayberdiyeva K | Xolmuratova D"
+          }
+        ]
+      }
+    ],
+    "Seshanba": [
+      {
+        "class": "8A",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "O'zbek Tili",
+            "room": "407",
+            "teacher": "Soidiqov J"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Informatika",
+            "room": "| 206",
+            "teacher": "Amanova Z | Sharapova D"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Adabiyot",
+            "room": "",
+            "teacher": "Xabibullayeva X"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Rus Tili",
+            "room": "| 206",
+            "teacher": "Bobomatova M | Xunarova B"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Ingliz Tili",
+            "room": "109 | 110",
+            "teacher": "Xudayberdiyeva K | Xolmuratova D"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Ona Tili",
+            "room": "",
+            "teacher": "Xabibullayeva X"
+          },
+          {
+            "number": 7,
+            "time": "13:30-14:15",
+            "subject": "Geografiya",
+            "room": "303",
+            "teacher": "Avezov S"
+          }
+        ]
+      },
+      {
+        "class": "8B",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Algebra",
+            "room": "| 403",
+            "teacher": "Madusmanova N | Jo'rayev T"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Geometriya",
+            "room": "| 403",
+            "teacher": "Madusmanova N | Jo'rayev T"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Ingliz Tili",
+            "room": "| 403",
+            "teacher": "Xasanov L | Shadiyeva U"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Jismoniy Tarbiya",
+            "room": "",
+            "teacher": "Xidirov A"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Ona Tili",
+            "room": "",
+            "teacher": "Kulboyeva D"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Kimyo",
+            "room": "",
+            "teacher": "Salomov A"
+          },
+          {
+            "number": 7,
+            "time": "13:30-14:15",
+            "subject": "Ixtisoslashtirilgan Fizika",
+            "room": "203 | 302",
+            "teacher": "Norova S | Niyozov I"
+          }
+        ]
+      },
+      {
+        "class": "8V",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Informatika",
+            "room": "209 | 211",
+            "teacher": "Dushayeva D | Sharapova D"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Rus Tili",
+            "room": "304 | 107",
+            "teacher": "Yuldasheva S | Xunarova B"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Geometriya",
+            "room": "|",
+            "teacher": "Adizov S | DushayevaLobar A"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Tarbiya",
+            "room": "405",
+            "teacher": "Salomov X"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Algebra",
+            "room": "217 |",
+            "teacher": "Adizov S | DushayevaLobar A"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Geografiya",
+            "room": "303",
+            "teacher": "Avezov S"
+          },
+          {
+            "number": 7,
+            "time": "13:30-14:15",
+            "subject": "Tarix",
+            "room": "408",
+            "teacher": "Boboxonov J"
+          }
+        ]
+      },
+      {
+        "class": "8G",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Robototexnika",
+            "room": "212",
+            "teacher": "Fozilova D"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Ingliz Tili",
+            "room": "| 403",
+            "teacher": "Xudayberdiyeva K | Xolmuratova D"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Informatika",
+            "room": "212 |",
+            "teacher": "Fozilova D | Sharapova D"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Geometriya",
+            "room": "",
+            "teacher": "Kimsanov M"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Ixtisoslashtirilgan Biologiya",
+            "room": "| 403",
+            "teacher": "Tashmatova M | Rahmonova N"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Algebra",
+            "room": "305",
+            "teacher": "Kimsanov M"
+          },
+          {
+            "number": 7,
+            "time": "13:30-14:15",
+            "subject": "Ona Tili",
+            "room": "401",
+            "teacher": "Matkarimova G"
+          }
+        ]
+      }
+    ],
+    "Chorshanba": [
+      {
+        "class": "8A",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Geometriya",
+            "room": "| 402",
+            "teacher": "Kimsanov M | Nurmatova N"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Ingliz Tili",
+            "room": "| 206",
+            "teacher": "Xudayberdiyeva K | Xolmuratova D"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Algebra",
+            "room": "| 402",
+            "teacher": "Kimsanov M | Nurmatova N"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Informatika",
+            "room": "210 |",
+            "teacher": "Amanova Z | Sharapova D"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Kimyo",
+            "room": "",
+            "teacher": "Salomov A"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Ixtisoslashtirilgan Fizika",
+            "room": "203 | 302",
+            "teacher": "Norova S | Niyozov I"
+          },
+          {
+            "number": 7,
+            "time": "13:30-14:15",
+            "subject": "San'at",
+            "room": "",
+            "teacher": "Yuldasheva D"
+          }
+        ]
+      },
+      {
+        "class": "8B",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Ingliz Tili",
+            "room": "| 206",
+            "teacher": "Xasanov L | Shadiyeva U"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Algebra",
+            "room": "| 206",
+            "teacher": "Madusmanova N | Jo'rayev T"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "O'zbek Tili",
+            "room": "",
+            "teacher": "Soidiqov J"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Informatika",
+            "room": "209 | 212",
+            "teacher": "Dushayeva D | Fozilova D"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Geometriya",
+            "room": "| 403",
+            "teacher": "Madusmanova N | Jo'rayev T"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Biologiya",
+            "room": "",
+            "teacher": "Tashmatova M"
+          },
+          {
+            "number": 7,
+            "time": "13:30-14:15",
+            "subject": "Geografiya",
+            "room": "303",
+            "teacher": "Avezov S"
+          }
+        ]
+      },
+      {
+        "class": "8V",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Ingliz Tili",
+            "room": "208 | 207",
+            "teacher": "Umarova S | Abriyev L"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Robototexnika",
+            "room": "212",
+            "teacher": "Fozilova D"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Biologiya",
+            "room": "216",
+            "teacher": "Tashmatova M"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Algebra",
+            "room": "217 |",
+            "teacher": "Adizov S | DushayevaLobar A"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Ixtisoslashtirilgan Fizika",
+            "room": "| 206",
+            "teacher": "Dusyorov J | Xalmatov U"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "San'at",
+            "room": "",
+            "teacher": "Yuldasheva D"
+          },
+          {
+            "number": 7,
+            "time": "13:30-14:15",
+            "subject": "Biologiya",
+            "room": "216",
+            "teacher": "Tashmatova M"
+          }
+        ]
+      },
+      {
+        "class": "8G",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "O'zbek Tili",
+            "room": "407",
+            "teacher": "Soidiqov J"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Algebra",
+            "room": "305",
+            "teacher": "Kimsanov M"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Ixtisoslashtirilgan Kimyo",
+            "room": "| 206",
+            "teacher": "Hasanova M | Iriskulov S"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "O'zbek Tili",
+            "room": "",
+            "teacher": "Soidiqov J"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Tarbiya",
+            "room": "",
+            "teacher": "Salomov X"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Jismoniy Tarbiya",
+            "room": "spo. z",
+            "teacher": "Xidirov A"
+          },
+          {
+            "number": 7,
+            "time": "13:30-14:15",
+            "subject": "Geometriya",
+            "room": "",
+            "teacher": "Kimsanov M"
+          }
+        ]
+      }
+    ],
+    "Payshanba": [
+      {
+        "class": "8A",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Geometriya",
+            "room": "| 403",
+            "teacher": "Kimsanov M | Nurmatova N"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Biologiya",
+            "room": "",
+            "teacher": "Tashmatova M"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Algebra",
+            "room": "| 404",
+            "teacher": "Kimsanov M | Nurmatova N"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Robototexnika",
+            "room": "",
+            "teacher": "Fozilova D"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Ona Tili",
+            "room": "",
+            "teacher": "Xabibullayeva X"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Geografiya",
+            "room": "",
+            "teacher": "Avezov S"
+          },
+          {
+            "number": 7,
+            "time": "13:30-14:15",
+            "subject": "Ingliz Tili",
+            "room": "109 | 110",
+            "teacher": "Xudayberdiyeva K | Xolmuratova D"
+          }
+        ]
+      },
+      {
+        "class": "8B",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "O'zbek Tili",
+            "room": "",
+            "teacher": "Soidiqov J"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Ixtisoslashtirilgan Fizika",
+            "room": "| 401",
+            "teacher": "Norova S | Niyozov I"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Geografiya",
+            "room": "",
+            "teacher": "Avezov S"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Adabiyot",
+            "room": "",
+            "teacher": "Kulboyeva D"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Rus Tili",
+            "room": "| 403",
+            "teacher": "Tashmatova D | Yuldasheva S"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Ingliz Tili",
+            "room": "| 402",
+            "teacher": "Xasanov L | Shadiyeva U"
+          },
+          {
+            "number": 7,
+            "time": "13:30-14:15",
+            "subject": "Ona Tili",
+            "room": "403",
+            "teacher": "Kulboyeva D"
+          }
+        ]
+      },
+      {
+        "class": "8V",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Jismoniy Tarbiya",
+            "room": "spo. z",
+            "teacher": "Xidirov A"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Ona Tili",
+            "room": "",
+            "teacher": "Nasriddinova M"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Kimyo",
+            "room": "",
+            "teacher": "Salomov A"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Adabiyot",
+            "room": "",
+            "teacher": "Nasriddinova M"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Ixtisoslashtirilgan Fizika",
+            "room": "204 | 201",
+            "teacher": "Dusyorov J | Xalmatov U"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Geometriya",
+            "room": "217 |",
+            "teacher": "Adizov S | DushayevaLobar A"
+          },
+          {
+            "number": 7,
+            "time": "13:30-14:15",
+            "subject": "Ingliz Tili",
+            "room": "208 | 207",
+            "teacher": "Umarova S | Abriyev L"
+          }
+        ]
+      },
+      {
+        "class": "8G",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Ixtisoslashtirilgan Biologiya",
+            "room": "| 404",
+            "teacher": "Tashmatova M | Rahmonova N"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Rus Tili",
+            "room": "| 403",
+            "teacher": "Tashmatova D | Yuldasheva S"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Adabiyot",
+            "room": "",
+            "teacher": "Matkarimova G"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Ingliz Tili",
+            "room": "109 | 110",
+            "teacher": "Xudayberdiyeva K | Xolmuratova D"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Ixtisoslashtirilgan Kimyo",
+            "room": "105 | 202",
+            "teacher": "Hasanova M | Iriskulov S"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Tarix",
+            "room": "407",
+            "teacher": "Soidiqov J"
+          },
+          {
+            "number": 7,
+            "time": "13:30-14:15",
+            "subject": "Geografiya",
+            "room": "303",
+            "teacher": "Avezov S"
+          }
+        ]
+      }
+    ],
+    "Juma": [
+      {
+        "class": "8A",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Ixtisoslashtirilgan Fizika",
+            "room": "| 401",
+            "teacher": "Norova S | Niyozov I"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Algebra",
+            "room": "| 401",
+            "teacher": "Kimsanov M | Nurmatova N"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Rus Tili",
+            "room": "| 403",
+            "teacher": "Bobomatova M | Xunarova B"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Jismoniy Tarbiya",
+            "room": "",
+            "teacher": "Xidirov A"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Ingliz Tili",
+            "room": "| 404",
+            "teacher": "Xudayberdiyeva K | Xolmuratova D"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "O'zbek Tili",
+            "room": "",
+            "teacher": "Soidiqov J"
+          },
+          {
+            "number": 7,
+            "time": "13:30-14:15",
+            "subject": "Biologiya",
+            "room": "216",
+            "teacher": "Tashmatova M"
+          }
+        ]
+      },
+      {
+        "class": "8B",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Robototexnika",
+            "room": "",
+            "teacher": "Fozilova D"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Adabiyot",
+            "room": "",
+            "teacher": "Kulboyeva D"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Algebra",
+            "room": "| 404",
+            "teacher": "Madusmanova N | Jo'rayev T"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Tarix",
+            "room": "",
+            "teacher": "Soidiqov J"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Informatika",
+            "room": "| 402",
+            "teacher": "Dushayeva D | Fozilova D"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Ingliz Tili",
+            "room": "| 401",
+            "teacher": "Xasanov L | Shadiyeva U"
+          },
+          {
+            "number": 7,
+            "time": "13:30-14:15",
+            "subject": "Tarbiya",
+            "room": "",
+            "teacher": "Salomov X"
+          }
+        ]
+      },
+      {
+        "class": "8V",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Ona Tili",
+            "room": "",
+            "teacher": "Nasriddinova M"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Rus Tili",
+            "room": "304 | 107",
+            "teacher": "Yuldasheva S | Xunarova B"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Ixtisoslashtirilgan Fizika",
+            "room": "204 | 201",
+            "teacher": "Dusyorov J | Xalmatov U"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Algebra",
+            "room": "217 |",
+            "teacher": "Adizov S | DushayevaLobar A"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "O'zbek Tili",
+            "room": "408",
+            "teacher": "Boboxonov J"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Adabiyot",
+            "room": "404",
+            "teacher": "Nasriddinova M"
+          },
+          {
+            "number": 7,
+            "time": "13:30-14:15",
+            "subject": "Ingliz Tili",
+            "room": "208 | 207",
+            "teacher": "Umarova S | Abriyev L"
+          }
+        ]
+      },
+      {
+        "class": "8G",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "San'at",
+            "room": "",
+            "teacher": "Yuldasheva D"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Adabiyot",
+            "room": "",
+            "teacher": "Matkarimova G"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Algebra",
+            "room": "305",
+            "teacher": "Kimsanov M"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Ixtisoslashtirilgan Biologiya",
+            "room": "| 206",
+            "teacher": "Tashmatova M | Rahmonova N"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Ixtisoslashtirilgan Kimyo",
+            "room": "| 403",
+            "teacher": "Hasanova M | Iriskulov S"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Ingliz Tili",
+            "room": "| 401",
+            "teacher": "Xudayberdiyeva K | Xolmuratova D"
+          },
+          {
+            "number": 7,
+            "time": "13:30-14:15",
+            "subject": "Fizika",
+            "room": "204",
+            "teacher": "Dusyorov J"
+          }
+        ]
+      }
+    ]
+  },
+  "9-sinf": {
+    "Dushanba": [
+      {
+        "class": "9A",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Ingliz Tili",
+            "room": "| 205",
+            "teacher": "Xasanov L | Shadiyeva U"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Geografiya",
+            "room": "303",
+            "teacher": "Avezov S"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Algebra",
+            "room": "| 217",
+            "teacher": "Toshpo`latov E | Xolmatov D"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Rus Tili",
+            "room": "| 404",
+            "teacher": "Tashmatova D | Yuldasheva S"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Kimyo",
+            "room": "105",
+            "teacher": "Hasanova M"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Geometriya",
+            "room": "211 |",
+            "teacher": "Toshpo`latov E | Xolmatov D"
+          },
+          {
+            "number": 7,
+            "time": "13:30-14:15",
+            "subject": "Informatika",
+            "room": "210 | 209",
+            "teacher": "Amanova Z | Dushayeva D"
+          }
+        ]
+      },
+      {
+        "class": "9B",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Rus Tili",
+            "room": "| 206",
+            "teacher": "Bobomatova M | Xunarova B"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Algebra",
+            "room": "213 | 306",
+            "teacher": "Madusmanova N | Jo'rayev T"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Ona Tili",
+            "room": "",
+            "teacher": "Matkarimova G"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Biologiya",
+            "room": "",
+            "teacher": "Tashmatova M"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Ingliz Tili",
+            "room": "| 402",
+            "teacher": "Samatova M | Umarova S"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Robototexnika",
+            "room": "",
+            "teacher": "Fozilova D"
+          },
+          {
+            "number": 7,
+            "time": "13:30-14:15",
+            "subject": "Jismoniy Tarbiya",
+            "room": "spo. z",
+            "teacher": "Xidirov A"
+          }
+        ]
+      },
+      {
+        "class": "9V",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Ixtisoslashtirilgan Kimyo",
+            "room": "| 404",
+            "teacher": "Salomov A | Hasanova M"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Ixtisoslashtirilgan Biologiya",
+            "room": "| 404",
+            "teacher": "Tashmatova M | Rahmonova N"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Ingliz Tili",
+            "room": "| 401",
+            "teacher": "Xasanov L | Samatova M"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Tarbiya",
+            "room": "",
+            "teacher": "Salomov X"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Fizika",
+            "room": "",
+            "teacher": "Dusyorov J"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Tarix",
+            "room": "",
+            "teacher": "Boboxonov J"
+          },
+          {
+            "number": 7,
+            "time": "13:30-14:15",
+            "subject": "Robototexnika",
+            "room": "212",
+            "teacher": "Fozilova D"
+          }
+        ]
+      }
+    ],
+    "Seshanba": [
+      {
+        "class": "9A",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Kimyo",
+            "room": "105",
+            "teacher": "Hasanova M"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Geografiya",
+            "room": "303",
+            "teacher": "Avezov S"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Algebra",
+            "room": "211 | 217",
+            "teacher": "Toshpo`latov E | Xolmatov D"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Ona Tili",
+            "room": "",
+            "teacher": "Xabibullayeva X"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Geometriya",
+            "room": "211 | 302",
+            "teacher": "Toshpo`latov E | Xolmatov D"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Ingliz Tili",
+            "room": "| 206",
+            "teacher": "Xasanov L | Shadiyeva U"
+          },
+          {
+            "number": 7,
+            "time": "13:30-14:15",
+            "subject": "Adabiyot",
+            "room": "402",
+            "teacher": "Xabibullayeva X"
+          }
+        ]
+      },
+      {
+        "class": "9B",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Kimyo",
+            "room": "104",
+            "teacher": "Salomov A"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "San'at",
+            "room": "",
+            "teacher": "Yuldasheva D"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Ingliz Tili",
+            "room": "| 208",
+            "teacher": "Samatova M | Umarova S"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Ixtisoslashtirilgan Fizika",
+            "room": "| 401",
+            "teacher": "Dusyorov J | Xalmatov U"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Algebra",
+            "room": "| 404",
+            "teacher": "Madusmanova N | Jo'rayev T"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Rus Tili",
+            "room": "| 404",
+            "teacher": "Bobomatova M | Xunarova B"
+          },
+          {
+            "number": 7,
+            "time": "13:30-14:15",
+            "subject": "Tarbiya",
+            "room": "405",
+            "teacher": "Salomov X"
+          }
+        ]
+      },
+      {
+        "class": "9V",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Ingliz Tili",
+            "room": "| 401",
+            "teacher": "Xasanov L | Samatova M"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Adabiyot",
+            "room": "",
+            "teacher": "Kulboyeva D"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Ixtisoslashtirilgan Kimyo",
+            "room": "| 404",
+            "teacher": "Salomov A | Hasanova M"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Ixtisoslashtirilgan Biologiya",
+            "room": "| 401",
+            "teacher": "Tashmatova M | Rahmonova N"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "O'zbek Tili",
+            "room": "",
+            "teacher": "Boboxonov J"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Algebra",
+            "room": "",
+            "teacher": "Jo'rayev T"
+          },
+          {
+            "number": 7,
+            "time": "13:30-14:15",
+            "subject": "Geometriya",
+            "room": "",
+            "teacher": "Jo'rayev T"
+          }
+        ]
+      }
+    ],
+    "Chorshanba": [
+      {
+        "class": "9A",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Tarix",
+            "room": "408",
+            "teacher": "Boboxonov J"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Ona Tili",
+            "room": "",
+            "teacher": "Xabibullayeva X"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Ingliz Tili",
+            "room": "| 205",
+            "teacher": "Xasanov L | Shadiyeva U"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Geometriya",
+            "room": "211 | 302",
+            "teacher": "Toshpo`latov E | Xolmatov D"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "San'at",
+            "room": "",
+            "teacher": "Yuldasheva D"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Biologiya",
+            "room": "215",
+            "teacher": "Rahmonova N"
+          },
+          {
+            "number": 7,
+            "time": "13:30-14:15",
+            "subject": "Ixtisoslashtirilgan Fizika",
+            "room": "203 | 302",
+            "teacher": "Norova S | Niyozov I"
+          }
+        ]
+      },
+      {
+        "class": "9B",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Kimyo",
+            "room": "104",
+            "teacher": "Salomov A"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Geografiya",
+            "room": "303",
+            "teacher": "Avezov S"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Geometriya",
+            "room": "| 206",
+            "teacher": "Madusmanova N | Jo'rayev T"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Algebra",
+            "room": "| 401",
+            "teacher": "Madusmanova N | Jo'rayev T"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Tarix",
+            "room": "",
+            "teacher": "Soidiqov J"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Informatika",
+            "room": "| 402",
+            "teacher": "Dushayeva D | Fozilova D"
+          },
+          {
+            "number": 7,
+            "time": "13:30-14:15",
+            "subject": "Adabiyot",
+            "room": "401",
+            "teacher": "Matkarimova G"
+          }
+        ]
+      },
+      {
+        "class": "9V",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Ona Tili",
+            "room": "",
+            "teacher": "Kulboyeva D"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Ixtisoslashtirilgan Kimyo",
+            "room": "| 403",
+            "teacher": "Salomov A | Hasanova M"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Geografiya",
+            "room": "",
+            "teacher": "Avezov S"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Fizika",
+            "room": "",
+            "teacher": "Dusyorov J"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Adabiyot",
+            "room": "",
+            "teacher": "Kulboyeva D"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Ingliz Tili",
+            "room": "| 403",
+            "teacher": "Xasanov L | Samatova M"
+          },
+          {
+            "number": 7,
+            "time": "13:30-14:15",
+            "subject": "Informatika",
+            "room": "209 | 112",
+            "teacher": "Dushayeva D | Fozilova D"
+          }
+        ]
+      }
+    ],
+    "Payshanba": [
+      {
+        "class": "9A",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Ingliz Tili",
+            "room": "| 205",
+            "teacher": "Xasanov L | Shadiyeva U"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Algebra",
+            "room": "211 | 217",
+            "teacher": "Toshpo`latov E | Xolmatov D"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Ixtisoslashtirilgan Fizika",
+            "room": "203 | 302",
+            "teacher": "Norova S | Niyozov I"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Informatika",
+            "room": "210 | 209",
+            "teacher": "Amanova Z | Dushayeva D"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "O'zbek Tili",
+            "room": "408",
+            "teacher": "Boboxonov J"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Robototexnika",
+            "room": "212",
+            "teacher": "Fozilova D"
+          },
+          {
+            "number": 7,
+            "time": "13:30-14:15",
+            "subject": "Algebra",
+            "room": "211 | 217",
+            "teacher": "Toshpo`latov E | Xolmatov D"
+          }
+        ]
+      },
+      {
+        "class": "9B",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Geometriya",
+            "room": "| 404",
+            "teacher": "Madusmanova N | Jo'rayev T"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Ixtisoslashtirilgan Fizika",
+            "room": "| 404",
+            "teacher": "Dusyorov J | Xalmatov U"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "O'zbek Tili",
+            "room": "",
+            "teacher": "Soidiqov J"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Geografiya",
+            "room": "",
+            "teacher": "Avezov S"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Algebra",
+            "room": "| 401",
+            "teacher": "Madusmanova N | Jo'rayev T"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Ingliz Tili",
+            "room": "| 403",
+            "teacher": "Samatova M | Umarova S"
+          },
+          {
+            "number": 7,
+            "time": "13:30-14:15",
+            "subject": "Informatika",
+            "room": "209 | 212",
+            "teacher": "Dushayeva D | Fozilova D"
+          }
+        ]
+      },
+      {
+        "class": "9V",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Ona Tili",
+            "room": "",
+            "teacher": "Kulboyeva D"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Algebra",
+            "room": "",
+            "teacher": "Jo'rayev T"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Geometriya",
+            "room": "",
+            "teacher": "Jo'rayev T"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Jismoniy Tarbiya",
+            "room": "",
+            "teacher": "Xidirov A"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Ingliz Tili",
+            "room": "| 404",
+            "teacher": "Xasanov L | Samatova M"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Ixtisoslashtirilgan Biologiya",
+            "room": "| 402",
+            "teacher": "Tashmatova M | Rahmonova N"
+          },
+          {
+            "number": 7,
+            "time": "13:30-14:15",
+            "subject": "Rus Tili",
+            "room": "| 401",
+            "teacher": "Tashmatova D | Yuldasheva S"
+          }
+        ]
+      }
+    ],
+    "Juma": [
+      {
+        "class": "9A",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Adabiyot",
+            "room": "",
+            "teacher": "Xabibullayeva X"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Biologiya",
+            "room": "",
+            "teacher": "Rahmonova N"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Rus Tili",
+            "room": "106 | 304",
+            "teacher": "Tashmatova D | Yuldasheva S"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Ixtisoslashtirilgan Fizika",
+            "room": "203 | 302",
+            "teacher": "Norova S | Niyozov I"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Jismoniy Tarbiya",
+            "room": "spo. z",
+            "teacher": "Xidirov A"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Tarbiya",
+            "room": "405",
+            "teacher": "Salomov X"
+          },
+          {
+            "number": 7,
+            "time": "13:30-14:15",
+            "subject": "O'zbek Tili",
+            "room": "408",
+            "teacher": "Boboxonov J"
+          }
+        ]
+      },
+      {
+        "class": "9B",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Ona Tili",
+            "room": "",
+            "teacher": "Matkarimova G"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Biologiya",
+            "room": "",
+            "teacher": "Tashmatova M"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Ingliz Tili",
+            "room": "| 206",
+            "teacher": "Samatova M | Umarova S"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Adabiyot",
+            "room": "",
+            "teacher": "Matkarimova G"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Geometriya",
+            "room": "| 206",
+            "teacher": "Madusmanova N | Jo'rayev T"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Ixtisoslashtirilgan Fizika",
+            "room": "| 403",
+            "teacher": "Dusyorov J | Xalmatov U"
+          },
+          {
+            "number": 7,
+            "time": "13:30-14:15",
+            "subject": "O'zbek Tili",
+            "room": "",
+            "teacher": "Soidiqov J"
+          }
+        ]
+      },
+      {
+        "class": "9V",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Ixtisoslashtirilgan Kimyo",
+            "room": "| 206",
+            "teacher": "Salomov A | Hasanova M"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Algebra",
+            "room": "",
+            "teacher": "Jo'rayev T"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "O'zbek Tili",
+            "room": "",
+            "teacher": "Boboxonov J"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Geografiya",
+            "room": "",
+            "teacher": "Avezov S"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Rus Tili",
+            "room": "| 403",
+            "teacher": "Tashmatova D | Yuldasheva S"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Ixtisoslashtirilgan Biologiya",
+            "room": "| 403",
+            "teacher": "Tashmatova M | Rahmonova N"
+          },
+          {
+            "number": 7,
+            "time": "13:30-14:15",
+            "subject": "San'at",
+            "room": "",
+            "teacher": "Yuldasheva D"
+          }
+        ]
+      }
+    ]
+  },
+  "10-sinf": {
+    "Dushanba": [
+      {
+        "class": "10A",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Ingliz Tili",
+            "room": "| 401",
+            "teacher": "Samatova M | Xudayberdiyeva K"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Rus Tili",
+            "room": "110 | 107",
+            "teacher": "Bobomatova M | Xunarova B"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "O'zbek Tili",
+            "room": "",
+            "teacher": "Rahmatova R"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Geometriya",
+            "room": "217 | 214",
+            "teacher": "Adizov S | Toshpo`latov E"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Jismoniy Tarbiya",
+            "room": "spo. z",
+            "teacher": "Xidirov A"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Ixtisoslashtirilgan Fizika",
+            "room": "203 | 302",
+            "teacher": "Norova S | Niyozov I"
+          }
+        ]
+      },
+      {
+        "class": "10B",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Ixtisoslashtirilgan Fizika",
+            "room": "| 404",
+            "teacher": "Norova S | Niyozov I"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Algebra",
+            "room": "| 404",
+            "teacher": "Berkishova L | DushayevaLobar A"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Ingliz Tili",
+            "room": "| 402",
+            "teacher": "Shadiyeva U | Xolmuratova D"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Jismoniy Tarbiya",
+            "room": "",
+            "teacher": "Xidirov A"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Informatika",
+            "room": "| 403",
+            "teacher": "Fozilova D | Sharapova D"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Geometriya",
+            "room": "| 402",
+            "teacher": "Berkishova L | DushayevaLobar A"
+          }
+        ]
+      },
+      {
+        "class": "10V",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Ixtisoslashtirilgan Fizika",
+            "room": "| 401",
+            "teacher": "Dusyorov J | Xalmatov U"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Rus Tili",
+            "room": "| 404",
+            "teacher": "Tashmatova D | Yuldasheva S"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "CHQBT",
+            "room": "",
+            "teacher": "Karimov Sh"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Ingliz Tili",
+            "room": "| 404",
+            "teacher": "Xolmuratova D | Xudayberdiyeva K"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Geometriya",
+            "room": "| 206",
+            "teacher": "Kimsanov M | Nurmatova N"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Algebra",
+            "room": "| 401",
+            "teacher": "Kimsanov M | Nurmatova N"
+          }
+        ]
+      },
+      {
+        "class": "10G",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "O'zbek Tili",
+            "room": "",
+            "teacher": "Soidiqov J"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Ona Tili",
+            "room": "",
+            "teacher": "Nasriddinova M"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Ixtisoslashtirilgan Kimyo",
+            "room": "104 | 202",
+            "teacher": "Salomov A | Iriskulov S"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Informatika",
+            "room": "| 402",
+            "teacher": "Amanova Z | Dushayeva D"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Ixtisoslashtirilgan Kimyo",
+            "room": "| 206",
+            "teacher": "Salomov A | Iriskulov S"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Ixtisoslashtirilgan Biologiya",
+            "room": "| 401",
+            "teacher": "Tashmatova M | Rahmonova N"
+          },
+          {
+            "number": 7,
+            "time": "13:30-14:15",
+            "subject": "Ingliz Tili",
+            "room": "| 205",
+            "teacher": "Xasanov L | Shadiyeva U"
+          }
+        ]
+      }
+    ],
+    "Seshanba": [
+      {
+        "class": "10A",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Algebra",
+            "room": "217 | 214",
+            "teacher": "Adizov S | Toshpo`latov E"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Ixtisoslashtirilgan Fizika",
+            "room": "| 402",
+            "teacher": "Norova S | Niyozov I"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Informatika",
+            "room": "| 403",
+            "teacher": "Amanova Z | Dushayeva D"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Geometriya",
+            "room": "217 | 214",
+            "teacher": "Adizov S | Toshpo`latov E"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Tarbiya",
+            "room": "405",
+            "teacher": "Salomov X"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Ingliz Tili",
+            "room": "301 | 109",
+            "teacher": "Samatova M | Xudayberdiyeva K"
+          }
+        ]
+      },
+      {
+        "class": "10B",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Adabiyot",
+            "room": "",
+            "teacher": "Nasriddinova M"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "CHQBT",
+            "room": "",
+            "teacher": "Karimov Sh"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Ixtisoslashtirilgan Fizika",
+            "room": "| 404",
+            "teacher": "Norova S | Niyozov I"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "O'zbek Tili",
+            "room": "",
+            "teacher": "Boboxonov J"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Rus Tili",
+            "room": "| 403",
+            "teacher": "Tashmatova D | Yuldasheva S"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Ona Tili",
+            "room": "",
+            "teacher": "Nasriddinova M"
+          }
+        ]
+      },
+      {
+        "class": "10V",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Geometriya",
+            "room": "| 403",
+            "teacher": "Kimsanov M | Nurmatova N"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Ona Tili",
+            "room": "",
+            "teacher": "Xabibullayeva X"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Tarbiya",
+            "room": "",
+            "teacher": "Salomov X"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Informatika",
+            "room": "| 403",
+            "teacher": "Amanova Z | Dushayeva D"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Algebra",
+            "room": "| 403",
+            "teacher": "Kimsanov M | Nurmatova N"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Ixtisoslashtirilgan Fizika",
+            "room": "| 404",
+            "teacher": "Dusyorov J | Xalmatov U"
+          },
+          {
+            "number": 7,
+            "time": "13:30-14:15",
+            "subject": "Jismoniy Tarbiya",
+            "room": "spo. z",
+            "teacher": "Xidirov A"
+          }
+        ]
+      },
+      {
+        "class": "10G",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Ixtisoslashtirilgan Biologiya",
+            "room": "| 401",
+            "teacher": "Tashmatova M | Rahmonova N"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Ixtisoslashtirilgan Kimyo",
+            "room": "| 206",
+            "teacher": "Salomov A | Iriskulov S"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Tarix",
+            "room": "",
+            "teacher": "Soidiqov J"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Geometriya",
+            "room": "",
+            "teacher": "Nurmatova N"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Informatika",
+            "room": "| 404",
+            "teacher": "Amanova Z | Dushayeva D"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Algebra",
+            "room": "307",
+            "teacher": "Nurmatova N"
+          },
+          {
+            "number": 7,
+            "time": "13:30-14:15",
+            "subject": "O'zbek Tili",
+            "room": "407",
+            "teacher": "Soidiqov J"
+          }
+        ]
+      }
+    ],
+    "Chorshanba": [
+      {
+        "class": "10A",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Algebra",
+            "room": "217 | 214",
+            "teacher": "Adizov S | Toshpo`latov E"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Informatika",
+            "room": "210 | 209",
+            "teacher": "Amanova Z | Dushayeva D"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Tarix",
+            "room": "406",
+            "teacher": "Rahmatova R"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Ixtisoslashtirilgan Fizika",
+            "room": "203 |",
+            "teacher": "Norova S | Niyozov I"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Ona Tili",
+            "room": "401",
+            "teacher": "Matkarimova G"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "CHQBT",
+            "room": "301",
+            "teacher": "Karimov Sh"
+          },
+          {
+            "number": 7,
+            "time": "13:30-14:15",
+            "subject": "Algebra",
+            "room": "217 | 214",
+            "teacher": "Adizov S | Toshpo`latov E"
+          }
+        ]
+      },
+      {
+        "class": "10B",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Informatika",
+            "room": "| 401",
+            "teacher": "Fozilova D | Sharapova D"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Algebra",
+            "room": "| 206",
+            "teacher": "Berkishova L | DushayevaLobar A"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Ixtisoslashtirilgan Fizika",
+            "room": "| 402",
+            "teacher": "Norova S | Niyozov I"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Adabiyot",
+            "room": "",
+            "teacher": "Nasriddinova M"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Geometriya",
+            "room": "| 206",
+            "teacher": "Berkishova L | DushayevaLobar A"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Ingliz Tili",
+            "room": "| 403",
+            "teacher": "Shadiyeva U | Xolmuratova D"
+          },
+          {
+            "number": 7,
+            "time": "13:30-14:15",
+            "subject": "Tarix",
+            "room": "408",
+            "teacher": "Boboxonov J"
+          }
+        ]
+      },
+      {
+        "class": "10V",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Informatika",
+            "room": "| 401",
+            "teacher": "Amanova Z | Dushayeva D"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Tarix",
+            "room": "407",
+            "teacher": "Soidiqov J"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Ixtisoslashtirilgan Fizika",
+            "room": "| 402",
+            "teacher": "Dusyorov J | Xalmatov U"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Ingliz Tili",
+            "room": "| 401",
+            "teacher": "Xolmuratova D | Xudayberdiyeva K"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Geometriya",
+            "room": "305 | 307",
+            "teacher": "Kimsanov M | Nurmatova N"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Adabiyot",
+            "room": "",
+            "teacher": "Xabibullayeva X"
+          }
+        ]
+      },
+      {
+        "class": "10G",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Ixtisoslashtirilgan Biologiya",
+            "room": "| 401",
+            "teacher": "Tashmatova M | Rahmonova N"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Algebra",
+            "room": "",
+            "teacher": "Nurmatova N"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "CHQBT",
+            "room": "",
+            "teacher": "Karimov Sh"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Rus Tili",
+            "room": "| 401",
+            "teacher": "Bobomatova M | Xunarova B"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Ingliz Tili",
+            "room": "| 404",
+            "teacher": "Xasanov L | Shadiyeva U"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Adabiyot",
+            "room": "",
+            "teacher": "Nasriddinova M"
+          },
+          {
+            "number": 7,
+            "time": "13:30-14:15",
+            "subject": "Ixtisoslashtirilgan Kimyo",
+            "room": "104 | 202",
+            "teacher": "Salomov A | Iriskulov S"
+          }
+        ]
+      }
+    ],
+    "Payshanba": [
+      {
+        "class": "10A",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Ingliz Tili",
+            "room": "| 401",
+            "teacher": "Samatova M | Xudayberdiyeva K"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Adabiyot",
+            "room": "",
+            "teacher": "Matkarimova G"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Geometriya",
+            "room": "| 206",
+            "teacher": "Adizov S | Toshpo`latov E"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Algebra",
+            "room": "217 | 214",
+            "teacher": "Adizov S | Toshpo`latov E"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "CHQBT",
+            "room": "301",
+            "teacher": "Karimov Sh"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Adabiyot",
+            "room": "401",
+            "teacher": "Matkarimova G"
+          }
+        ]
+      },
+      {
+        "class": "10B",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Algebra",
+            "room": "| 404",
+            "teacher": "Berkishova L | DushayevaLobar A"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "CHQBT",
+            "room": "",
+            "teacher": "Karimov Sh"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Ingliz Tili",
+            "room": "| 402",
+            "teacher": "Shadiyeva U | Xolmuratova D"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Rus Tili",
+            "room": "| 403",
+            "teacher": "Tashmatova D | Yuldasheva S"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Ixtisoslashtirilgan Fizika",
+            "room": "| 402",
+            "teacher": "Norova S | Niyozov I"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Tarbiya",
+            "room": "",
+            "teacher": "Salomov X"
+          }
+        ]
+      },
+      {
+        "class": "10V",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "CHQBT",
+            "room": "301",
+            "teacher": "Karimov Sh"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Ingliz Tili",
+            "room": "| 401",
+            "teacher": "Xolmuratova D | Xudayberdiyeva K"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Ixtisoslashtirilgan Fizika",
+            "room": "| 403",
+            "teacher": "Dusyorov J | Xalmatov U"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Algebra",
+            "room": "| 404",
+            "teacher": "Kimsanov M | Nurmatova N"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "O'zbek Tili",
+            "room": "",
+            "teacher": "Soidiqov J"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Algebra",
+            "room": "305 | 307",
+            "teacher": "Kimsanov M | Nurmatova N"
+          }
+        ]
+      },
+      {
+        "class": "10G",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Rus Tili",
+            "room": "| 206",
+            "teacher": "Bobomatova M | Xunarova B"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Ingliz Tili",
+            "room": "206 | 205",
+            "teacher": "Xasanov L | Shadiyeva U"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Ona Tili",
+            "room": "",
+            "teacher": "Nasriddinova M"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Ixtisoslashtirilgan Kimyo",
+            "room": "| 402",
+            "teacher": "Salomov A | Iriskulov S"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Ixtisoslashtirilgan Biologiya",
+            "room": "| 206",
+            "teacher": "Tashmatova M | Rahmonova N"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "CHQBT",
+            "room": "",
+            "teacher": "Karimov Sh"
+          },
+          {
+            "number": 7,
+            "time": "13:30-14:15",
+            "subject": "Jismoniy Tarbiya",
+            "room": "spo. z",
+            "teacher": "Xidirov A"
+          }
+        ]
+      }
+    ],
+    "Juma": [
+      {
+        "class": "10A",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "O'zbek Tili",
+            "room": "406",
+            "teacher": "Rahmatova R"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Ixtisoslashtirilgan Fizika",
+            "room": "203 | 302",
+            "teacher": "Norova S | Niyozov I"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Ona Tili",
+            "room": "",
+            "teacher": "Matkarimova G"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Ingliz Tili",
+            "room": "| 206",
+            "teacher": "Samatova M | Xudayberdiyeva K"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Rus Tili",
+            "room": "110 | 107",
+            "teacher": "Bobomatova M | Xunarova B"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Ixtisoslashtirilgan Fizika",
+            "room": "203 | 302",
+            "teacher": "Norova S | Niyozov I"
+          }
+        ]
+      },
+      {
+        "class": "10B",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Geometriya",
+            "room": "| 404",
+            "teacher": "Berkishova L | DushayevaLobar A"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Ona Tili",
+            "room": "",
+            "teacher": "Nasriddinova M"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Ixtisoslashtirilgan Fizika",
+            "room": "| 403",
+            "teacher": "Norova S | Niyozov I"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Ingliz Tili",
+            "room": "| 401",
+            "teacher": "Shadiyeva U | Xolmuratova D"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Algebra",
+            "room": "| 401",
+            "teacher": "Berkishova L | DushayevaLobar A"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "O'zbek Tili",
+            "room": "",
+            "teacher": "Boboxonov J"
+          }
+        ]
+      },
+      {
+        "class": "10V",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Ixtisoslashtirilgan Fizika",
+            "room": "| 404",
+            "teacher": "Dusyorov J | Xalmatov U"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Ona Tili",
+            "room": "",
+            "teacher": "Xabibullayeva X"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Ingliz Tili",
+            "room": "110 | 109",
+            "teacher": "Xolmuratova D | Xudayberdiyeva K"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Adabiyot",
+            "room": "402",
+            "teacher": "Xabibullayeva X"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "O'zbek Tili",
+            "room": "",
+            "teacher": "Soidiqov J"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Rus Tili",
+            "room": "| 206",
+            "teacher": "Tashmatova D | Yuldasheva S"
+          }
+        ]
+      },
+      {
+        "class": "10G",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Ixtisoslashtirilgan Biologiya",
+            "room": "| 404",
+            "teacher": "Tashmatova M | Rahmonova N"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Ixtisoslashtirilgan Kimyo",
+            "room": "104 | 202",
+            "teacher": "Salomov A | Iriskulov S"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Algebra",
+            "room": "307",
+            "teacher": "Nurmatova N"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Adabiyot",
+            "room": "",
+            "teacher": "Nasriddinova M"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Tarbiya",
+            "room": "405",
+            "teacher": "Salomov X"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Geometriya",
+            "room": "307",
+            "teacher": "Nurmatova N"
+          },
+          {
+            "number": 7,
+            "time": "13:30-14:15",
+            "subject": "Ingliz Tili",
+            "room": "| 206",
+            "teacher": "Xasanov L | Shadiyeva U"
+          }
+        ]
+      }
+    ]
+  },
+  "11-sinf": {
+    "Dushanba": [
+      {
+        "class": "11A",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Geometriya",
+            "room": "| 404",
+            "teacher": "Kimsanov M | Nurmatova N"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Algebra",
+            "room": "| 206",
+            "teacher": "Kimsanov M | Nurmatova N"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Ixtisoslashtirilgan Fizika",
+            "room": "| 401",
+            "teacher": "Norova S | Niyozov I"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Ona Tili",
+            "room": "",
+            "teacher": "Matkarimova G"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "CHQBT",
+            "room": "301",
+            "teacher": "Karimov Sh"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Rus Tili",
+            "room": "110 | 107",
+            "teacher": "Bobomatova M | Xunarova B"
+          }
+        ]
+      },
+      {
+        "class": "11B",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "CHQBT",
+            "room": "301",
+            "teacher": "Karimov Sh"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Geometriya",
+            "room": "217 |",
+            "teacher": "Adizov S | Xolmatov D"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Ixtisoslashtirilgan Fizika",
+            "room": "204 | 201",
+            "teacher": "Dusyorov J | Xalmatov U"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Adabiyot",
+            "room": "",
+            "teacher": "Xabibullayeva X"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Algebra",
+            "room": "|",
+            "teacher": "Adizov S | Xolmatov D"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Ona Tili",
+            "room": "",
+            "teacher": "Xabibullayeva X"
+          }
+        ]
+      },
+      {
+        "class": "11V",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Algebra",
+            "room": "217 | 214",
+            "teacher": "Adizov S | Toshpo`latov E"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "CHQBT",
+            "room": "",
+            "teacher": "Karimov Sh"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Rus Tili",
+            "room": "110 | 107",
+            "teacher": "Bobomatova M | Xunarova B"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Ona Tili",
+            "room": "403",
+            "teacher": "Kulboyeva D"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "O'zbek Tili",
+            "room": "406",
+            "teacher": "Rahmatova R"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Ixtisoslashtirilgan Fizika",
+            "room": "204 | 201",
+            "teacher": "Dusyorov J | Xalmatov U"
+          }
+        ]
+      },
+      {
+        "class": "11G",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "O'zbek Tili",
+            "room": "",
+            "teacher": "Rahmatova R"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Geometriya",
+            "room": "",
+            "teacher": "Karimova F"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Rus Tili",
+            "room": "| 402",
+            "teacher": "Tashmatova D | Yuldasheva S"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Ingliz Tili",
+            "room": "| 404",
+            "teacher": "Xasanov L | Samatova M"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Informatika",
+            "room": "210 | 209",
+            "teacher": "Amanova Z | Dushayeva D"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Ixtisoslashtirilgan Kimyo",
+            "room": "| 401",
+            "teacher": "Hasanova M | Iriskulov S"
+          },
+          {
+            "number": 7,
+            "time": "13:30-14:15",
+            "subject": "Algebra",
+            "room": "112",
+            "teacher": "Karimova F"
+          }
+        ]
+      },
+      {
+        "class": "11D",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Informatika",
+            "room": "",
+            "teacher": "Fozilova D"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Tarix",
+            "room": "",
+            "teacher": "Rahmatova R"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Ixtisoslashtirilgan Biologiya",
+            "room": "",
+            "teacher": "Rahmonova N"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Ona Tili",
+            "room": "",
+            "teacher": "Nasriddinova M"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Algebra",
+            "room": "108",
+            "teacher": "Berkishova L"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Ixtisoslashtirilgan Kimyo",
+            "room": "104",
+            "teacher": "Salomov A"
+          },
+          {
+            "number": 7,
+            "time": "13:30-14:15",
+            "subject": "Ingliz Tili",
+            "room": "",
+            "teacher": "Umarova S"
+          }
+        ]
+      }
+    ],
+    "Seshanba": [
+      {
+        "class": "11A",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Rus Tili",
+            "room": "| 403",
+            "teacher": "Bobomatova M | Xunarova B"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Adabiyot",
+            "room": "",
+            "teacher": "Matkarimova G"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Geometriya",
+            "room": "305 | 307",
+            "teacher": "Kimsanov M | Nurmatova N"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "CHQBT",
+            "room": "",
+            "teacher": "Karimov Sh"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Ingliz Tili",
+            "room": "| 403",
+            "teacher": "Umarova S | Abriyev L"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Ixtisoslashtirilgan Fizika",
+            "room": "203 | 302",
+            "teacher": "Norova S | Niyozov I"
+          }
+        ]
+      },
+      {
+        "class": "11B",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "O'zbek Tili",
+            "room": "406",
+            "teacher": "Rahmatova R"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Ixtisoslashtirilgan Fizika",
+            "room": "| 403",
+            "teacher": "Dusyorov J | Xalmatov U"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Ingliz Tili",
+            "room": "| 403",
+            "teacher": "Abriyev L | Xasanov J"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Tarix",
+            "room": "406",
+            "teacher": "Rahmatova R"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Rus Tili",
+            "room": "| 107",
+            "teacher": "Bobomatova M | Xunarova B"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Ingliz Tili",
+            "room": "207 | 205",
+            "teacher": "Abriyev L | Xasanov J"
+          },
+          {
+            "number": 7,
+            "time": "13:30-14:15",
+            "subject": "Geometriya",
+            "room": "217 |",
+            "teacher": "Adizov S | Xolmatov D"
+          }
+        ]
+      },
+      {
+        "class": "11V",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Ingliz Tili",
+            "room": "| 402",
+            "teacher": "Umarova S | Xasanov J"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Geometriya",
+            "room": "217 | 214",
+            "teacher": "Adizov S | Toshpo`latov E"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Ixtisoslashtirilgan Fizika",
+            "room": "204 | 201",
+            "teacher": "Dusyorov J | Xalmatov U"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Ingliz Tili",
+            "room": "| 404",
+            "teacher": "Umarova S | Xasanov J"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Jismoniy Tarbiya",
+            "room": "spo. z",
+            "teacher": "Xidirov A"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Algebra",
+            "room": "217 | 214",
+            "teacher": "Adizov S | Toshpo`latov E"
+          },
+          {
+            "number": 7,
+            "time": "13:30-14:15",
+            "subject": "Adabiyot",
+            "room": "",
+            "teacher": "Kulboyeva D"
+          }
+        ]
+      },
+      {
+        "class": "11G",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Adabiyot",
+            "room": "",
+            "teacher": "Kulboyeva D"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Ingliz Tili",
+            "room": "| 301",
+            "teacher": "Xasanov L | Samatova M"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Ona Tili",
+            "room": "",
+            "teacher": "Kulboyeva D"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Ona Tili",
+            "room": "",
+            "teacher": "Kulboyeva D"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Ixtisoslashtirilgan Kimyo",
+            "room": "105 | 202",
+            "teacher": "Hasanova M | Iriskulov S"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Informatika",
+            "room": "210 | 209",
+            "teacher": "Amanova Z | Dushayeva D"
+          },
+          {
+            "number": 7,
+            "time": "13:30-14:15",
+            "subject": "Ixtisoslashtirilgan Biologiya",
+            "room": "216 | 215",
+            "teacher": "Tashmatova M | Rahmonova N"
+          }
+        ]
+      },
+      {
+        "class": "11D",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "CHQBT",
+            "room": "",
+            "teacher": "Karimov Sh"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Adabiyot",
+            "room": "",
+            "teacher": "Nasriddinova M"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Ixtisoslashtirilgan Biologiya",
+            "room": "",
+            "teacher": "Rahmonova N"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Rus Tili",
+            "room": "",
+            "teacher": "Tashmatova D"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "O'zbek Tili",
+            "room": "",
+            "teacher": "Rahmatova R"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Geometriya",
+            "room": "108",
+            "teacher": "Berkishova L"
+          },
+          {
+            "number": 7,
+            "time": "13:30-14:15",
+            "subject": "Ixtisoslashtirilgan Kimyo",
+            "room": "",
+            "teacher": "Salomov A"
+          }
+        ]
+      }
+    ],
+    "Chorshanba": [
+      {
+        "class": "11A",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Tarix",
+            "room": "",
+            "teacher": "Rahmatova R"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "O'zbek Tili",
+            "room": "406",
+            "teacher": "Rahmatova R"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Ona Tili",
+            "room": "",
+            "teacher": "Matkarimova G"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Algebra",
+            "room": "| 402",
+            "teacher": "Kimsanov M | Nurmatova N"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Ixtisoslashtirilgan Fizika",
+            "room": "| 206",
+            "teacher": "Norova S | Niyozov I"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Ingliz Tili",
+            "room": "| 402",
+            "teacher": "Umarova S | Abriyev L"
+          },
+          {
+            "number": 7,
+            "time": "13:30-14:15",
+            "subject": "Jismoniy Tarbiya",
+            "room": "spo. z",
+            "teacher": "Xidirov A"
+          }
+        ]
+      },
+      {
+        "class": "11B",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Jismoniy Tarbiya",
+            "room": "spo. z",
+            "teacher": "Xidirov A"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Geometriya",
+            "room": "217 | 302",
+            "teacher": "Adizov S | Xolmatov D"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Informatika",
+            "room": "| 402",
+            "teacher": "Amanova Z | Dushayeva D"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Adabiyot",
+            "room": "",
+            "teacher": "Xabibullayeva X"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Algebra",
+            "room": "|",
+            "teacher": "Adizov S | Xolmatov D"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Ixtisoslashtirilgan Fizika",
+            "room": "| 401",
+            "teacher": "Dusyorov J | Xalmatov U"
+          }
+        ]
+      },
+      {
+        "class": "11V",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Ixtisoslashtirilgan Fizika",
+            "room": "| 403",
+            "teacher": "Dusyorov J | Xalmatov U"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Adabiyot",
+            "room": "",
+            "teacher": "Kulboyeva D"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Algebra",
+            "room": "217 | 214",
+            "teacher": "Adizov S | Toshpo`latov E"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Tarbiya",
+            "room": "405",
+            "teacher": "Salomov X"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Informatika",
+            "room": "| 403",
+            "teacher": "Amanova Z | Dushayeva D"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Geometriya",
+            "room": "217 | 214",
+            "teacher": "Adizov S | Toshpo`latov E"
+          }
+        ]
+      },
+      {
+        "class": "11G",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "CHQBT",
+            "room": "",
+            "teacher": "Karimov Sh"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Ixtisoslashtirilgan Biologiya",
+            "room": "| 206",
+            "teacher": "Tashmatova M | Rahmonova N"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Geometriya",
+            "room": "",
+            "teacher": "Karimova F"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "O'zbek Tili",
+            "room": "",
+            "teacher": "Rahmatova R"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Ixtisoslashtirilgan Biologiya",
+            "room": "216 | 215",
+            "teacher": "Tashmatova M | Rahmonova N"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Ixtisoslashtirilgan Kimyo",
+            "room": "105 | 202",
+            "teacher": "Hasanova M | Iriskulov S"
+          },
+          {
+            "number": 7,
+            "time": "13:30-14:15",
+            "subject": "Ingliz Tili",
+            "room": "| 301",
+            "teacher": "Xasanov L | Samatova M"
+          }
+        ]
+      },
+      {
+        "class": "11D",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Adabiyot",
+            "room": "404",
+            "teacher": "Nasriddinova M"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Ingliz Tili",
+            "room": "208",
+            "teacher": "Umarova S"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Ona Tili",
+            "room": "",
+            "teacher": "Nasriddinova M"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Ixtisoslashtirilgan Biologiya",
+            "room": "215",
+            "teacher": "Rahmonova N"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "O'zbek Tili",
+            "room": "",
+            "teacher": "Rahmatova R"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Ixtisoslashtirilgan Kimyo",
+            "room": "",
+            "teacher": "Salomov A"
+          },
+          {
+            "number": 7,
+            "time": "13:30-14:15",
+            "subject": "Ixtisoslashtirilgan Biologiya",
+            "room": "215",
+            "teacher": "Rahmonova N"
+          }
+        ]
+      }
+    ],
+    "Payshanba": [
+      {
+        "class": "11A",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Ixtisoslashtirilgan Fizika",
+            "room": "| 206",
+            "teacher": "Norova S | Niyozov I"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Algebra",
+            "room": "| 402",
+            "teacher": "Kimsanov M | Nurmatova N"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "O'zbek Tili",
+            "room": "",
+            "teacher": "Rahmatova R"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Adabiyot",
+            "room": "401",
+            "teacher": "Matkarimova G"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Geometriya",
+            "room": "| 401",
+            "teacher": "Kimsanov M | Nurmatova N"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Informatika",
+            "room": "210 | 209",
+            "teacher": "Amanova Z | Dushayeva D"
+          }
+        ]
+      },
+      {
+        "class": "11B",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Ixtisoslashtirilgan Fizika",
+            "room": "| 206",
+            "teacher": "Dusyorov J | Xalmatov U"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Tarbiya",
+            "room": "405",
+            "teacher": "Salomov X"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Ona Tili",
+            "room": "",
+            "teacher": "Xabibullayeva X"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "O'zbek Tili",
+            "room": "",
+            "teacher": "Rahmatova R"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Ingliz Tili",
+            "room": "207 | 205",
+            "teacher": "Abriyev L | Xasanov J"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Ingliz Tili",
+            "room": "207 | 205",
+            "teacher": "Abriyev L | Xasanov J"
+          }
+        ]
+      },
+      {
+        "class": "11V",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Algebra",
+            "room": "217 | 214",
+            "teacher": "Adizov S | Toshpo`latov E"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "O'zbek Tili",
+            "room": "",
+            "teacher": "Rahmatova R"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Ingliz Tili",
+            "room": "| 206",
+            "teacher": "Umarova S | Xasanov J"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Ingliz Tili",
+            "room": "208 | 205",
+            "teacher": "Umarova S | Xasanov J"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Geometriya",
+            "room": "| 403",
+            "teacher": "Adizov S | Toshpo`latov E"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Ixtisoslashtirilgan Fizika",
+            "room": "204 | 201",
+            "teacher": "Dusyorov J | Xalmatov U"
+          }
+        ]
+      },
+      {
+        "class": "11G",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Tarix",
+            "room": "406",
+            "teacher": "Rahmatova R"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Algebra",
+            "room": "112",
+            "teacher": "Karimova F"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Jismoniy Tarbiya",
+            "room": "",
+            "teacher": "Xidirov A"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Ixtisoslashtirilgan Biologiya",
+            "room": "| 403",
+            "teacher": "Tashmatova M | Rahmonova N"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Tarbiya",
+            "room": "",
+            "teacher": "Salomov X"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Ixtisoslashtirilgan Kimyo",
+            "room": "| 402",
+            "teacher": "Hasanova M | Iriskulov S"
+          },
+          {
+            "number": 7,
+            "time": "13:30-14:15",
+            "subject": "CHQBT",
+            "room": "301",
+            "teacher": "Karimov Sh"
+          }
+        ]
+      },
+      {
+        "class": "11D",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Ixtisoslashtirilgan Kimyo",
+            "room": "",
+            "teacher": "Salomov A"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Ixtisoslashtirilgan Kimyo",
+            "room": "",
+            "teacher": "Salomov A"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Geometriya",
+            "room": "108",
+            "teacher": "Berkishova L"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Algebra",
+            "room": "",
+            "teacher": "Berkishova L"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Ingliz Tili",
+            "room": "",
+            "teacher": "Umarova S"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Jismoniy Tarbiya",
+            "room": "",
+            "teacher": "Xidirov A"
+          },
+          {
+            "number": 7,
+            "time": "13:30-14:15",
+            "subject": "Ixtisoslashtirilgan Biologiya",
+            "room": "215",
+            "teacher": "Rahmonova N"
+          }
+        ]
+      }
+    ],
+    "Juma": [
+      {
+        "class": "11A",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Algebra",
+            "room": "| 403",
+            "teacher": "Kimsanov M | Nurmatova N"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Ingliz Tili",
+            "room": "208 | 207",
+            "teacher": "Umarova S | Abriyev L"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Tarbiya",
+            "room": "405",
+            "teacher": "Salomov X"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Informatika",
+            "room": "| 401",
+            "teacher": "Amanova Z | Dushayeva D"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Ixtisoslashtirilgan Fizika",
+            "room": "| 404",
+            "teacher": "Norova S | Niyozov I"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Ingliz Tili",
+            "room": "208 | 207",
+            "teacher": "Umarova S | Abriyev L"
+          }
+        ]
+      },
+      {
+        "class": "11B",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Algebra",
+            "room": "|",
+            "teacher": "Adizov S | Xolmatov D"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "CHQBT",
+            "room": "",
+            "teacher": "Karimov Sh"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Algebra",
+            "room": "|",
+            "teacher": "Adizov S | Xolmatov D"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Rus Tili",
+            "room": "| 206",
+            "teacher": "Bobomatova M | Xunarova B"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Ixtisoslashtirilgan Fizika",
+            "room": "204 | 201",
+            "teacher": "Dusyorov J | Xalmatov U"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Informatika",
+            "room": "210 | 209",
+            "teacher": "Amanova Z | Dushayeva D"
+          }
+        ]
+      },
+      {
+        "class": "11V",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Informatika",
+            "room": "210 | 209",
+            "teacher": "Amanova Z | Dushayeva D"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Tarix",
+            "room": "406",
+            "teacher": "Rahmatova R"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "CHQBT",
+            "room": "301",
+            "teacher": "Karimov Sh"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Ixtisoslashtirilgan Fizika",
+            "room": "| 403",
+            "teacher": "Dusyorov J | Xalmatov U"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Ona Tili",
+            "room": "",
+            "teacher": "Kulboyeva D"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Rus Tili",
+            "room": "110 | 107",
+            "teacher": "Bobomatova M | Xunarova B"
+          }
+        ]
+      },
+      {
+        "class": "11G",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Rus Tili",
+            "room": "106 | 304",
+            "teacher": "Tashmatova D | Yuldasheva S"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Ingliz Tili",
+            "room": "| 301",
+            "teacher": "Xasanov L | Samatova M"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Adabiyot",
+            "room": "",
+            "teacher": "Kulboyeva D"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Ixtisoslashtirilgan Kimyo",
+            "room": "| 404",
+            "teacher": "Hasanova M | Iriskulov S"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Ixtisoslashtirilgan Biologiya",
+            "room": "| 404",
+            "teacher": "Tashmatova M | Rahmonova N"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "Algebra",
+            "room": "",
+            "teacher": "Karimova F"
+          },
+          {
+            "number": 7,
+            "time": "13:30-14:15",
+            "subject": "Ixtisoslashtirilgan Kimyo",
+            "room": "105 | 202",
+            "teacher": "Hasanova M | Iriskulov S"
+          }
+        ]
+      },
+      {
+        "class": "11D",
+        "lessons": [
+          {
+            "number": 1,
+            "time": "08:00-08:45",
+            "subject": "Tarbiya",
+            "room": "405",
+            "teacher": "Salomov X"
+          },
+          {
+            "number": 2,
+            "time": "08:50-09:35",
+            "subject": "Rus Tili",
+            "room": "",
+            "teacher": "Tashmatova D"
+          },
+          {
+            "number": 3,
+            "time": "09:40-10:25",
+            "subject": "Informatika",
+            "room": "212",
+            "teacher": "Fozilova D"
+          },
+          {
+            "number": 4,
+            "time": "10:45-11:30",
+            "subject": "Ixtisoslashtirilgan Kimyo",
+            "room": "",
+            "teacher": "Salomov A"
+          },
+          {
+            "number": 5,
+            "time": "11:50-12:35",
+            "subject": "Ingliz Tili",
+            "room": "",
+            "teacher": "Umarova S"
+          },
+          {
+            "number": 6,
+            "time": "12:40-13:25",
+            "subject": "CHQBT",
+            "room": "301",
+            "teacher": "Karimov Sh"
+          },
+          {
+            "number": 7,
+            "time": "13:30-14:15",
+            "subject": "Algebra",
+            "room": "108",
+            "teacher": "Berkishova L"
+          }
+        ]
+      }
+    ]
+  }
+}

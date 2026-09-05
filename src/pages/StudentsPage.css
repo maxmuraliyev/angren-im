@@ -1,0 +1,298 @@
+.students-page {
+  padding: 120px 5% 60px;
+  min-height: calc(100vh - 200px);
+  background: var(--bg-main);
+}
+
+.students-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.students-title {
+  font-size: 2.5rem;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+}
+
+.students-subtitle {
+  font-size: 1.1rem;
+  color: #475569;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.students-masonry {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ---- Card ---- */
+.student-item {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 28, 65, 0.08);
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.35s ease;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(0, 53, 122, 0.1);
+}
+
+.student-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 36px rgba(0, 28, 65, 0.15);
+  border-color: var(--accent-green, #41B078);
+}
+
+.student-image-wrapper {
+  width: 100%;
+  aspect-ratio: 4/3;
+  overflow: hidden;
+  background-color: #f1f5f9;
+  position: relative;
+}
+
+.student-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.student-item:hover .student-image {
+  transform: scale(1.08);
+}
+
+.student-info {
+  padding: 1.4rem 1.4rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  background: linear-gradient(180deg, #ffffff 0%, var(--primary-lighter, #F0F4F9) 100%);
+  border-top: 1px solid rgba(0, 53, 122, 0.06);
+}
+
+.student-name {
+  font-size: 1.22rem;
+  font-weight: 700;
+  color: var(--primary-darkest, #001C41);
+  margin: 0 0 0.5rem 0;
+  line-height: 1.35;
+  transition: color 0.3s ease;
+}
+
+.student-item:hover .student-name {
+  color: var(--primary-dark, #00357A);
+}
+
+.student-text {
+  font-size: 0.94rem;
+  color: #475569;
+  line-height: 1.6;
+  margin: 0 0 1rem 0;
+  flex-grow: 1;
+}
+
+/* ---- Read More Button ---- */
+.student-read-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: auto;
+  padding: 0.55rem 1.1rem;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(135deg, var(--primary-dark, #00357A), var(--primary-darkest, #001C41));
+  color: white;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  align-self: flex-start;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+  box-shadow: 0 4px 12px rgba(0, 53, 122, 0.25);
+  letter-spacing: 0.01em;
+}
+
+.student-read-more:hover {
+  transform: translateX(3px);
+  box-shadow: 0 6px 18px rgba(0, 53, 122, 0.35);
+  background: linear-gradient(135deg, var(--accent-green, #41B078), #2d8d5c);
+}
+
+.student-read-more svg {
+  transition: transform 0.25s ease;
+  flex-shrink: 0;
+}
+
+.student-read-more:hover svg {
+  transform: translateX(4px);
+}
+
+/* ============================================================
+   MODAL
+   ============================================================ */
+.student-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 18, 40, 0.72);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  animation: backdropIn 0.3s ease;
+}
+
+@keyframes backdropIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.student-modal {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  max-width: 560px;
+  width: 100%;
+  position: relative;
+  box-shadow: 0 32px 80px rgba(0, 18, 40, 0.4);
+  animation: modalSlideIn 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+}
+
+@keyframes modalSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(32px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.student-modal-close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.45);
+  color: white;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  transition: background 0.2s ease, transform 0.2s ease;
+  backdrop-filter: blur(4px);
+}
+
+.student-modal-close:hover {
+  background: rgba(0, 0, 0, 0.65);
+  transform: scale(1.1) rotate(90deg);
+}
+
+.student-modal-image-wrap {
+  position: relative;
+  width: 100%;
+  max-height: 340px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.student-modal-image {
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s ease;
+}
+
+.student-modal:hover .student-modal-image {
+  transform: scale(1.04);
+}
+
+.student-modal-image-gradient {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  background: linear-gradient(to top, white 0%, transparent 100%);
+}
+
+.student-modal-body {
+  padding: 1.5rem 2rem 2rem;
+  overflow-y: auto;
+}
+
+
+
+.student-modal-name {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--primary-dark, #00357A);
+  margin: 0 0 1rem 0;
+  line-height: 1.25;
+  position: relative;
+  padding-bottom: 0.75rem;
+}
+
+.student-modal-name::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 4px;
+  background: var(--accent-green, #41B078);
+  border-radius: 2px;
+}
+
+.student-modal-text {
+  font-size: 1.05rem;
+  color: #334155;
+  line-height: 1.8;
+  margin: 0;
+  white-space: pre-wrap;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 640px) {
+  .students-title {
+    font-size: 1.8rem;
+  }
+
+  .students-masonry {
+    grid-template-columns: 1fr;
+  }
+
+  .student-modal-image,
+  .student-modal-image-wrap {
+    height: 240px;
+    max-height: 240px;
+  }
+
+  .student-modal-body {
+    padding: 1.2rem 1.4rem 1.6rem;
+  }
+
+  .student-modal-name {
+    font-size: 1.3rem;
+  }
+}

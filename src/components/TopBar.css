@@ -1,0 +1,165 @@
+/* ============================================
+   TopBar — Matches alberuni.uz top utility bar
+   Dark navy strip with contact info & socials
+   ============================================ */
+
+.topbar {
+  background: var(--primary-darkest);
+  padding: 8px 0;
+  position: relative;
+  z-index: 1001;
+}
+
+.topbar__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Left: contact info */
+.topbar__contact {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.topbar__contact-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  font-weight: 400;
+  transition: color var(--transition-fast);
+  letter-spacing: 0.01em;
+}
+
+.topbar__contact-item:hover {
+  color: var(--text-white);
+}
+
+.topbar__contact-item svg {
+  font-size: 0.95rem;
+  flex-shrink: 0;
+}
+
+.topbar__divider {
+  width: 1px;
+  height: 16px;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* Right: socials + lang */
+.topbar__right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.topbar__socials {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.topbar__social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  color: var(--text-muted);
+  font-size: 1rem;
+  transition: all var(--transition-fast);
+}
+
+.topbar__social-link:hover {
+  color: var(--text-white);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.topbar__social-sep {
+  width: 1px;
+  height: 16px;
+  background: rgba(255, 255, 255, 0.15);
+  margin: 0 4px;
+}
+
+/* Language switcher */
+.topbar__lang {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  margin-left: 12px;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 20px;
+  padding: 3px;
+}
+
+.topbar__lang-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 14px;
+  border-radius: 18px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  background: transparent;
+  transition: all var(--transition-fast);
+  letter-spacing: 0.02em;
+}
+
+.topbar__lang-btn:hover {
+  color: var(--text-white);
+}
+
+.topbar__lang-btn.active {
+  background: var(--primary-mid);
+  color: var(--text-white);
+}
+
+.topbar__lang-flag {
+  width: 18px;
+  height: 13px;
+  border-radius: 2px;
+  object-fit: cover;
+}
+
+/* ---- Mobile ---- */
+@media (max-width: 768px) {
+  .topbar__contact {
+    gap: 12px;
+  }
+
+  .topbar__contact-item span {
+    display: none;
+  }
+
+  .topbar__social-sep {
+    display: none;
+  }
+
+  .topbar__lang-btn {
+    padding: 4px 10px;
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .topbar {
+    padding: 6px 0;
+  }
+
+  .topbar__inner {
+    padding: 0 12px;
+  }
+
+  .topbar__socials {
+    display: none;
+  }
+}

@@ -1,0 +1,205 @@
+{
+  "nav": {
+    "about": "Biz haqimizda",
+    "news": "Yangiliklar",
+    "admission": "Qabul",
+    "education": "Ta'lim",
+    "achievements": "Yutuqlar",
+    "timetable": "Dars jadvali",
+    "gallery": "Galereya",
+    "contact": "Bog'lanish"
+  },
+  "topbar": {
+    "phone": "+998 94 125 79 79",
+    "email": "info@angren-im.uz"
+  },
+  "lang": {
+    "uz": "O'z",
+    "en": "En"
+  },
+  "events": {
+    "title": "Bo'lajak tadbirlar",
+    "no_events": "Yaqin orada tadbirlar rejalashtirilmagan."
+  },
+  "hero": {
+    "title": "Angren shahar\nixtisoslashtirilgan maktabi",
+    "subtitle": "\"Kelajak bugundan boshlanadi\"",
+    "card_students": "O'quvchilar yutuqlari",
+    "card_students_desc": "Iqtidorli o'quvchilarimiz yutuqlari",
+    "card_teachers": "O'qituvchilar",
+    "card_teachers_desc": "Tajribali pedagoglar",
+    "card_admission": "Qabul",
+    "card_admission_desc": "Maktabga kirish tartibi"
+  },
+  "about": {
+    "section_title": "Biz haqimizda",
+    "section_subtitle": "Maktabimiz haqida batafsil ma'lumot",
+    "director_greeting": "Hurmatli ota-onalar va o'quvchilar!",
+    "director_text": "Angren shahar ixtisoslashtirilgan maktabi O'zbekiston Respublikasi ixtisoslashtirilgan ta'lim tizimi ostidagi davlat ixtisoslashtirilgan maktabi hisoblanadi. Maktabimiz matematika, fizika, informatika va boshqa ixtisoslashtirilgan fanlar bo'yicha ilg'or ta'lim berishga ixtisoslashgan.",
+    "director_name": "Nazirov Abror Urinbayevich",
+    "mission_title": "Bizning maqsadimiz",
+    "mission_text": "Iste'dodli o'quvchilarni respublika va xalqaro olimpiadalar hamda universitetga kirishga tayyorlash. Biz har bir o'quvchining salohiyatini ro'yobga chiqarish uchun eng zamonaviy ta'lim usullaridan foydalanamiz.",
+    "stat_students": "O'quvchilar",
+    "stat_teachers": "O'qituvchilar",
+    "stat_years": "Yillik tajriba",
+    "stat_subjects": "Fanlar"
+  },
+  "whyus": {
+    "section_title": "Nega bizni tanlash kerak",
+    "section_subtitle": "Biz sizning sifatli ta'lim olishingiz uchun eng yaxshi imkoniyatlarni taklif qilamiz",
+    "item1_title": "STEM yo'nalishi",
+    "item1_desc": "Matematika, fizika, informatika va tabiiy fanlar bo'yicha chuqurlashtirilgan ta'lim",
+    "item2_title": "Olimpiada tayyorligi",
+    "item2_desc": "Respublika va xalqaro olimpiadalarga professional tayyorgarlik",
+    "item3_title": "Bepul ta'lim",
+    "item3_desc": "Rasmiy tanlov orqali qabul qilingan o'quvchilar uchun ta'lim bepul",
+    "item4_title": "Tajribali pedagoglar",
+    "item4_desc": "Yuqori malakali va tajribali o'qituvchilar jamoasi"
+  },
+  "education": {
+    "section_title": "Ta'lim yo'nalishlari",
+    "section_subtitle": "Maktabimizda o'qitiladigan asosiy fanlar va yo'nalishlar",
+    "math_title": "Matematika",
+    "math_desc": "Algebra, geometriya, matematik analiz va olimpiad matematikasi",
+    "physics_title": "Fizika",
+    "physics_desc": "Nazariy va amaliy fizika, laboratoriya mashg'ulotlari",
+    "it_title": "Informatika",
+    "it_desc": "Dasturlash, algoritmlar, kompyuter fanlari asoslari",
+    "biology_title": "Biologiya",
+    "biology_desc": "Umumiy biologiya, genetika va biotexnologiya asoslari",
+    "languages_title": "Tillar",
+    "languages_desc": "O'zbek tili, rus tili, ingliz tili chuqurlashtirilgan o'qitish"
+  },
+  "admission": {
+    "section_title": "Qabul tartibi",
+    "section_subtitle": "Maktabga kirish tartibi: onlayn hujjat topshirishdan imtihonlargacha",
+    "step1_title": "Onlayn ariza",
+    "step1_desc": "my.gov.uz portali orqali onlayn ariza topshiring",
+    "step2_title": "Hujjatlar yuklash",
+    "step2_desc": "Pasport surati, tug'ilganlik guvohnomasi, maktab tabeli",
+    "step3_title": "Kirish imtihonlari",
+    "step3_desc": "Matematika, ona tili, mantiqiy fikrlash fanlaridan imtihon",
+    "step4_title": "Natijalar va ro'yxatga olish",
+    "step4_desc": "Imtihon natijalari asosida o'quvchilar qabul qilinadi",
+    "apply_btn": "Ariza topshirish",
+    "apply_next_cohort_btn": "Keyingi qabul",
+    "grades_title": "Qabul sinflari",
+    "grades_text": "5-11 sinflar uchun qabul amalga oshiriladi. Ba'zi fan yo'nalishlari 7-sinfdan boshlanadi.",
+    "free_title": "Bepul ta'lim",
+    "free_text": "Rasmiy tanlov jarayoni orqali qabul qilingan barcha o'quvchilar uchun ta'lim bepul."
+  },
+  "news": {
+    "section_title": "Maktab yangiliklari",
+    "section_subtitle": "Maktabimiz hayotida ro'y berayotgan eng so'nggi va muhim voqealar"
+  },
+  "gallery": {
+    "section_title": "Galereya",
+    "section_subtitle": "Maktabimiz haqida vizual tanishuv",
+    "filter_all": "Barchasi",
+    "filter_building": "Bino",
+    "filter_classroom": "Darsxona",
+    "filter_lab": "Laboratoriya",
+    "filter_library": "Kutubxona",
+    "filter_cafeteria": "Oshxona",
+    "filter_sports": "Sport",
+    "filter_events": "Tadbirlar",
+    "filter_olympiad": "Olimpiadalar"
+  },
+  "footer": {
+    "subscribe_title": "Bizning sahifalarimizga",
+    "subscribe_highlight": "obuna bo'ling",
+    "subscribe_desc": "Eng so'nggi yangiliklarimizdan xabardor bo'ling",
+    "phone_label": "Telefon raqami",
+    "email_label": "Elektron pochta",
+    "address": "Mustaqillik ko'chasi 1B, Angren sh.",
+    "address_label": "Manzil",
+    "copyright": "© 2026 Angren shahar ixtisoslashtirilgan maktabi. Barcha huquqlar himoyalangan.",
+    "school_tagline": "Angren shahar ixtisoslashtirilgan maktabi: Kelajakni bugundan shakllantiramiz."
+  },
+  "subjects": {
+    "all": "Barchasi",
+    "management": "Ma'muriyat va Maslahatchilar",
+    "matematika": "Matematika",
+    "informatika": "Informatika",
+    "robototexnika": "Robototexnika",
+    "fizika": "Fizika",
+    "kimyo": "Kimyo",
+    "biologiya": "Biologiya",
+    "science": "Science",
+    "geografiya": "Geografiya",
+    "tarix": "Tarix",
+    "tarbiya": "Tarbiya",
+    "ona_tili_adabiyot": "Ona tili va Adabiyot",
+    "ozbek_tili": "O'zbek tili",
+    "rus_tili": "Rus tili",
+    "ingliz_tili": "Ingliz tili",
+    "jismoniy_tarbiya": "Jismoniy tarbiya",
+    "chqbt": "CHQBT",
+    "sanat": "San'at",
+    "musiqa": "Musiqa",
+    "other": "Boshqa fanlar"
+  },
+  "teachers": {
+    "loading": "Yuklanmoqda...",
+    "empty": "Hozircha o'qituvchilar ma'lumotlari qo'shilmagan."
+  },
+  "students": {
+    "loading": "Yuklanmoqda...",
+    "empty": "Hozircha o'quvchilar rasmi qo'shilmagan.",
+    "read_more": "Ko'proq o'qi",
+    "close": "Yopish"
+  },
+  "timetable": {
+    "loading": "Dars jadvali yuklanmoqda...",
+    "subtitle": "Sinf va kunni tanlang",
+    "grade": "Sinf:",
+    "day": "Kun:",
+    "empty": "Bu kun uchun dars jadvali kiritilmagan.",
+    "col_num": "#",
+    "col_time": "Vaqt",
+    "col_subject": "Fan",
+    "col_room": "Xona",
+    "col_teacher": "O'qituvchi"
+  },
+  "news_misc": {
+    "loading": "Yangiliklar yuklanmoqda...",
+    "views": "ko'rishlar",
+    "likes": "yoqdi",
+    "copied": "Nusxalandi!",
+    "share": "Ulashish",
+    "telegram_post": "Telegram xabari",
+    "school_news": "Maktab Yangiliklari"
+  },
+  "days": {
+    "Dushanba": "Dushanba",
+    "Seshanba": "Seshanba",
+    "Chorshanba": "Chorshanba",
+    "Payshanba": "Payshanba",
+    "Juma": "Juma",
+    "Shanba": "Shanba"
+  },
+  "contact_page": {
+    "subtitle": "Biz bilan bog'laning va savollaringizga javob oling",
+    "working_hours": "Ish vaqti",
+    "working_hours_val": "Dushanba - Shanba: 08:00 - 18:00",
+    "socials_title": "Ijtimoiy tarmoqlarimiz",
+    "socials_desc": "Maktabimiz hayotini rasmiy sahifalarimizda kuzatib boring",
+    "success_title": "Xabaringiz muvaffaqiyatli yuborildi!",
+    "success_desc": "Murojaatingiz uchun rahmat. Ma'muriyat tez orada siz bilan bog'lanadi.",
+    "btn_resend": "Yana xabar yuborish",
+    "form_title": "Savollar yoki takliflar bormi?",
+    "form_subtitle": "Quyidagi shaklni to'ldiring va bizga xabar yo'llang",
+    "label_name": "Ismingiz *",
+    "placeholder_name": "To'liq ismingizni kiriting",
+    "label_contact": "Telefon raqam yoki Email *",
+    "placeholder_contact": "+998 90 123 45 67 yoki email",
+    "label_subject": "Mavzu",
+    "placeholder_subject": "Murojaatingiz mavzusi",
+    "label_message": "Xabaringiz *",
+    "placeholder_message": "Batafsil xabaringizni yozing...",
+    "btn_sending": "Yuborilmoqda...",
+    "btn_send": "Xabarni yuborish",
+    "err_server": "Xatolik yuz berdi. Iltimos keyinroq qayta urinib ko'ring.",
+    "err_network": "Tarmoq xatosi. Iltimos internetingizni tekshiring."
+  }
+}

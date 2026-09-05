@@ -1,0 +1,25 @@
+name = "angren-imi-news-worker"
+main = "worker.js"
+compatibility_date = "2024-06-30"
+
+# Daily cron trigger (runs everyday at midnight UTC)
+[triggers]
+crons = ["0 0 * * *"]
+
+# D1 Database Binding
+[[d1_databases]]
+binding = "DB"
+database_name = "angren-im"
+database_id = "42a4736d-7ebd-46fc-bebd-721676786f1c"
+
+# Environment variables
+[vars]
+TG_CHANNEL_USERNAME = "@angrenimuzsite"
+TG_CHAT_ID = "-1002750755644"
+ALLOWED_ORIGIN = "https://angren-im.uz"
+
+# SENSITIVE SECRETS — Set these via CLI, NOT in this file:
+# wrangler secret put TELEGRAM_BOT_TOKEN
+# wrangler secret put GEMINI_API_KEY
+# wrangler secret put SYNC_SECRET
+#   (Generate with: openssl rand -hex 32)

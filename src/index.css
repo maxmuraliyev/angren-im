@@ -1,0 +1,239 @@
+/* ============================================
+   ANGREN IMI — Design System & Global Styles
+   Color scheme matched to alberuni.uz
+   ============================================ */
+
+/* ---- CSS Reset ---- */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ---- Design Tokens ---- */
+:root {
+  /* Primary palette (from alberuni.uz) */
+  --primary-darkest: #001C41;
+  --primary-dark: #00357A;
+  --primary-mid: #174A8C;
+  --primary-light: #E8EEF5;
+  --primary-lighter: #F0F4F9;
+
+  /* Accent */
+  --accent-green: #41B078;
+  --accent-green-dark: #369963;
+
+  /* Footer (from newuu.uz) */
+  --footer-bg: #162347;
+  --footer-social-bg: #1a2a4a;
+
+  /* Neutrals */
+  --text-white: #FFFFFF;
+  --text-muted: rgba(255, 255, 255, 0.55);
+  --text-dark: #1a1a2e;
+  --text-body: #4a4a5a;
+  --body-bg: #F5F7FA;
+  --card-bg: #FFFFFF;
+  --border-light: rgba(0, 0, 0, 0.06);
+
+  /* Typography */
+  --font-family: 'Inter Tight', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  /* Spacing */
+  --container-max: 1280px;
+  --section-padding: 100px 0;
+
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-med: 0.35s ease;
+  --transition-slow: 0.5s ease;
+
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(0, 28, 65, 0.06);
+  --shadow-md: 0 4px 20px rgba(0, 28, 65, 0.1);
+  --shadow-lg: 0 8px 40px rgba(0, 28, 65, 0.12);
+  --shadow-xl: 0 16px 60px rgba(0, 28, 65, 0.15);
+
+  /* Border radius */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+}
+
+/* ---- Base ---- */
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-family);
+  color: var(--text-dark);
+  background: var(--body-bg);
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color var(--transition-fast);
+}
+
+ul, ol {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-family: var(--font-family);
+}
+
+/* ---- Container ---- */
+.container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ---- Section Styles ---- */
+.section {
+  padding: var(--section-padding);
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  color: var(--primary-darkest);
+  margin-bottom: 16px;
+  letter-spacing: -0.02em;
+}
+
+.section-subtitle {
+  font-size: 1.05rem;
+  color: var(--text-body);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* ---- Utility ---- */
+.text-gradient {
+  background: linear-gradient(135deg, var(--primary-dark), var(--primary-mid));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ---- Animations ---- */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes countUp {
+  from { opacity: 0; transform: scale(0.5); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+.animate-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.animate-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger children */
+.animate-in.visible .stagger-1 { transition-delay: 0.1s; }
+.animate-in.visible .stagger-2 { transition-delay: 0.2s; }
+.animate-in.visible .stagger-3 { transition-delay: 0.3s; }
+.animate-in.visible .stagger-4 { transition-delay: 0.4s; }
+
+/* ---- Scrollbar ---- */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--body-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--primary-mid);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-dark);
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 768px) {
+  :root {
+    --section-padding: 60px 0;
+  }
+
+  .section-header {
+    margin-bottom: 40px;
+  }
+
+  .container {
+    padding: 0 16px;
+  }
+}

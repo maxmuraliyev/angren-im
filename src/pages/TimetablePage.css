@@ -1,0 +1,319 @@
+.timetable-page {
+  padding: 120px 5% 60px;
+  min-height: calc(100vh - 250px);
+  background: var(--bg-light, #f8f9fa);
+  color: var(--text-main, #333);
+}
+
+.timetable-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.timetable-title {
+  font-size: 2.5rem;
+  color: var(--primary, #0056b3);
+  margin-bottom: 10px;
+}
+
+.timetable-subtitle {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+/* ---- Upcoming Events ---- */
+.upcoming-events-section {
+  margin-bottom: 3rem;
+  background: white;
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.events-section-title {
+  font-size: 1.8rem;
+  color: var(--primary-dark, #00357A);
+  margin-bottom: 1.5rem;
+  text-align: center;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.events-section-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 4px;
+  background: var(--accent-green, #41B078);
+  border-radius: 2px;
+}
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+.event-card {
+  display: flex;
+  flex-direction: column;
+  background: #f8fafc;
+  border: 1px solid rgba(0, 53, 122, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 28, 65, 0.1);
+  border-color: var(--accent-green, #41B078);
+}
+
+.event-image-wrap {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.event-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.event-card:hover .event-image {
+  transform: scale(1.05);
+}
+
+.event-info {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.event-date {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--accent-green, #41B078);
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.05em;
+}
+
+.event-name {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--primary-darkest, #001C41);
+  margin: 0 0 0.5rem 0;
+  line-height: 1.3;
+}
+
+.event-text {
+  font-size: 0.95rem;
+  color: #475569;
+  line-height: 1.6;
+  margin: 0;
+  white-space: pre-wrap;
+}
+
+.timetable-filters {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-bottom: 40px;
+  background: #fff;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.filter-label {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.filter-btn {
+  padding: 10px 20px;
+  border: 1px solid #e0e0e0;
+  background: #fff;
+  border-radius: 30px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #555;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+  background: #f0f4f8;
+  border-color: var(--primary, #0056b3);
+  color: var(--primary, #0056b3);
+}
+
+.filter-btn.active {
+  background: var(--primary, #0056b3);
+  border-color: var(--primary, #0056b3);
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 86, 179, 0.3);
+}
+
+.kun-buttons {
+  gap: 8px;
+}
+
+.timetable-empty {
+  text-align: center;
+  padding: 50px;
+  background: #fff;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  color: #888;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.timetable-classes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 25px;
+}
+
+.class-schedule-card {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.class-schedule-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.class-schedule-header {
+  background: linear-gradient(135deg, var(--primary, #0056b3) 0%, #003d82 100%);
+  color: #fff;
+  padding: 15px 20px;
+  text-align: center;
+}
+
+.class-schedule-header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.class-schedule-body {
+  padding: 0;
+}
+
+.table-header {
+  display: grid;
+  grid-template-columns: 35px 85px 1fr 50px 100px;
+  background: #f8f9fa;
+  padding: 12px 15px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: #555;
+  border-bottom: 1px solid #eef0f2;
+}
+
+.table-row {
+  display: grid;
+  grid-template-columns: 35px 85px 1fr 50px 100px;
+  padding: 12px 15px;
+  font-size: 0.9rem;
+  border-bottom: 1px solid #f0f0f0;
+  align-items: center;
+  transition: background 0.2s ease;
+}
+
+.table-row:last-child {
+  border-bottom: none;
+}
+
+.table-row:hover {
+  background: #fafbfc;
+}
+
+.td-num, .th-num {
+  font-weight: 600;
+  color: var(--primary, #0056b3);
+}
+
+.td-time, .th-time {
+  color: #666;
+  font-size: 0.8rem;
+}
+
+.td-subject, .th-subject {
+  font-weight: 500;
+  color: #222;
+}
+
+.td-room, .th-room {
+  color: #444;
+  font-weight: 500;
+}
+
+.td-teacher, .th-teacher {
+  font-size: 0.8rem;
+  color: #777;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 768px) {
+  .timetable-page {
+    padding: 100px 15px 40px;
+  }
+  
+  .timetable-classes-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .table-header, .table-row {
+    grid-template-columns: 30px 80px 1fr 45px 90px;
+    padding: 10px;
+    gap: 5px;
+  }
+  
+  .td-teacher, .th-teacher {
+    font-size: 0.75rem;
+  }
+}
+
+.split-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.group-1 {
+  border-bottom: 1px dashed #e0e0e0;
+  padding-bottom: 2px;
+}
+
+.group-2 {
+  padding-top: 2px;
+}

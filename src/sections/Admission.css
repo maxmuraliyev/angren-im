@@ -1,0 +1,172 @@
+/* ============================================
+   Admission Section
+   Timeline and Info cards
+   ============================================ */
+
+.admission {
+  padding: var(--section-padding);
+  background: var(--primary-light);
+}
+
+.admission__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+/* Timeline */
+.admission__timeline {
+  position: relative;
+  padding-left: 40px;
+}
+
+.admission__timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 15px;
+  width: 2px;
+  background: rgba(0, 53, 122, 0.15);
+}
+
+.admission__step {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.admission__step:last-child {
+  margin-bottom: 0;
+}
+
+.admission__step-dot {
+  position: absolute;
+  left: -40px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--primary-mid);
+  color: var(--text-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1rem;
+  box-shadow: 0 0 0 6px var(--primary-light);
+  z-index: 2;
+  transform: translateX(-50%);
+}
+
+.admission__step-content {
+  background: var(--card-bg);
+  padding: 24px;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.admission__step:hover .admission__step-content {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.admission__step-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--primary-darkest);
+  margin-bottom: 8px;
+}
+
+.admission__step-desc {
+  font-size: 0.95rem;
+  color: var(--text-body);
+}
+
+/* Right Info Cards */
+.admission__info {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.admission__card {
+  background: linear-gradient(135deg, var(--primary-dark), var(--primary-mid));
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  color: var(--text-white);
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+
+.admission__card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 150px;
+  height: 150px;
+  background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 70%);
+  border-radius: 50%;
+  transform: translate(30%, -30%);
+}
+
+.admission__card-icon {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: var(--accent-green);
+}
+
+.admission__card-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.admission__card-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.admission__apply-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 32px;
+  padding: 16px 32px;
+  background: var(--accent-green);
+  color: var(--text-white);
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 30px;
+  transition: all var(--transition-fast);
+  box-shadow: 0 4px 15px rgba(65, 176, 120, 0.3);
+}
+
+.admission__apply-btn:hover {
+  background: var(--accent-green-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(65, 176, 120, 0.4);
+}
+
+.admission__apply-btn.disabled {
+  background: #94a3b8;
+  color: #f8fafc;
+  cursor: not-allowed;
+  box-shadow: none;
+  border: none;
+}
+
+.admission__apply-btn.disabled:hover {
+  transform: none;
+  background: #94a3b8;
+  box-shadow: none;
+}
+
+/* ---- Mobile ---- */
+@media (max-width: 900px) {
+  .admission__grid {
+    grid-template-columns: 1fr;
+  }
+}
