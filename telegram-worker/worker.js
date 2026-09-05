@@ -20,7 +20,7 @@ export default {
 
   // 2. API Endpoints
   async fetch(request, env) {
-    const allowedOrigin = env.ALLOWED_ORIGIN || "https://angren-im.uz";
+    const allowedOrigin = env.ALLOWED_ORIGIN || "https://angren-im.vercel.app/";
 
     // Handle CORS preflight requests
     if (request.method === "OPTIONS") {
@@ -354,7 +354,7 @@ async function handleDailySync(env) {
 
 function corsHeaders(allowedOrigin) {
   return {
-    "Access-Control-Allow-Origin": allowedOrigin || "https://angren-im.uz",
+    "Access-Control-Allow-Origin": allowedOrigin || "https://angren-im.vercel.app/",
     "Access-Control-Allow-Methods": "GET, OPTIONS",
     "Access-Control-Allow-Headers": "Content-Type, X-Sync-Key"
   };
