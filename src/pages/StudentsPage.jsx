@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
+import { FiMaximize2, FiX } from 'react-icons/fi';
 import { supabase } from '../supabase';
 import './StudentsPage.css';
 
@@ -7,6 +8,8 @@ const TEXT_PREVIEW_LIMIT = 120;
 
 function StudentModal({ student, onClose }) {
   const { t } = useTranslation();
+  const [isFullScreen, setIsFullScreen] = useState(false);
+
   /* Close on backdrop click */
   const handleBackdrop = (e) => {
     if (e.target === e.currentTarget) onClose();
@@ -14,38 +17,87 @@ function StudentModal({ student, onClose }) {
 
   /* Close on Escape key */
   useEffect(() => {
-    const onKey = (e) => { if (e.key === 'Escape') onClose(); };
-    document.addEventListener('keydown', onKey);
+    const onKey = (e) => {
+      if (e.key === 'Escape') {
+        if (isFullScreen) {
+          setIsFullScreen(false);
+        } else {
+          onClose();
+        }
+      }
+    };
+    window.addEventListener('keydown', onKey);
     document.body.style.overflow = 'hidden';
     return () => {
       document.removeEventListener('keydown', onKey);
       document.body.style.overflow = '';
     };
-  }, [onClose]);
+  }, [onClose, isFullScreen]);
 
   return (
-    <div className="student-modal-backdrop" onClick={handleBackdrop}>
-      <div className="student-modal" role="dialog" aria-modal="true">
-        <button className="student-modal-close" onClick={onClose} aria-label={t('students.close', 'Yopish')}>
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
-            <line x1="18" y1="6" x2="6" y2="18" />
-            <line x1="6" y1="6" x2="18" y2="18" />
-          </svg>
-        </button>
+    <>
+      <div className="student-modal-backdrop" onClick={handleBackdrop}>
+        <div className="student-modal" role="dialog" aria-modal="true">
+          <button className="student-modal-close" onClick={onClose} aria-label={t('students.close', 'Yopish')}>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
+              <line x1="18" y1="6" x2="6" y2="18" />
+              <line x1="6" y1="6" x2="18" y2="18" />
+            </svg>
+          </button>
 
-        <div className="student-modal-image-wrap">
-          <img src={student.src} alt={student.name || student.title} className="student-modal-image" />
-          <div className="student-modal-image-gradient" />
-        </div>
+          <div
+            className="student-modal-image-wrap"
+            onClick={() => setIsFullScreen(true)}
+            style={{ cursor: 'pointer' }}
+            title={t('students.fullscreen_photo', "To'liq ekranda ko'rish")}
+          >
+            <img src={student.src} alt={student.name || student.title} className="student-modal-image" />
+            <div className="student-modal-image-gradient" />
+            
+            {/* Button with full screen photo */}
+            <button
+              type="button"
+              className="student-modal-fullscreen-btn"
+              onClick={(e) => {
+                e.stopPropagation();
+                setIsFullScreen(true);
+              }}
+              aria-label={t('students.fullscreen_photo', "To'liq ekranda ko'rish")}
+            >
+              <FiMaximize2 />
+              <span>{t('students.fullscreen_photo', "To'liq ekranda ko'rish")}</span>
+            </button>
+          </div>
 
-        <div className="student-modal-body">
-          <h2 className="student-modal-name">{student.name || student.title}</h2>
-          {student.text && (
-            <p className="student-modal-text">{student.text}</p>
-          )}
+          <div className="student-modal-body">
+            <h2 className="student-modal-name">{student.name || student.title}</h2>
+            {student.text && (
+              <p className="student-modal-text">{student.text}</p>
+            )}
+          </div>
         </div>
       </div>
-    </div>
+
+      {/* Full Screen Photo Lightbox */}
+      {isFullScreen && (
+        <div className="student-fullscreen-backdrop" onClick={() => setIsFullScreen(false)}>
+          <button
+            type="button"
+            className="student-fullscreen-close"
+            onClick={() => setIsFullScreen(false)}
+            aria-label={t('students.close', 'Yopish')}
+          >
+            <FiX />
+          </button>
+          <img
+            src={student.src}
+            alt={student.name || student.title}
+            className="student-fullscreen-image"
+            onClick={(e) => e.stopPropagation()}
+          />
+        </div>
+      )}
+    </>
   );
 }
 

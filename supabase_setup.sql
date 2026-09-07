@@ -11,6 +11,7 @@ INSERT INTO public.site_data (id, data) VALUES
   ('students', '[]'),
   ('teachers', '[]'),
   ('events', '[]'),
+  ('news', '[]'),
   ('timetable', '{}')
 ON CONFLICT (id) DO NOTHING;
 

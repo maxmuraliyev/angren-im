@@ -61,7 +61,7 @@ export default function ContactPage() {
             <div className="contact-page__card">
               <div className="contact-page__card-icon"><FiPhone /></div>
               <h3 className="contact-page__card-title">{t('footer.phone_label')}</h3>
-              <a href="tel:+998941257979" className="contact-page__card-value">{t('topbar.phone')}</a>
+              <a href="tel:+998903910770" className="contact-page__card-value">{t('topbar.phone')}</a>
             </div>
 
             <div className="contact-page__card">

@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import { FiZoomIn, FiX, FiChevronLeft, FiChevronRight } from 'react-icons/fi';
+import { FiZoomIn, FiPlay, FiX, FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 import { supabase } from '../supabase';
 import galleryPhotos from '../data/galleryPhotos';
+import { isVideoMedia } from '../utils/uploadSecurity';
 import './Gallery.css';
 
 export default function Gallery() {
@@ -85,6 +86,9 @@ export default function Gallery() {
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [lightbox.isOpen, filteredPhotos.length]);
 
+  const currentItem = filteredPhotos[lightbox.currentIndex];
+  const isCurrentVideo = currentItem && (currentItem.type === 'video' || isVideoMedia(currentItem.src));
+
   return (
     <section className="gallery section" id="gallery">
       <div className="container">
@@ -109,6 +113,7 @@ export default function Gallery() {
         {/* Grid */}
         <div className="gallery__grid animate-in">
           {filteredPhotos.map((photo, index) => {
+            const isVideo = photo.type === 'video' || isVideoMedia(photo.src);
             const spanClass =
               filteredPhotos.length > 4 && index < filteredPhotos.length - 2
                 ? index % 7 === 0
@@ -124,9 +129,35 @@ export default function Gallery() {
                 className={`gallery__item ${spanClass}`.trim()}
                 onClick={() => openLightbox(index)}
               >
-                <img src={photo.src} alt={photo.alt} loading="lazy" />
+                {isVideo ? (
+                  <video
+                    src={photo.src}
+                    muted
+                    playsInline
+                    preload="metadata"
+                    className="gallery__item-media"
+                  />
+                ) : (
+                  <img
+                    src={photo.src}
+                    alt={photo.alt}
+                    loading="lazy"
+                    className="gallery__item-media"
+                  />
+                )}
+
+                {isVideo && (
+                  <div className="gallery__item-badge">
+                    <FiPlay className="gallery__item-badge-icon" /> Video
+                  </div>
+                )}
+
                 <div className="gallery__item-overlay">
-                  <FiZoomIn className="gallery__item-icon" />
+                  {isVideo ? (
+                    <FiPlay className="gallery__item-icon" />
+                  ) : (
+                    <FiZoomIn className="gallery__item-icon" />
+                  )}
                 </div>
               </div>
             );
@@ -139,24 +170,36 @@ export default function Gallery() {
         className={`gallery__lightbox ${lightbox.isOpen ? 'open' : ''}`}
         onClick={closeLightbox}
       >
-        <button className="gallery__lightbox-close" onClick={closeLightbox}>
+        <button className="gallery__lightbox-close" onClick={closeLightbox} aria-label="Close modal">
           <FiX />
         </button>
         
-        {lightbox.isOpen && (
+        {lightbox.isOpen && currentItem && (
           <div className="gallery__lightbox-content" onClick={e => e.stopPropagation()}>
-            <img
-              src={filteredPhotos[lightbox.currentIndex].src}
-              alt="Gallery Preview"
-              className="gallery__lightbox-img"
-            />
+            {isCurrentVideo ? (
+              <video
+                key={currentItem.src}
+                src={currentItem.src}
+                controls
+                autoPlay
+                playsInline
+                className="gallery__lightbox-media gallery__lightbox-video"
+              />
+            ) : (
+              <img
+                key={currentItem.src}
+                src={currentItem.src}
+                alt={currentItem.alt || "Gallery Preview"}
+                className="gallery__lightbox-media gallery__lightbox-img"
+              />
+            )}
             
             {filteredPhotos.length > 1 && (
               <>
-                <button className="gallery__lightbox-prev" onClick={prevImg}>
+                <button className="gallery__lightbox-prev" onClick={prevImg} aria-label="Previous">
                   <FiChevronLeft />
                 </button>
-                <button className="gallery__lightbox-next" onClick={nextImg}>
+                <button className="gallery__lightbox-next" onClick={nextImg} aria-label="Next">
                   <FiChevronRight />
                 </button>
               </>

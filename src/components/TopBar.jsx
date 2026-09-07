@@ -17,7 +17,7 @@ export default function TopBar() {
       <div className="topbar__inner">
         {/* Left: Contact Info */}
         <div className="topbar__contact">
-          <a href="tel:+998941257979" className="topbar__contact-item">
+          <a href="tel:+998903910770" className="topbar__contact-item">
             <FiPhone />
             <span>{t('topbar.phone')}</span>
           </a>

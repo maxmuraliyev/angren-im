@@ -1,6 +1,7 @@
 import React, { useState, useRef } from 'react';
 import { supabase } from '../../supabase';
 import { useNavigate } from 'react-router-dom';
+import { isUserAdmin } from '../../components/AdminRoute';
 
 const MAX_ATTEMPTS = 5;
 const LOCKOUT_DURATION_MS = 60 * 1000; // 1 minute lockout after MAX_ATTEMPTS
@@ -37,31 +38,44 @@ export default function AdminLogin() {
     
     try {
       const { data, error } = await supabase.auth.signInWithPassword({
-        email: email,
+        email: email.trim(),
         password: password,
       });
 
       if (error) throw error;
+
+      // Verify admin authorization
+      if (data?.user && !isUserAdmin(data.user)) {
+        await supabase.auth.signOut();
+        setError(`Ushbu email (${data.user.email}) admin ro'yxatida yo'q. Faqat admin huquqi berilgan email orqali kirish mumkin.`);
+        return;
+      }
       
       // Success: reset attempts
       attemptsRef.current = 0;
       lockoutUntilRef.current = 0;
       navigate('/admin/dashboard');
     } catch (err) {
-      // Security: Increment attempts and check for lockout
+      console.error("Login failed:", err);
+
       attemptsRef.current += 1;
 
       if (attemptsRef.current >= MAX_ATTEMPTS) {
         lockoutUntilRef.current = Date.now() + LOCKOUT_DURATION_MS;
-        attemptsRef.current = 0; // Reset counter, lockout timer handles the rest
+        attemptsRef.current = 0;
         setError(`Juda ko'p muvaffaqiyatsiz urinish. 1 daqiqa kutib, qayta urinib ko'ring.`);
       } else {
         const remaining = MAX_ATTEMPTS - attemptsRef.current;
-        // Security: Generic error message to prevent account enumeration
-        setError(`Login yoki parol noto'g'ri. ${remaining} ta urinish qoldi.`);
-      }
+        const msg = err.message || '';
 
-      console.error("Login failed"); // Don't log the actual error to console in production
+        if (msg.toLowerCase().includes('email not confirmed')) {
+          setError(`Email hali tasdiqlanmagan (Email not confirmed). Supabase Dashboard -> Authentication -> Users bo'limida foydalanuvchi qatoridagi uchta nuqtani (...) bosib "Confirm user" tugmasini bosing.`);
+        } else if (msg.toLowerCase().includes('invalid login credentials')) {
+          setError(`Login yoki parol noto'g'ri. (${remaining} ta urinish qoldi)`);
+        } else {
+          setError(`${msg || "Kirishda xatolik yuz berdi"}. (${remaining} ta urinish qoldi)`);
+        }
+      }
     } finally {
       setLoading(false);
     }

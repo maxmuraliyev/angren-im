@@ -30,11 +30,11 @@ export default function About() {
         <div className="about__agency animate-in">
           <img
             src="/images/agentlik.svg"
-            alt="Ixtisoslashtirilgan maktablar agentligi"
+            alt="Ixtisoslashtirilgan ta'lim muassasalari agentligi"
             className="about__agency-logo"
           />
           <span className="about__agency-text">
-            Ixtisoslashtirilgan maktablar agentligi
+            Ixtisoslashtirilgan ta'lim muassasalari agentligi
           </span>
         </div>
 

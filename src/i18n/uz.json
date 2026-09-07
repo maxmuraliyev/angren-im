@@ -147,7 +147,8 @@
     "loading": "Yuklanmoqda...",
     "empty": "Hozircha o'quvchilar rasmi qo'shilmagan.",
     "read_more": "Ko'proq o'qi",
-    "close": "Yopish"
+    "close": "Yopish",
+    "fullscreen_photo": "To'liq ekranda ko'rish"
   },
   "timetable": {
     "loading": "Dars jadvali yuklanmoqda...",

@@ -234,6 +234,88 @@
   right: 0;
   height: 80px;
   background: linear-gradient(to top, white 0%, transparent 100%);
+  pointer-events: none;
+}
+
+/* Button with full screen photo */
+.student-modal-fullscreen-btn {
+  position: absolute;
+  bottom: 14px;
+  right: 14px;
+  background: rgba(0, 28, 65, 0.85);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 30px;
+  padding: 8px 16px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  z-index: 5;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.2s ease;
+}
+
+.student-modal-fullscreen-btn:hover {
+  background: var(--accent-green, #41B078);
+  border-color: var(--accent-green, #41B078);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(65, 176, 120, 0.4);
+}
+
+/* Full Screen Photo Lightbox */
+.student-fullscreen-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.95);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  animation: fadeIn 0.25s ease;
+}
+
+.student-fullscreen-close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1.6rem;
+  transition: all 0.2s ease;
+  z-index: 10001;
+}
+
+.student-fullscreen-close:hover {
+  background: #ef4444;
+  border-color: #ef4444;
+  transform: scale(1.1);
+}
+
+.student-fullscreen-image {
+  max-width: 95vw;
+  max-height: 92vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 10px 50px rgba(0, 0, 0, 0.8);
+  animation: modalSlideIn 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .student-modal-body {

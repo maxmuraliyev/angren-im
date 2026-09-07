@@ -147,7 +147,8 @@
     "loading": "Loading...",
     "empty": "No student photos added yet.",
     "read_more": "Read more",
-    "close": "Close"
+    "close": "Close",
+    "fullscreen_photo": "Full screen photo"
   },
   "timetable": {
     "loading": "Loading timetable...",

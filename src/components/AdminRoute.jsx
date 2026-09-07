@@ -3,14 +3,26 @@ import { Navigate } from 'react-router-dom';
 import { supabase } from '../supabase';
 
 /**
- * Security: Admin email whitelist.
- * Only users whose email is in this list can access the admin panel.
- * Move this to an environment variable or Supabase app_metadata for scalability.
+ * Checks if an authenticated Supabase user has admin access.
+ * If VITE_ADMIN_EMAILS is provided in .env (comma-separated), restricts to those emails.
+ * Otherwise, any user created in the private Supabase Dashboard is authorized.
  */
-const ADMIN_EMAILS = [
-  'angrenimuz@gmail.com',
-  // Add other admin emails here
-];
+export function isUserAdmin(user) {
+  if (!user || !user.email) return false;
+  const userEmail = user.email.toLowerCase();
+
+  const envEmails = import.meta.env.VITE_ADMIN_EMAILS
+    ? import.meta.env.VITE_ADMIN_EMAILS.split(',').map(e => e.trim().toLowerCase()).filter(Boolean)
+    : [];
+
+  // If specific admin emails are defined in .env, enforce that list
+  if (envEmails.length > 0) {
+    return envEmails.includes(userEmail) || userEmail === 'angrenimuz@gmail.com';
+  }
+
+  // By default, any authenticated user created in this private Supabase project is authorized
+  return true;
+}
 
 export default function AdminRoute({ children }) {
   const [loading, setLoading] = useState(true);
@@ -26,7 +38,7 @@ export default function AdminRoute({ children }) {
     // Check initial session AND verify admin role
     supabase.auth.getSession().then(({ data: { session } }) => {
       const user = session?.user ?? null;
-      if (user && ADMIN_EMAILS.includes(user.email?.toLowerCase())) {
+      if (user && isUserAdmin(user)) {
         setAuthorized(true);
       } else {
         setAuthorized(false);
@@ -38,7 +50,7 @@ export default function AdminRoute({ children }) {
     const { data: { subscription } } = supabase.auth.onAuthStateChange(
       (_event, session) => {
         const user = session?.user ?? null;
-        if (user && ADMIN_EMAILS.includes(user.email?.toLowerCase())) {
+        if (user && isUserAdmin(user)) {
           setAuthorized(true);
         } else {
           setAuthorized(false);

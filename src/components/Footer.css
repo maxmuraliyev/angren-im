@@ -159,6 +159,30 @@
   font-style: italic;
 }
 
+.footer__creators {
+  font-size: 0.84rem;
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 1.6;
+}
+
+.footer__creators-label {
+  color: rgba(255, 255, 255, 0.45);
+  font-weight: 500;
+}
+
+.footer__creator-link {
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, 0.3);
+  text-underline-offset: 3px;
+  transition: all var(--transition-fast, 0.2s);
+}
+
+.footer__creator-link:hover {
+  color: var(--accent-green, #41b078);
+  text-decoration-color: var(--accent-green, #41b078);
+}
+
 /* Contact columns */
 .footer__info-col {
   display: grid;

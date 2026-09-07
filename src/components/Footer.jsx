@@ -64,12 +64,32 @@ export default function Footer() {
               </div>
             </div>
             <p className="footer__brand-tagline">{t('footer.school_tagline')}</p>
+            <div className="footer__creators">
+              <span className="footer__creators-label">Developers: </span>
+              <a
+                href="https://t.me/mirafzal_ru"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="footer__creator-link"
+              >
+                Mirafzal Rustamjonov
+              </a>
+              {', '}
+              <a
+                href="https://t.me/maxmuraliyev"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="footer__creator-link"
+              >
+                Jamshidbek Maxmuraliyev
+              </a>
+            </div>
           </div>
 
           {/* Contact Details — 2 columns */}
           <div className="footer__info-col">
             <div className="footer__info-item">
-              <a href="tel:+998941257979" className="footer__info-value">{t('topbar.phone')}</a>
+              <a href="tel:+998903910770" className="footer__info-value">{t('topbar.phone')}</a>
               <span className="footer__info-label">{t('footer.phone_label')}</span>
             </div>
             <div className="footer__info-item">
