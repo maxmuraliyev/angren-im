@@ -1,0 +1,428 @@
+/* ============================================
+   Director Profile Modal — Institutional Theme
+   Clean, calm, academic, trustworthy
+   ============================================ */
+
+/* Dimmed backdrop (calm, no aggressive blur) */
+.director-modal__backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background-color: rgba(0, 28, 65, 0.45);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  animation: modalFadeIn 0.22s ease-out forwards;
+  overflow-y: auto;
+}
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Modal Content Container — Physical Sheet of Fine Paper */
+.director-modal__content {
+  background: #ffffff;
+  color: var(--text-dark, #1a1a2e);
+  width: 100%;
+  max-width: 760px;
+  max-height: 90vh;
+  border-radius: var(--radius-lg, 20px);
+  box-shadow: 0 16px 48px rgba(0, 28, 65, 0.12), 0 2px 8px rgba(0, 0, 0, 0.04);
+  border: 1px solid #e2e8f0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  animation: modalRise 0.22s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes modalRise {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Header Bar */
+.director-modal__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 36px;
+  border-bottom: 1px solid #eef2f6;
+  background: #ffffff;
+  flex-shrink: 0;
+}
+
+.director-modal__header-title {
+  font-size: 1.22rem;
+  font-weight: 700;
+  color: var(--primary-darkest, #001C41);
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+.director-modal__close-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: transparent;
+  color: #64748b;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: all var(--transition-fast, 0.2s ease);
+}
+
+.director-modal__close-btn:hover {
+  background: #f1f5f9;
+  color: var(--primary-darkest, #001C41);
+}
+
+.director-modal__close-btn:focus-visible {
+  outline: 2px solid var(--primary-dark, #00357A);
+  outline-offset: 2px;
+}
+
+/* Scrollable Modal Body */
+.director-modal__body {
+  padding: 32px 36px 28px 36px;
+  overflow-y: auto;
+  flex: 1;
+  scrollbar-width: thin;
+  scrollbar-color: #cbd5e1 transparent;
+}
+
+.director-modal__body::-webkit-scrollbar {
+  width: 6px;
+}
+
+.director-modal__body::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+
+/* Two-Column Introduction */
+.director-modal__intro {
+  display: grid;
+  grid-template-columns: 190px 1fr;
+  gap: 32px;
+  align-items: start;
+}
+
+.director-modal__portrait-col {
+  width: 100%;
+}
+
+.director-modal__portrait {
+  width: 100%;
+  height: 235px;
+  border-radius: 10px;
+  object-fit: cover;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 14px rgba(0, 28, 65, 0.06);
+  background-color: #f8fafc;
+}
+
+.director-modal__portrait-fallback {
+  width: 100%;
+  height: 235px;
+  border-radius: 10px;
+  background: #f1f5f9;
+  border: 1px solid #e2e8f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #64748b;
+  font-weight: 700;
+  gap: 8px;
+}
+
+.director-modal__fallback-icon {
+  font-size: 2.2rem;
+  opacity: 0.6;
+}
+
+.director-modal__info-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.director-modal__name {
+  font-size: 1.55rem;
+  font-weight: 800;
+  color: var(--primary-darkest, #001C41);
+  line-height: 1.25;
+  margin-bottom: 4px;
+  letter-spacing: -0.01em;
+}
+
+.director-modal__role {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--accent-green-dark, #369963);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 8px;
+}
+
+.director-modal__meta {
+  font-size: 0.85rem;
+  color: #64748b;
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+
+.director-modal__bio {
+  color: var(--text-body, #4a4a5a);
+}
+
+.director-modal__bio-paragraph {
+  font-size: 0.94rem;
+  line-height: 1.75;
+  margin-bottom: 12px;
+}
+
+.director-modal__bio-paragraph:last-child {
+  margin-bottom: 0;
+}
+
+/* Subtle Divider */
+.director-modal__divider {
+  border: none;
+  height: 1px;
+  background: #eef2f6;
+  margin: 28px 0;
+}
+
+/* Section Headings */
+.director-modal__section {
+  margin-bottom: 0;
+}
+
+.director-modal__section-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--primary-darkest, #001C41);
+  margin-bottom: 18px;
+  letter-spacing: -0.01em;
+}
+
+/* Minimal Career Timeline */
+.director-modal__timeline {
+  display: flex;
+  flex-direction: column;
+}
+
+.director-modal__timeline-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+}
+
+.director-modal__timeline-marker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 14px;
+  flex-shrink: 0;
+  padding-top: 6px;
+}
+
+.director-modal__timeline-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--primary-mid, #174A8C);
+}
+
+.director-modal__timeline-line {
+  width: 1.5px;
+  flex: 1;
+  min-height: 28px;
+  background: #e2e8f0;
+  margin-top: 4px;
+}
+
+.director-modal__timeline-content {
+  padding-bottom: 18px;
+  flex: 1;
+}
+
+.director-modal__timeline-year {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--primary-dark, #00357A);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+}
+
+.director-modal__timeline-heading {
+  font-size: 0.94rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 2px;
+}
+
+.director-modal__timeline-desc {
+  font-size: 0.86rem;
+  color: #64748b;
+  line-height: 1.55;
+  margin: 0;
+}
+
+/* Leadership / Focus Areas (3 Editorial Columns) */
+.director-modal__focus-columns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.director-modal__focus-col {
+  border-top: 2px solid #eef2f6;
+  padding-top: 14px;
+}
+
+.director-modal__focus-num {
+  font-size: 0.76rem;
+  font-weight: 700;
+  color: var(--accent-green-dark, #369963);
+  letter-spacing: 0.06em;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.director-modal__focus-heading {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--primary-darkest, #001C41);
+  margin-bottom: 6px;
+  line-height: 1.35;
+}
+
+.director-modal__focus-desc {
+  font-size: 0.84rem;
+  color: #64748b;
+  line-height: 1.55;
+  margin: 0;
+}
+
+/* Footer */
+.director-modal__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 36px;
+  background: #fafbfc;
+  border-top: 1px solid #eef2f6;
+  flex-shrink: 0;
+}
+
+.director-modal__footer-inst {
+  font-size: 0.82rem;
+  color: #64748b;
+  font-weight: 500;
+}
+
+.director-modal__footer-close {
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  color: #334155;
+  padding: 7px 18px;
+  border-radius: 6px;
+  font-size: 0.86rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-fast, 0.2s ease);
+}
+
+.director-modal__footer-close:hover {
+  background: #f1f5f9;
+  border-color: #94a3b8;
+  color: var(--primary-darkest, #001C41);
+}
+
+.director-modal__footer-close:focus-visible {
+  outline: 2px solid var(--primary-dark, #00357A);
+  outline-offset: 2px;
+}
+
+/* ============================================
+   Responsive Design (< 768px)
+   ============================================ */
+@media (max-width: 768px) {
+  .director-modal__backdrop {
+    padding: 12px;
+    align-items: center;
+  }
+
+  .director-modal__content {
+    max-height: 92vh;
+    border-radius: 16px;
+  }
+
+  .director-modal__header {
+    padding: 16px 20px;
+  }
+
+  .director-modal__body {
+    padding: 24px 20px;
+  }
+
+  .director-modal__intro {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .director-modal__portrait {
+    width: 140px;
+    height: 175px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .director-modal__portrait-fallback {
+    width: 140px;
+    height: 175px;
+    margin: 0 auto;
+  }
+
+  .director-modal__info-col {
+    text-align: center;
+  }
+
+  .director-modal__focus-columns {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .director-modal__footer {
+    padding: 14px 20px;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .director-modal__footer-close {
+    width: 100%;
+  }
+}
