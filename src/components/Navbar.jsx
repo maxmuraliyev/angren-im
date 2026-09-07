@@ -19,7 +19,7 @@ export default function Navbar() {
 
       /* Track active section on home page */
       if (location.pathname === '/') {
-        const sections = ['contact', 'gallery', 'admission', 'education', 'news', 'whyus', 'about'];
+        const sections = ['contact', 'gallery', 'admission', 'studentlife', 'education', 'whyus', 'news', 'about'];
         let found = false;
         for (const id of sections) {
           const el = document.getElementById(id);
@@ -50,6 +50,7 @@ export default function Navbar() {
     { id: 'news', path: '/news', label: t('nav.news') },
     { id: 'education', path: '/education', label: t('nav.education') },
     { id: 'achievements', path: '/students', label: t('nav.achievements') },
+    { id: 'studentlife', path: '/student-life', label: t('nav.studentlife') },
     { id: 'timetable', path: '/timetable', label: t('nav.timetable') },
     { id: 'admission', path: '/admission', label: t('nav.admission') },
     { id: 'gallery', path: '/gallery', label: t('nav.gallery') },
@@ -57,6 +58,14 @@ export default function Navbar() {
   ];
 
   const handleNav = (link) => {
+    if (location.pathname === '/') {
+      const el = document.getElementById(link.id);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth' });
+        setMenuOpen(false);
+        return;
+      }
+    }
     navigate(link.path);
     setMenuOpen(false);
   };
@@ -73,6 +82,7 @@ export default function Navbar() {
   const isLinkActive = (link) => {
     if (location.pathname === link.path) return true;
     if (link.id === 'achievements' && (location.pathname === '/students' || location.pathname === '/achievements')) return true;
+    if (link.id === 'studentlife' && (location.pathname === '/student-life' || (location.pathname === '/' && activeSection === 'studentlife'))) return true;
     if (location.pathname === '/' && activeSection === link.id) return true;
     return false;
   };

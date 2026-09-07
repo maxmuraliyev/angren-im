@@ -1,0 +1,199 @@
+/* ============================================
+   Maktab Hayoti (Student Life) Section
+   Asymmetric photo collage with random swaps
+   ============================================ */
+
+.studentlife {
+  padding: var(--section-padding);
+  background: var(--body-bg);
+  position: relative;
+}
+
+/* ---- Layout: Left text + Right collage ---- */
+.studentlife__layout {
+  display: grid;
+  grid-template-columns: 380px 1fr;
+  gap: 56px;
+  align-items: start;
+}
+
+/* ---- Left Column: Category descriptions ---- */
+.studentlife__categories {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding-top: 8px;
+}
+
+.studentlife__cat {
+  position: relative;
+  padding-left: 20px;
+}
+
+.studentlife__cat::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 4px;
+  bottom: 4px;
+  width: 3px;
+  background: var(--primary-dark);
+  border-radius: 2px;
+  transition: background var(--transition-med);
+}
+
+.studentlife__cat:hover::before {
+  background: var(--accent-green);
+}
+
+.studentlife__cat-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--primary-darkest);
+  margin-bottom: 6px;
+  letter-spacing: -0.01em;
+}
+
+.studentlife__cat-desc {
+  font-size: 0.9rem;
+  color: var(--text-body);
+  line-height: 1.65;
+}
+
+/* ---- Right Column: Asymmetric Photo Collage ---- */
+.studentlife__collage {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 180px 200px 180px;
+  gap: 10px;
+}
+
+/* Asymmetric cell spans */
+.studentlife__cell:nth-child(1) {
+  grid-column: 1 / 3;
+  grid-row: 1;
+}
+
+.studentlife__cell:nth-child(2) {
+  grid-column: 3;
+  grid-row: 1 / 3;
+}
+
+.studentlife__cell:nth-child(3) {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.studentlife__cell:nth-child(4) {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.studentlife__cell:nth-child(5) {
+  grid-column: 1 / 2;
+  grid-row: 3;
+}
+
+.studentlife__cell:nth-child(6) {
+  grid-column: 2 / 4;
+  grid-row: 3;
+}
+
+/* Cell base */
+.studentlife__cell {
+  position: relative;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background: var(--primary-light);
+}
+
+/* Image layers for crossfade */
+.studentlife__cell img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 1.2s ease;
+}
+
+.studentlife__cell img.sl-behind {
+  opacity: 0;
+  z-index: 1;
+}
+
+.studentlife__cell img.sl-front {
+  opacity: 1;
+  z-index: 2;
+}
+
+/* Subtle hover lift */
+.studentlife__cell:hover {
+  z-index: 3;
+}
+
+.studentlife__cell::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: var(--radius-md);
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.06);
+  pointer-events: none;
+  z-index: 4;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 960px) {
+  .studentlife__layout {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .studentlife__categories {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+
+  .studentlife__collage {
+    grid-template-rows: 160px 180px 160px;
+  }
+}
+
+@media (max-width: 600px) {
+  .studentlife__categories {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .studentlife__collage {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 150px 150px 150px;
+  }
+
+  .studentlife__cell:nth-child(1) {
+    grid-column: 1 / 3;
+    grid-row: 1;
+  }
+
+  .studentlife__cell:nth-child(2) {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .studentlife__cell:nth-child(3) {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .studentlife__cell:nth-child(4) {
+    grid-column: 1 / 3;
+    grid-row: 3;
+  }
+
+  /* Hide 5th & 6th on small screens */
+  .studentlife__cell:nth-child(5),
+  .studentlife__cell:nth-child(6) {
+    display: none;
+  }
+}

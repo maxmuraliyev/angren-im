@@ -8,6 +8,7 @@ import ManageEvents from './ManageEvents';
 import ManageTeachers from './ManageTeachers';
 import ManageStudents from './ManageStudents';
 import ManageGallery from './ManageGallery';
+import ManageStudentLife from './ManageStudentLife';
 import ManageSettings from './ManageSettings';
 
 const DashboardHome = () => (
@@ -44,6 +45,11 @@ const DashboardHome = () => (
       <Link to="/admin/dashboard/gallery" style={{ textDecoration: 'none', backgroundColor: 'white', padding: '1.5rem', borderRadius: '8px', boxShadow: '0 2px 6px rgba(0,0,0,0.06)', display: 'block', borderLeft: '4px solid #ec4899' }}>
         <h3 style={{ margin: '0 0 0.5rem', color: '#0f172a' }}>🖼️ Manage Gallery</h3>
         <p style={{ margin: 0, color: '#64748b', fontSize: '0.9rem' }}>Upload and manage school photo albums.</p>
+      </Link>
+
+      <Link to="/admin/dashboard/student-life" style={{ textDecoration: 'none', backgroundColor: 'white', padding: '1.5rem', borderRadius: '8px', boxShadow: '0 2px 6px rgba(0,0,0,0.06)', display: 'block', borderLeft: '4px solid #06b6d4' }}>
+        <h3 style={{ margin: '0 0 0.5rem', color: '#0f172a' }}>🏫 Maktab hayoti</h3>
+        <p style={{ margin: 0, color: '#64748b', fontSize: '0.9rem' }}>Maktab hayoti kollaj rasmlarini boshqarish.</p>
       </Link>
 
       <Link to="/admin/dashboard/settings" style={{ textDecoration: 'none', backgroundColor: 'white', padding: '1.5rem', borderRadius: '8px', boxShadow: '0 2px 6px rgba(0,0,0,0.06)', display: 'block', borderLeft: '4px solid #64748b' }}>
@@ -96,6 +102,9 @@ export default function AdminDashboard() {
             <Link to="/admin/dashboard/gallery" style={{ color: 'white', textDecoration: 'none', fontSize: '1.1rem' }}>Manage Gallery</Link>
           </li>
           <li style={{ marginBottom: '1rem' }}>
+            <Link to="/admin/dashboard/student-life" style={{ color: 'white', textDecoration: 'none', fontSize: '1.1rem' }}>Maktab hayoti</Link>
+          </li>
+          <li style={{ marginBottom: '1rem' }}>
             <Link to="/admin/dashboard/settings" style={{ color: 'white', textDecoration: 'none', fontSize: '1.1rem' }}>Manage Settings</Link>
           </li>
         </ul>
@@ -126,6 +135,7 @@ export default function AdminDashboard() {
           <Route path="/teachers" element={<ManageTeachers />} />
           <Route path="/students" element={<ManageStudents />} />
           <Route path="/gallery" element={<ManageGallery />} />
+          <Route path="/student-life" element={<ManageStudentLife />} />
           <Route path="/settings" element={<ManageSettings />} />
         </Routes>
       </div>

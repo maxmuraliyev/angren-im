@@ -5,6 +5,7 @@
     "admission": "Admission",
     "education": "Education",
     "achievements": "Achievements",
+    "studentlife": "Student Life",
     "timetable": "Timetable",
     "gallery": "Gallery",
     "contact": "Contact"
@@ -104,6 +105,26 @@
     "filter_sports": "Sports",
     "filter_events": "Events",
     "filter_olympiad": "Olympiads"
+  },
+  "studentlife": {
+    "section_title": "School Life",
+    "section_subtitle": "Discover what life is like beyond the classroom at our school",
+    "tab_events": "Events",
+    "tab_sports": "Sports",
+    "tab_clubs": "Clubs",
+    "tab_achievements": "Achievements",
+    "events_title": "Celebrations & Events",
+    "events_text": "Throughout the year, our school hosts cultural celebrations, scientific conferences, and creative competitions. Students actively participate and showcase their talents on stage and beyond.",
+    "sports_title": "Sports & Healthy Lifestyle",
+    "sports_text": "Regular training sessions in football, basketball, volleyball, and table tennis. Our students successfully compete in city and regional championships.",
+    "clubs_title": "Science & Creative Clubs",
+    "clubs_text": "From robotics and programming to biology labs and beyond — students deepen their knowledge through hands-on extracurricular activities aligned with their interests.",
+    "achievements_title": "Student Achievements",
+    "achievements_text": "Our students bring honor to the school by winning national and international olympiads. Every year, hundreds of medals and diplomas are earned across various disciplines.",
+    "stat_clubs": "Clubs & Circles",
+    "stat_sports": "Sports Teams",
+    "stat_events": "Annual Events",
+    "stat_winners": "Olympiad Winners"
   },
   "footer": {
     "subscribe_title": "Subscribe to our pages",

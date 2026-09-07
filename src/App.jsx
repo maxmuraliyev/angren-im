@@ -12,6 +12,7 @@ import Hero from './sections/Hero';
 import About from './sections/About';
 import WhyUs from './sections/WhyUs';
 import Education from './sections/Education';
+import StudentLife from './sections/StudentLife';
 import Admission from './sections/Admission';
 import News from './sections/News';
 import Gallery from './sections/Gallery';
@@ -26,6 +27,7 @@ import ContactPage from './pages/ContactPage';
 import TimetablePage from './pages/TimetablePage';
 import TeachersPage from './pages/TeachersPage';
 import StudentsPage from './pages/StudentsPage';
+import StudentLifePage from './pages/StudentLifePage';
 
 /* Admin Components */
 import AdminLogin from './pages/admin/AdminLogin';
@@ -41,6 +43,7 @@ function Home() {
       <News />
       <WhyUs />
       <Education />
+      <StudentLife />
       <Admission />
       <Gallery />
     </>
@@ -95,6 +98,7 @@ function App() {
           <Route path="/teachers" element={<TeachersPage />} />
           <Route path="/students" element={<StudentsPage />} />
           <Route path="/achievements" element={<StudentsPage />} />
+          <Route path="/student-life" element={<StudentLifePage />} />
           
           {/* Admin Routes */}
           <Route path="/admin" element={<Navigate to="/admin/dashboard" replace />} />

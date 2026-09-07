@@ -1,10 +1,42 @@
-import React, { useState, useRef } from 'react';
+import React, { useState } from 'react';
 import { supabase } from '../../supabase';
 import { useNavigate } from 'react-router-dom';
 import { isUserAdmin } from '../../components/AdminRoute';
 
 const MAX_ATTEMPTS = 5;
 const LOCKOUT_DURATION_MS = 60 * 1000; // 1 minute lockout after MAX_ATTEMPTS
+const STORAGE_KEY_ATTEMPTS = '_admin_login_attempts';
+const STORAGE_KEY_LOCKOUT = '_admin_lockout_until';
+
+function getStoredAttempts() {
+  try {
+    const val = parseInt(sessionStorage.getItem(STORAGE_KEY_ATTEMPTS) || '0', 10);
+    return isNaN(val) ? 0 : val;
+  } catch {
+    return 0;
+  }
+}
+
+function getStoredLockout() {
+  try {
+    const val = parseInt(sessionStorage.getItem(STORAGE_KEY_LOCKOUT) || '0', 10);
+    return isNaN(val) ? 0 : val;
+  } catch {
+    return 0;
+  }
+}
+
+function setStoredAttempts(attempts) {
+  try {
+    sessionStorage.setItem(STORAGE_KEY_ATTEMPTS, String(attempts));
+  } catch {}
+}
+
+function setStoredLockout(timestamp) {
+  try {
+    sessionStorage.setItem(STORAGE_KEY_LOCKOUT, String(timestamp));
+  } catch {}
+}
 
 export default function AdminLogin() {
   const [email, setEmail] = useState('');
@@ -12,10 +44,6 @@ export default function AdminLogin() {
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
-
-  // Rate limiting state (persists across re-renders but not page reloads)
-  const attemptsRef = useRef(0);
-  const lockoutUntilRef = useRef(0);
 
   const handleLogin = async (e) => {
     e.preventDefault();
@@ -25,10 +53,22 @@ export default function AdminLogin() {
       return;
     }
 
-    // Security: Check lockout
+    const trimmedEmail = email.trim();
+    if (!trimmedEmail || !password) {
+      setError("Email va parolni kiriting.");
+      return;
+    }
+
+    if (trimmedEmail.length > 100 || password.length > 128) {
+      setError("Kiritilgan ma'lumotlar uzunligi ruxsat etilgan me'yordan oshdi.");
+      return;
+    }
+
+    // Security: Check persistent lockout
     const now = Date.now();
-    if (lockoutUntilRef.current > now) {
-      const remainingSec = Math.ceil((lockoutUntilRef.current - now) / 1000);
+    const lockoutUntil = getStoredLockout();
+    if (lockoutUntil > now) {
+      const remainingSec = Math.ceil((lockoutUntil - now) / 1000);
       setError(`Juda ko'p urinish. ${remainingSec} soniyadan so'ng qayta urinib ko'ring.`);
       return;
     }
@@ -38,7 +78,7 @@ export default function AdminLogin() {
     
     try {
       const { data, error } = await supabase.auth.signInWithPassword({
-        email: email.trim(),
+        email: trimmedEmail,
         password: password,
       });
 
@@ -51,21 +91,22 @@ export default function AdminLogin() {
         return;
       }
       
-      // Success: reset attempts
-      attemptsRef.current = 0;
-      lockoutUntilRef.current = 0;
+      // Success: reset attempts & lockout
+      setStoredAttempts(0);
+      setStoredLockout(0);
       navigate('/admin/dashboard');
     } catch (err) {
       console.error("Login failed:", err);
 
-      attemptsRef.current += 1;
+      const nextAttempts = getStoredAttempts() + 1;
 
-      if (attemptsRef.current >= MAX_ATTEMPTS) {
-        lockoutUntilRef.current = Date.now() + LOCKOUT_DURATION_MS;
-        attemptsRef.current = 0;
+      if (nextAttempts >= MAX_ATTEMPTS) {
+        setStoredLockout(Date.now() + LOCKOUT_DURATION_MS);
+        setStoredAttempts(0);
         setError(`Juda ko'p muvaffaqiyatsiz urinish. 1 daqiqa kutib, qayta urinib ko'ring.`);
       } else {
-        const remaining = MAX_ATTEMPTS - attemptsRef.current;
+        setStoredAttempts(nextAttempts);
+        const remaining = MAX_ATTEMPTS - nextAttempts;
         const msg = err.message || '';
 
         if (msg.toLowerCase().includes('email not confirmed')) {
@@ -95,6 +136,7 @@ export default function AdminLogin() {
               onChange={(e) => setEmail(e.target.value)}
               style={{ width: '100%', padding: '0.75rem', borderRadius: '4px', border: '1px solid #ccc', boxSizing: 'border-box' }}
               required
+              maxLength={100}
               autoComplete="email"
             />
           </div>
@@ -106,6 +148,7 @@ export default function AdminLogin() {
               onChange={(e) => setPassword(e.target.value)}
               style={{ width: '100%', padding: '0.75rem', borderRadius: '4px', border: '1px solid #ccc', boxSizing: 'border-box' }}
               required
+              maxLength={128}
               autoComplete="current-password"
             />
           </div>

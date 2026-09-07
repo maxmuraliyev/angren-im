@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { supabase } from '../../supabase';
-import { validateMediaFile, generateSecureMediaFileName, isVideoMedia } from '../../utils/uploadSecurity';
+import { validateMediaFile, generateSecureMediaFileName, isVideoMedia, sanitizeMediaUrl } from '../../utils/uploadSecurity';
 import galleryPhotos from '../../data/galleryPhotos';
 
 export default function ManageGallery() {
@@ -76,9 +76,9 @@ export default function ManageGallery() {
         .getPublicUrl(filePath);
 
       const newMedia = {
-        src: publicUrl,
-        category,
-        alt: alt || (isVideo ? 'Maktab videosi' : 'Maktab rasmi'),
+        src: sanitizeMediaUrl(publicUrl),
+        category: (category || 'tadbir').trim().slice(0, 50),
+        alt: (alt || (isVideo ? 'Maktab videosi' : 'Maktab rasmi')).trim().slice(0, 200),
         path: filePath,
         type: isVideo ? 'video' : 'image'
       };

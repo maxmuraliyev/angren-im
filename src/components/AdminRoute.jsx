@@ -9,7 +9,7 @@ import { supabase } from '../supabase';
  */
 export function isUserAdmin(user) {
   if (!user || !user.email) return false;
-  const userEmail = user.email.toLowerCase();
+  const userEmail = user.email.trim().toLowerCase();
 
   const envEmails = import.meta.env.VITE_ADMIN_EMAILS
     ? import.meta.env.VITE_ADMIN_EMAILS.split(',').map(e => e.trim().toLowerCase()).filter(Boolean)
@@ -20,8 +20,8 @@ export function isUserAdmin(user) {
     return envEmails.includes(userEmail) || userEmail === 'angrenimuz@gmail.com';
   }
 
-  // By default, any authenticated user created in this private Supabase project is authorized
-  return true;
+  // Secure default-deny: only the primary admin email is permitted if no env whitelist is configured
+  return userEmail === 'angrenimuz@gmail.com';
 }
 
 export default function AdminRoute({ children }) {

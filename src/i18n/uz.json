@@ -5,6 +5,7 @@
     "admission": "Qabul",
     "education": "Ta'lim",
     "achievements": "Yutuqlar",
+    "studentlife": "Maktab hayoti",
     "timetable": "Dars jadvali",
     "gallery": "Galereya",
     "contact": "Bog'lanish"
@@ -104,6 +105,26 @@
     "filter_sports": "Sport",
     "filter_events": "Tadbirlar",
     "filter_olympiad": "Olimpiadalar"
+  },
+  "studentlife": {
+    "section_title": "Maktab hayoti",
+    "section_subtitle": "Maktabimizda darslardan tashqari hayot qanday kechadi",
+    "tab_events": "Tadbirlar",
+    "tab_sports": "Sport",
+    "tab_clubs": "To'garaklar",
+    "tab_achievements": "Yutuqlar",
+    "events_title": "Bayramlar va tadbirlar",
+    "events_text": "Maktabimizda yil davomida turli madaniy bayramlar, ilmiy konferensiyalar va ijodiy ko'rik-tanlovlar o'tkaziladi. O'quvchilarimiz faol ishtirok etib, o'z iste'dodlarini namoyon qiladi.",
+    "sports_title": "Sport va sog'lom turmush tarzi",
+    "sports_text": "Futbol, basketbol, voleybol va stol tennisi bo'yicha muntazam mashg'ulotlar olib boriladi. O'quvchilarimiz shahar va viloyat musobaqalarida muvaffaqiyatli qatnashadilar.",
+    "clubs_title": "Fan va ijod to'garaklari",
+    "clubs_text": "Robototexnika, dasturlash, biologiya laboratoriyasi va boshqa to'garaklarda o'quvchilar qiziqishlari bo'yicha chuqur bilim oladilar.",
+    "achievements_title": "O'quvchilarimiz yutuqlari",
+    "achievements_text": "Respublika va xalqaro olimpiadalarda g'olib bo'lgan o'quvchilarimiz maktabimiz sharafini yuqori ko'tarishmoqda. Har yili yuzlab medal va diplomlar qo'lga kiritilmoqda.",
+    "stat_clubs": "To'garaklar",
+    "stat_sports": "Sport turlari",
+    "stat_events": "Yillik tadbirlar",
+    "stat_winners": "Olimpiada g'oliblari"
   },
   "footer": {
     "subscribe_title": "Bizning sahifalarimizga",

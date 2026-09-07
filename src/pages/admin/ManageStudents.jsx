@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { supabase } from '../../supabase';
-import { validateImageFile, generateSecureFileName } from '../../utils/uploadSecurity';
+import { validateImageFile, generateSecureFileName, sanitizeMediaUrl } from '../../utils/uploadSecurity';
 
 export default function ManageStudents() {
   const [students, setStudents] = useState([]);
@@ -76,7 +76,15 @@ export default function ManageStudents() {
         .getPublicUrl(filePath);
 
       // 3. Update database
-      const newStudent = { name, text: text || '', title: name, src: publicUrl, path: filePath };
+      const safeName = (name || '').trim().slice(0, 100);
+      const safeText = (text || '').trim().slice(0, 1000);
+      const newStudent = { 
+        name: safeName, 
+        text: safeText, 
+        title: safeName, 
+        src: sanitizeMediaUrl(publicUrl), 
+        path: filePath 
+      };
       const updatedStudents = [...students, newStudent];
 
       const { error: dbError } = await supabase

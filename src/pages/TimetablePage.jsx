@@ -27,7 +27,22 @@ export default function TimetablePage() {
           .single();
 
         if (!ttError && ttData && ttData.data && Object.keys(ttData.data).length > 0) {
-          setTimetableData(ttData.data);
+          // Merge remote data with localTimetableData so missing days (e.g. Tuesday, Thursday) fall back seamlessly
+          const merged = {};
+          const allGrades = new Set([...Object.keys(localTimetableData || {}), ...Object.keys(ttData.data)]);
+
+          for (const grade of allGrades) {
+            merged[grade] = { ...(localTimetableData?.[grade] || {}) };
+            if (ttData.data[grade]) {
+              for (const day of Object.keys(ttData.data[grade])) {
+                const dayLessons = ttData.data[grade][day];
+                if (Array.isArray(dayLessons) && dayLessons.some(c => c.lessons && c.lessons.length > 0)) {
+                  merged[grade][day] = dayLessons;
+                }
+              }
+            }
+          }
+          setTimetableData(merged);
         } else if (ttError && ttError.code !== 'PGRST116') {
           console.error("Timetable fetch error:", ttError);
         }
@@ -57,7 +72,15 @@ export default function TimetablePage() {
   }, []);
 
   const getDayData = () => {
-    return timetableData[activeSinf]?.[activeKun] || [];
+    const fromState = timetableData[activeSinf]?.[activeKun];
+    if (Array.isArray(fromState) && fromState.some(c => c.lessons && c.lessons.length > 0)) {
+      return fromState;
+    }
+    const fromLocal = localTimetableData?.[activeSinf]?.[activeKun];
+    if (Array.isArray(fromLocal) && fromLocal.length > 0) {
+      return fromLocal;
+    }
+    return fromState || [];
   };
 
   const dayData = getDayData();

@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { supabase } from '../../supabase';
-import { validateMediaFile, generateSecureMediaFileName, isVideoMedia } from '../../utils/uploadSecurity';
+import { validateMediaFile, generateSecureMediaFileName, isVideoMedia, sanitizeMediaUrl } from '../../utils/uploadSecurity';
 
 export default function ManageNews() {
   const [newsList, setNewsList] = useState([]);
@@ -178,7 +178,7 @@ export default function ManageNews() {
       const parseParagraphs = (txt) => {
         return txt
           .split('\n')
-          .map(p => p.trim())
+          .map(p => p.trim().slice(0, 3000))
           .filter(p => p.length > 0);
       };
 
@@ -186,16 +186,21 @@ export default function ManageNews() {
       const randomViews = Math.floor(Math.random() * (1500 - 500 + 1)) + 500;
       const randomLikes = Math.floor(Math.random() * (150 - 50 + 1)) + 50;
 
+      const safeTitleUz = titleUz.trim().slice(0, 300);
+      const safeTitleEn = titleEn.trim().slice(0, 300);
+      const safeDate = (date.trim() || getTodayFormatted()).slice(0, 30);
+      const safeMediaUrl = sanitizeMediaUrl(mediaUrl);
+
       const articleObj = {
         id: editingId || `news-${Date.now()}`,
-        date: date.trim() || getTodayFormatted(),
+        date: safeDate,
         views: editingId ? (newsList.find(n => n.id === editingId)?.views ?? randomViews) : randomViews,
         likes: editingId ? (newsList.find(n => n.id === editingId)?.likes ?? randomLikes) : randomLikes,
-        image: mediaUrl,
+        image: safeMediaUrl,
         mediaPath: mediaPath,
         mediaType: isVideo ? 'video' : 'image',
-        title: titleEn.trim() ? { uz: titleUz.trim(), en: titleEn.trim() } : titleUz.trim(),
-        content: titleEn.trim() || contentEn.trim() 
+        title: safeTitleEn ? { uz: safeTitleUz, en: safeTitleEn } : safeTitleUz,
+        content: safeTitleEn || contentEn.trim() 
           ? { uz: parseParagraphs(contentUz), en: parseParagraphs(contentEn) }
           : parseParagraphs(contentUz),
         created_at: new Date().toISOString()

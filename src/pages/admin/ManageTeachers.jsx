@@ -95,8 +95,16 @@ export default function ManageTeachers() {
         filePath = teachers[editingIndex].path;
       }
 
-      // 3. Update database
-      const newTeacher = { name, role, category, phone: phone || '', src: publicUrl, path: filePath };
+      // 3. Update database with sanitized and length-bounded inputs
+      const sanitizedPhone = phone ? phone.trim().replace(/[^0-9+\s\-()]/g, '').slice(0, 30) : '';
+      const newTeacher = { 
+        name: (name || '').trim().slice(0, 100), 
+        role: (role || '').trim().slice(0, 100), 
+        category: (category || '').trim().slice(0, 50), 
+        phone: sanitizedPhone, 
+        src: publicUrl, 
+        path: filePath 
+      };
       let updatedTeachers;
 
       if (editingIndex !== null) {

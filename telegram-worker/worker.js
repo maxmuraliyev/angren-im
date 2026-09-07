@@ -2,14 +2,51 @@
  * Cloudflare Worker: Read-only News API
  */
 
+const DEFAULT_ALLOWED_ORIGINS = [
+  "https://angren-im.vercel.app",
+  "http://localhost:5173",
+  "http://localhost:3000",
+  "http://127.0.0.1:5173"
+];
+
+function getCorsOrigin(request, env) {
+  const reqOrigin = request.headers.get("Origin") || "";
+  const configuredOrigin = (env.ALLOWED_ORIGIN || "").replace(/\/$/, "");
+
+  if (configuredOrigin && reqOrigin === configuredOrigin) {
+    return reqOrigin;
+  }
+
+  if (DEFAULT_ALLOWED_ORIGINS.includes(reqOrigin)) {
+    return reqOrigin;
+  }
+
+  return configuredOrigin || "https://angren-im.vercel.app";
+}
+
+function corsHeaders(origin) {
+  return {
+    "Access-Control-Allow-Origin": origin,
+    "Access-Control-Allow-Methods": "GET, OPTIONS",
+    "Access-Control-Allow-Headers": "Content-Type",
+    "X-Content-Type-Options": "nosniff"
+  };
+}
+
 export default {
-  // API Endpoints
   async fetch(request, env) {
-    const allowedOrigin = env.ALLOWED_ORIGIN || "https://angren-im.vercel.app/";
+    const origin = getCorsOrigin(request, env);
 
     // Handle CORS preflight requests
     if (request.method === "OPTIONS") {
-      return new Response(null, { headers: corsHeaders(allowedOrigin) });
+      return new Response(null, { headers: corsHeaders(origin) });
+    }
+
+    if (request.method !== "GET") {
+      return new Response(JSON.stringify({ error: "Method Not Allowed" }), {
+        status: 405,
+        headers: { "Content-Type": "application/json", ...corsHeaders(origin) }
+      });
     }
 
     const url = new URL(request.url);
@@ -27,12 +64,16 @@ export default {
         
         return new Response(JSON.stringify(results), {
           status: 200,
-          headers: { "Content-Type": "application/json", ...corsHeaders(allowedOrigin) }
+          headers: { 
+            "Content-Type": "application/json", 
+            "Cache-Control": "public, max-age=60, stale-while-revalidate=120",
+            ...corsHeaders(origin) 
+          }
         });
       } catch (err) {
         return new Response(JSON.stringify({ error: "Internal server error" }), {
           status: 500,
-          headers: { "Content-Type": "application/json", ...corsHeaders(allowedOrigin) }
+          headers: { "Content-Type": "application/json", ...corsHeaders(origin) }
         });
       }
     }
@@ -40,15 +81,7 @@ export default {
     // Default 404 for unknown routes
     return new Response(JSON.stringify({ error: "Not Found" }), {
       status: 404,
-      headers: { "Content-Type": "application/json", ...corsHeaders(allowedOrigin) }
+      headers: { "Content-Type": "application/json", ...corsHeaders(origin) }
     });
   }
 };
-
-function corsHeaders(allowedOrigin) {
-  return {
-    "Access-Control-Allow-Origin": allowedOrigin || "https://angren-im.vercel.app/",
-    "Access-Control-Allow-Methods": "GET, OPTIONS",
-    "Access-Control-Allow-Headers": "Content-Type"
-  };
-}

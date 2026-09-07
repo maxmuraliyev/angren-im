@@ -10,16 +10,24 @@ function TeacherCard({ teacher, index = 0 }) {
     animationDelay: `${Math.min(index * 0.07, 0.35)}s`
   };
 
+  // Sanitize phone strictly for tel: protocol (digits and leading plus only)
+  const sanitizedTel = teacher?.phone ? String(teacher.phone).replace(/[^0-9+]/g, '') : '';
+  const safeSrc = teacher?.src && /^(https?:\/\/|\/)/i.test(teacher.src) ? teacher.src : '';
+
   return (
     <div className="teacher-card card-pop-in" style={style}>
       <div className="teacher-image-wrapper">
-        <img src={teacher.src} alt={teacher.name} className="teacher-image" loading="lazy" />
+        {safeSrc ? (
+          <img src={safeSrc} alt={teacher.name || 'O\'qituvchi'} className="teacher-image" loading="lazy" />
+        ) : (
+          <div className="teacher-image-placeholder" style={{ width: '100%', height: '100%', backgroundColor: '#e2e8f0' }} />
+        )}
       </div>
       <div className="teacher-info">
         <h3 className="teacher-name">{teacher.name}</h3>
         <p className="teacher-role-text">{teacher.role}</p>
-        {teacher.phone && (
-          <a href={`tel:${teacher.phone}`} className="teacher-phone-link">
+        {sanitizedTel && (
+          <a href={`tel:${sanitizedTel}`} className="teacher-phone-link" rel="noopener noreferrer">
             <FaPhoneAlt className="phone-icon" />
             <span>{teacher.phone}</span>
           </a>

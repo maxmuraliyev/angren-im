@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { supabase } from '../../supabase';
-import { validateImageFile, generateSecureFileName } from '../../utils/uploadSecurity';
+import { validateImageFile, generateSecureFileName, sanitizeMediaUrl } from '../../utils/uploadSecurity';
 
 export default function ManageEvents() {
   const [events, setEvents] = useState([]);
@@ -85,10 +85,10 @@ export default function ManageEvents() {
       // 2. Add to existing events list
       const newEvent = {
         id: Date.now().toString(),
-        name,
-        text,
-        datetime,
-        src: imageUrl
+        name: (name || '').trim().slice(0, 200),
+        text: (text || '').trim().slice(0, 5000),
+        datetime: (datetime || '').trim().slice(0, 50),
+        src: sanitizeMediaUrl(imageUrl)
       };
 
       const updatedEvents = [newEvent, ...events];

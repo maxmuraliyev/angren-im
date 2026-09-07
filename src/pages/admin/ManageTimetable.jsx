@@ -6,9 +6,27 @@ export default function ManageTimetable() {
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState('');
 
+  const MAX_FILE_SIZE = 5 * 1024 * 1024; // 5MB
+  const ALLOWED_EXTENSIONS = ['xlsx', 'xls'];
+  const FORBIDDEN_KEYS = new Set(['__proto__', 'constructor', 'prototype']);
+
   const handleFileUpload = (e) => {
     const file = e.target.files[0];
     if (!file) return;
+
+    // 1. Validate file extension and size
+    const ext = file.name.split('.').pop()?.toLowerCase();
+    if (!ALLOWED_EXTENSIONS.includes(ext)) {
+      setMessage("Xatolik: Faqat .xlsx yoki .xls formatidagi Excel fayllar qabul qilinadi.");
+      e.target.value = '';
+      return;
+    }
+
+    if (file.size > MAX_FILE_SIZE) {
+      setMessage("Xatolik: Excel fayl hajmi juda katta (maksimal: 5MB).");
+      e.target.value = '';
+      return;
+    }
 
     const reader = new FileReader();
     reader.onload = async (event) => {
@@ -17,18 +35,25 @@ export default function ManageTimetable() {
         setMessage('');
 
         const data = new Uint8Array(event.target.result);
-        const workbook = XLSX.read(data, { type: 'array' });
+        const workbook = XLSX.read(data, { type: 'array', dense: true });
         const sheetName = workbook.SheetNames[0];
+        if (!sheetName) throw new Error("Excel faylida sahifalar topilmadi.");
+
         const sheet = workbook.Sheets[sheetName];
         
         // We use raw:false to keep dates/times as strings if formatted as such
         const jsonRaw = XLSX.utils.sheet_to_json(sheet, { header: 1, raw: false });
         
+        // Guard against excessively large sheets (DoS prevention)
+        if (jsonRaw.length > 1000) {
+          throw new Error("Jadval qatorlari soni me'yordan oshdi (maksimal: 1000 qator).");
+        }
+
         // 1. Find Header Row
         let headerRowIndex = -1;
-        for (let i = 0; i < jsonRaw.length; i++) {
+        for (let i = 0; i < Math.min(jsonRaw.length, 50); i++) {
           const row = jsonRaw[i];
-          if (row && row.includes('Kun') && row.includes('Vaqt')) {
+          if (row && Array.isArray(row) && row.some(c => typeof c === 'string' && c.includes('Kun')) && row.some(c => typeof c === 'string' && c.includes('Vaqt'))) {
             headerRowIndex = i;
             break;
           }
@@ -42,18 +67,22 @@ export default function ManageTimetable() {
         
         // 2. Identify Classes and their column indices
         const classCols = [];
-        for (let col = 3; col < headerRow.length; col++) {
+        for (let col = 3; col < Math.min(headerRow.length, 50); col++) {
           const cell = headerRow[col];
           if (cell && typeof cell === 'string') {
             const trimmed = cell.trim();
             // Match classes like "5A", "10V", "11 D", etc.
-            const match = trimmed.match(/^(\d+)[A-ZА-Яa-zа-я]/i);
+            const match = trimmed.match(/^(\d{1,2})[A-ZА-Яa-zа-я]/i);
             if (match) {
-              classCols.push({ 
-                className: trimmed.replace(/\s/g, ''), // Normalize "11 D" to "11D"
-                col: col, 
-                grade: match[1] 
-              });
+              const safeClassName = trimmed.replace(/[^a-zA-Z0-9А-Яа-я]/g, '').slice(0, 10);
+              const safeGrade = match[1];
+              if (!FORBIDDEN_KEYS.has(safeClassName)) {
+                classCols.push({ 
+                  className: safeClassName, 
+                  col: col, 
+                  grade: safeGrade 
+                });
+              }
             }
           }
         }
@@ -62,16 +91,40 @@ export default function ManageTimetable() {
           throw new Error("Sinf nomlari (masalan: 5A, 6B) sarlavhalar qatoridan topilmadi.");
         }
 
-        // 3. Parse Lessons Data
-        const timetableData = {};
+        // 3. Parse Lessons Data (guarded against prototype pollution)
+        const timetableData = Object.create(null);
         let currentDay = '';
-        const dayMap = {
-          'Du': 'Dushanba',
-          'Se': 'Seshanba',
-          'Ch': 'Chorshanba',
-          'Pa': 'Payshanba',
-          'Ju': 'Juma',
-          'Sh': 'Shanba'
+
+        const normalizeDay = (dayRaw) => {
+          if (!dayRaw || typeof dayRaw !== 'string') return '';
+          const d = dayRaw.trim().toLowerCase();
+
+          // 1. Dushanba / Monday / Понедельник
+          if (d.startsWith('du') || d.startsWith('ду') || d.startsWith('пн') || d.startsWith('pon') || d.startsWith('mon')) {
+            return 'Dushanba';
+          }
+          // 2. Seshanba / Tuesday / Вторник
+          if (d.startsWith('se') || d.startsWith('се') || d.startsWith('вт') || d.startsWith('vtor') || d.startsWith('tue')) {
+            return 'Seshanba';
+          }
+          // 3. Payshanba / Thursday / Четверг (evaluated before 'ch'/'ч' to prevent overlap)
+          if (d.startsWith('pa') || d.startsWith('па') || d.startsWith('чт') || d.startsWith('chet') || d.startsWith('thu')) {
+            return 'Payshanba';
+          }
+          // 4. Chorshanba / Wednesday / Среда
+          if (d.startsWith('ch') || d.startsWith('ч') || d.startsWith('ср') || d.startsWith('sred') || d.startsWith('wed')) {
+            return 'Chorshanba';
+          }
+          // 5. Juma / Friday / Пятница
+          if (d.startsWith('ju') || d.startsWith('жу') || d.startsWith('пт') || d.startsWith('pyat') || d.startsWith('fri')) {
+            return 'Juma';
+          }
+          // 6. Shanba / Saturday / Суббота
+          if (d.startsWith('sh') || d.startsWith('ша') || d.startsWith('сб') || d.startsWith('sub') || d.startsWith('sat')) {
+            return 'Shanba';
+          }
+
+          return '';
         };
 
         for (let i = headerRowIndex + 1; i < jsonRaw.length; i += 2) {
@@ -79,40 +132,40 @@ export default function ManageTimetable() {
           const nextRow = jsonRaw[i + 1];
           if (!row || !nextRow) break;
           
-          let dayRaw = row[0];
-          if (dayRaw && typeof dayRaw === 'string') {
-            dayRaw = dayRaw.trim();
-            for (const [key, value] of Object.entries(dayMap)) {
-              if (dayRaw.startsWith(key)) {
-                currentDay = value;
-                break;
-              }
+          if (row[0]) {
+            const detected = normalizeDay(String(row[0]));
+            if (detected) {
+              currentDay = detected;
             }
           }
           
-          if (!currentDay) continue;
+          if (!currentDay || FORBIDDEN_KEYS.has(currentDay)) continue;
 
-          // Some rows might not have a lesson number if they are empty padding, check this
           const lessonRaw = row[1];
           if (!lessonRaw) continue;
           
           const lessonNumber = parseInt(lessonRaw.toString().trim(), 10);
-          if (isNaN(lessonNumber)) continue;
+          if (isNaN(lessonNumber) || lessonNumber < 1 || lessonNumber > 20) continue;
           
-          const time = row[2] ? String(row[2]).trim() : '';
+          const time = row[2] ? String(row[2]).trim().slice(0, 30) : '';
 
           classCols.forEach(({ className, col, grade }) => {
             const groupKey = `${grade}-sinf`;
+            if (FORBIDDEN_KEYS.has(groupKey)) return;
             
-            let subject = row[col] ? String(row[col]).trim() : '';
-            let room = row[col + 1] ? String(row[col + 1]).trim() : ''; // Next column is room
-            let teacher = nextRow[col] ? String(nextRow[col]).trim() : ''; // Next row same col is teacher
+            let subject = row[col] ? String(row[col]).trim().slice(0, 100) : '';
+            let room = row[col + 1] ? String(row[col + 1]).trim().slice(0, 50) : '';
+            let teacher = nextRow[col] ? String(nextRow[col]).trim().slice(0, 100) : '';
             
-            if (!subject) return; // Empty lesson
+            if (!subject) return;
 
-            // Initialize structure
-            if (!timetableData[groupKey]) timetableData[groupKey] = {};
-            if (!timetableData[groupKey][currentDay]) timetableData[groupKey][currentDay] = [];
+            // Initialize structure safely
+            if (!Object.prototype.hasOwnProperty.call(timetableData, groupKey)) {
+              timetableData[groupKey] = {};
+            }
+            if (!Object.prototype.hasOwnProperty.call(timetableData[groupKey], currentDay)) {
+              timetableData[groupKey][currentDay] = [];
+            }
             
             let classDayData = timetableData[groupKey][currentDay].find(c => c.class === className);
             if (!classDayData) {
@@ -130,17 +183,20 @@ export default function ManageTimetable() {
           });
         }
 
+        // Convert safe map to plain serializable object
+        const plainTimetableData = JSON.parse(JSON.stringify(timetableData));
+
         // 4. Save to Database
         const { error } = await supabase
           .from('site_data')
-          .upsert({ id: 'timetable', data: timetableData });
+          .upsert({ id: 'timetable', data: plainTimetableData });
 
         if (error) throw error;
         
         setMessage("Dars jadvali Excel fayldan muvaffaqiyatli o'qildi va saytga yuklandi!");
       } catch (err) {
         console.error(err);
-        setMessage("Xatolik: " + err.message);
+        setMessage("Xatolik: " + (err.message || 'Faylni o\'qishda xatolik'));
       } finally {
         setLoading(false);
         // Reset file input
