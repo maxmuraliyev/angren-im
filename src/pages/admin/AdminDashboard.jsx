@@ -2,13 +2,57 @@ import React from 'react';
 import { Routes, Route, Link, useNavigate } from 'react-router-dom';
 import { supabase } from '../../supabase';
 
-const DashboardHome = () => <div><h2>Dashboard Home</h2><p>Welcome to the admin panel. Select an option from the sidebar to manage content.</p></div>;
 import ManageTimetable from './ManageTimetable';
-import ManageGallery from './ManageGallery';
+import ManageNews from './ManageNews';
+import ManageEvents from './ManageEvents';
 import ManageTeachers from './ManageTeachers';
 import ManageStudents from './ManageStudents';
-import ManageEvents from './ManageEvents';
+import ManageGallery from './ManageGallery';
 import ManageSettings from './ManageSettings';
+
+const DashboardHome = () => (
+  <div>
+    <h2 style={{ marginBottom: '0.5rem', color: '#1e293b' }}>Dashboard Home</h2>
+    <p style={{ color: '#64748b', marginBottom: '2rem' }}>Welcome to the admin panel. Select an option from the sidebar or choose a section below to manage content.</p>
+    
+    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(240px, 1fr))', gap: '1.5rem' }}>
+      <Link to="/admin/dashboard/news" style={{ textDecoration: 'none', backgroundColor: 'white', padding: '1.5rem', borderRadius: '8px', boxShadow: '0 2px 6px rgba(0,0,0,0.06)', display: 'block', borderLeft: '4px solid #00357A' }}>
+        <h3 style={{ margin: '0 0 0.5rem', color: '#0f172a' }}>📰 Manage News</h3>
+        <p style={{ margin: 0, color: '#64748b', fontSize: '0.9rem' }}>Publish, edit, or delete school news with photo and video uploads.</p>
+      </Link>
+
+      <Link to="/admin/dashboard/timetable" style={{ textDecoration: 'none', backgroundColor: 'white', padding: '1.5rem', borderRadius: '8px', boxShadow: '0 2px 6px rgba(0,0,0,0.06)', display: 'block', borderLeft: '4px solid #0284c7' }}>
+        <h3 style={{ margin: '0 0 0.5rem', color: '#0f172a' }}>📅 Manage Timetable</h3>
+        <p style={{ margin: 0, color: '#64748b', fontSize: '0.9rem' }}>Update class schedules and shifts.</p>
+      </Link>
+
+      <Link to="/admin/dashboard/events" style={{ textDecoration: 'none', backgroundColor: 'white', padding: '1.5rem', borderRadius: '8px', boxShadow: '0 2px 6px rgba(0,0,0,0.06)', display: 'block', borderLeft: '4px solid #10b981' }}>
+        <h3 style={{ margin: '0 0 0.5rem', color: '#0f172a' }}>🎉 Manage Events</h3>
+        <p style={{ margin: 0, color: '#64748b', fontSize: '0.9rem' }}>Post and organize upcoming school events.</p>
+      </Link>
+
+      <Link to="/admin/dashboard/teachers" style={{ textDecoration: 'none', backgroundColor: 'white', padding: '1.5rem', borderRadius: '8px', boxShadow: '0 2px 6px rgba(0,0,0,0.06)', display: 'block', borderLeft: '4px solid #f59e0b' }}>
+        <h3 style={{ margin: '0 0 0.5rem', color: '#0f172a' }}>👨‍🏫 Manage Teachers</h3>
+        <p style={{ margin: 0, color: '#64748b', fontSize: '0.9rem' }}>Add, edit, or remove faculty and staff members.</p>
+      </Link>
+
+      <Link to="/admin/dashboard/students" style={{ textDecoration: 'none', backgroundColor: 'white', padding: '1.5rem', borderRadius: '8px', boxShadow: '0 2px 6px rgba(0,0,0,0.06)', display: 'block', borderLeft: '4px solid #8b5cf6' }}>
+        <h3 style={{ margin: '0 0 0.5rem', color: '#0f172a' }}>🎓 Manage Students</h3>
+        <p style={{ margin: 0, color: '#64748b', fontSize: '0.9rem' }}>Highlight student achievements and olympiad winners.</p>
+      </Link>
+
+      <Link to="/admin/dashboard/gallery" style={{ textDecoration: 'none', backgroundColor: 'white', padding: '1.5rem', borderRadius: '8px', boxShadow: '0 2px 6px rgba(0,0,0,0.06)', display: 'block', borderLeft: '4px solid #ec4899' }}>
+        <h3 style={{ margin: '0 0 0.5rem', color: '#0f172a' }}>🖼️ Manage Gallery</h3>
+        <p style={{ margin: 0, color: '#64748b', fontSize: '0.9rem' }}>Upload and manage school photo albums.</p>
+      </Link>
+
+      <Link to="/admin/dashboard/settings" style={{ textDecoration: 'none', backgroundColor: 'white', padding: '1.5rem', borderRadius: '8px', boxShadow: '0 2px 6px rgba(0,0,0,0.06)', display: 'block', borderLeft: '4px solid #64748b' }}>
+        <h3 style={{ margin: '0 0 0.5rem', color: '#0f172a' }}>⚙️ Manage Settings</h3>
+        <p style={{ margin: 0, color: '#64748b', fontSize: '0.9rem' }}>Configure website preferences and toggles.</p>
+      </Link>
+    </div>
+  </div>
+);
 
 export default function AdminDashboard() {
   const navigate = useNavigate();
@@ -32,6 +76,9 @@ export default function AdminDashboard() {
         <ul style={{ listStyle: 'none', padding: 0 }}>
           <li style={{ marginBottom: '1rem' }}>
             <Link to="/admin/dashboard" style={{ color: 'white', textDecoration: 'none', fontSize: '1.1rem' }}>Dashboard Home</Link>
+          </li>
+          <li style={{ marginBottom: '1rem' }}>
+            <Link to="/admin/dashboard/news" style={{ color: 'white', textDecoration: 'none', fontSize: '1.1rem' }}>Manage News</Link>
           </li>
           <li style={{ marginBottom: '1rem' }}>
             <Link to="/admin/dashboard/timetable" style={{ color: 'white', textDecoration: 'none', fontSize: '1.1rem' }}>Manage Timetable</Link>
@@ -73,6 +120,7 @@ export default function AdminDashboard() {
       <div style={{ flex: 1, padding: '2rem', backgroundColor: '#ecf0f1' }}>
         <Routes>
           <Route path="/" element={<DashboardHome />} />
+          <Route path="/news" element={<ManageNews />} />
           <Route path="/timetable" element={<ManageTimetable />} />
           <Route path="/events" element={<ManageEvents />} />
           <Route path="/teachers" element={<ManageTeachers />} />

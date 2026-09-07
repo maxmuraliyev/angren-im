@@ -19,7 +19,19 @@ export default function ManageNews() {
   // Edit mode tracking
   const [editingId, setEditingId] = useState(null);
   const [existingImage, setExistingImage] = useState('');
+  const [previewUrl, setPreviewUrl] = useState(null);
   const fileInputRef = useRef(null);
+
+  // Live media preview for newly selected file
+  useEffect(() => {
+    if (!file) {
+      setPreviewUrl(null);
+      return;
+    }
+    const objectUrl = URL.createObjectURL(file);
+    setPreviewUrl(objectUrl);
+    return () => URL.revokeObjectURL(objectUrl);
+  }, [file]);
 
   // Helper to format today's date as DD.MM.YYYY
   const getTodayFormatted = () => {
@@ -67,6 +79,7 @@ export default function ManageNews() {
     setContentUz('');
     setContentEn('');
     setFile(null);
+    setPreviewUrl(null);
     setEditingId(null);
     setExistingImage('');
     if (fileInputRef.current) {
@@ -96,6 +109,7 @@ export default function ManageNews() {
 
     setExistingImage(article.image || '');
     setFile(null);
+    setPreviewUrl(null);
     setMessage('');
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
@@ -123,6 +137,7 @@ export default function ManageNews() {
 
     try {
       let mediaUrl = existingImage;
+      let mediaPath = editingId ? (newsList.find(n => n.id === editingId)?.mediaPath || null) : null;
 
       // 1. Upload new media (image or video) if provided
       if (file) {
@@ -135,6 +150,7 @@ export default function ManageNews() {
 
         const fileName = generateSecureMediaFileName(file.name);
         const filePath = `news/${fileName}`;
+        mediaPath = filePath;
 
         let { error: uploadError } = await supabase.storage
           .from('gallery')
@@ -176,6 +192,7 @@ export default function ManageNews() {
         views: editingId ? (newsList.find(n => n.id === editingId)?.views ?? randomViews) : randomViews,
         likes: editingId ? (newsList.find(n => n.id === editingId)?.likes ?? randomLikes) : randomLikes,
         image: mediaUrl,
+        mediaPath: mediaPath,
         mediaType: isVideo ? 'video' : 'image',
         title: titleEn.trim() ? { uz: titleUz.trim(), en: titleEn.trim() } : titleUz.trim(),
         content: titleEn.trim() || contentEn.trim() 
@@ -218,6 +235,24 @@ export default function ManageNews() {
     setMessage('');
 
     try {
+      const itemToDelete = newsList.find(item => item.id === idToDelete);
+
+      // Delete media file from Supabase storage if available
+      if (itemToDelete) {
+        const pathToDel = itemToDelete.mediaPath || (
+          itemToDelete.image && itemToDelete.image.includes('/gallery/')
+            ? decodeURIComponent(itemToDelete.image.split('/gallery/').pop())
+            : null
+        );
+        if (pathToDel) {
+          try {
+            await supabase.storage.from('gallery').remove([pathToDel]);
+          } catch (storageErr) {
+            console.warn("Could not delete media file from storage:", storageErr);
+          }
+        }
+      }
+
       const updatedList = newsList.filter(item => item.id !== idToDelete);
 
       const { error } = await supabase
@@ -363,37 +398,87 @@ export default function ManageNews() {
             <label style={{ display: 'block', marginBottom: '0.4rem', fontWeight: 'bold', color: '#334155' }}>
               Rasm yoki Video (*)
             </label>
+
+            {/* If editing and keeping existing media without new upload */}
             {editingId && existingImage && !file && (
-              <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '8px' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '10px', padding: '10px', backgroundColor: '#f8fafc', borderRadius: '6px', border: '1px solid #e2e8f0' }}>
                 {isVideoMedia(existingImage) ? (
                   <video
                     src={existingImage}
                     muted
-                    style={{ width: '80px', height: '50px', objectFit: 'cover', borderRadius: '4px' }}
+                    style={{ width: '90px', height: '60px', objectFit: 'cover', borderRadius: '4px', backgroundColor: '#000' }}
                   />
                 ) : (
                   <img
                     src={existingImage}
                     alt="Current"
-                    style={{ width: '80px', height: '50px', objectFit: 'cover', borderRadius: '4px' }}
+                    style={{ width: '90px', height: '60px', objectFit: 'cover', borderRadius: '4px' }}
                   />
                 )}
-                <span style={{ fontSize: '0.85rem', color: '#64748b' }}>
-                  Hozirgi {isVideoMedia(existingImage) ? 'video' : 'rasm'} saqlanib qoladi (yangi fayl tanlasangiz almashtiriladi).
-                </span>
+                <div>
+                  <span style={{ fontSize: '0.85rem', color: '#1e293b', fontWeight: 'bold', display: 'block' }}>
+                    Hozirgi {isVideoMedia(existingImage) ? '🎬 Video' : '🖼️ Rasm'} saqlanmoqda
+                  </span>
+                  <small style={{ color: '#64748b' }}>
+                    Yangi fayl tanlasangiz, avvalgisi yangisiga almashtiriladi.
+                  </small>
+                </div>
               </div>
             )}
+
             <input
               type="file"
               ref={fileInputRef}
               accept="image/*,video/*"
               required={!editingId && !existingImage}
-              onChange={(e) => setFile(e.target.files[0])}
+              onChange={(e) => setFile(e.target.files[0] || null)}
               style={{ width: '100%', padding: '0.5rem', borderRadius: '4px', border: '1px solid #cbd5e1' }}
             />
             <small style={{ color: '#64748b', display: 'block', marginTop: '4px' }}>
               Qo'llab-quvvatlanadi: Rasm (JPG, PNG, WebP maks 10MB) yoki Video (MP4, WebM, MOV maks 50MB). Fayl yuklash majburiy (*).
             </small>
+
+            {/* Live Media Preview when user chooses a new file */}
+            {file && previewUrl && (
+              <div style={{ marginTop: '12px', padding: '12px', backgroundColor: '#f0fdf4', borderRadius: '6px', border: '1px solid #bbf7d0' }}>
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '8px' }}>
+                  <span style={{ fontSize: '0.85rem', fontWeight: 'bold', color: isVideoMedia(file) ? '#0284c7' : '#15803d' }}>
+                    {isVideoMedia(file) ? '🎬 Tanlangan Video:' : '🖼️ Tanlangan Rasm:'} {file.name} ({(file.size / (1024 * 1024)).toFixed(2)} MB)
+                  </span>
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setFile(null);
+                      if (fileInputRef.current) fileInputRef.current.value = '';
+                    }}
+                    style={{
+                      background: 'none',
+                      border: 'none',
+                      color: '#ef4444',
+                      cursor: 'pointer',
+                      fontSize: '0.85rem',
+                      fontWeight: 'bold',
+                      padding: '2px 6px'
+                    }}
+                  >
+                    ✕ Bekor qilish
+                  </button>
+                </div>
+                {isVideoMedia(file) ? (
+                  <video
+                    src={previewUrl}
+                    controls
+                    style={{ maxWidth: '100%', maxHeight: '260px', borderRadius: '4px', backgroundColor: '#000', display: 'block' }}
+                  />
+                ) : (
+                  <img
+                    src={previewUrl}
+                    alt="Preview"
+                    style={{ maxWidth: '100%', maxHeight: '260px', borderRadius: '4px', objectFit: 'contain', display: 'block' }}
+                  />
+                )}
+              </div>
+            )}
           </div>
 
           {/* Submit Button */}
