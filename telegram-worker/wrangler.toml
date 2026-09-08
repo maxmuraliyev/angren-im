@@ -10,4 +10,4 @@ database_id = "42a4736d-7ebd-46fc-bebd-721676786f1c"
 
 # Environment variables
 [vars]
-ALLOWED_ORIGIN = "https://angren-im.vercel.app"
+ALLOWED_ORIGIN = "https://angren-im.uz"
