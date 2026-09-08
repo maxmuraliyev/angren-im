@@ -36,7 +36,7 @@ function isRateLimited(ip) {
 }
 
 const ALLOWED_ORIGINS = [
-  'https://angren-im.vercel.app',
+  'https://angren-im.uz',
   'http://localhost:5173',
   'http://localhost:3000',
   'http://127.0.0.1:5173',
