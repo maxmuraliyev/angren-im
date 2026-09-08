@@ -92,6 +92,8 @@
   letter-spacing: 0.01em;
   position: relative;
   background: none;
+  border: none;
+  text-decoration: none;
   cursor: pointer;
 }
 
@@ -250,6 +252,7 @@
   cursor: pointer;
   background: none;
   border: none;
+  text-decoration: none;
   font-family: var(--font-family);
   position: relative;
   

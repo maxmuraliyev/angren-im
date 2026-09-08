@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import { useNavigate, useLocation } from 'react-router-dom';
+import { useNavigate, useLocation, Link } from 'react-router-dom';
 import { FaTelegramPlane, FaInstagram, FaFacebookF, FaYoutube } from 'react-icons/fa';
 import { FiX } from 'react-icons/fi';
 import './Navbar.css';
@@ -11,33 +11,15 @@ export default function Navbar() {
   const location = useLocation();
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const [activeSection, setActiveSection] = useState('');
 
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 10);
-
-      /* Track active section on home page */
-      if (location.pathname === '/') {
-        const sections = ['contact', 'gallery', 'admission', 'studentlife', 'education', 'whyus', 'news', 'about'];
-        let found = false;
-        for (const id of sections) {
-          const el = document.getElementById(id);
-          if (el && el.getBoundingClientRect().top <= 200) {
-            setActiveSection(id);
-            found = true;
-            break;
-          }
-        }
-        if (!found) setActiveSection('');
-      } else {
-        setActiveSection('');
-      }
     };
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, [location.pathname]);
+  }, []);
 
   /* Lock body scroll when mega-menu is open */
   useEffect(() => {
@@ -57,24 +39,18 @@ export default function Navbar() {
     { id: 'contact', path: '/contact', label: t('nav.contact') },
   ];
 
-  const handleNav = (link) => {
-    if (location.pathname === '/') {
-      const el = document.getElementById(link.id);
-      if (el) {
-        el.scrollIntoView({ behavior: 'smooth' });
-        setMenuOpen(false);
-        return;
-      }
+  const handleLinkClick = (e, path) => {
+    if (location.pathname === path) {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     }
-    navigate(link.path);
     setMenuOpen(false);
   };
 
-  const handleLogoClick = () => {
+  const handleLogoClick = (e) => {
     if (location.pathname === '/') {
+      if (e) e.preventDefault();
       window.scrollTo({ top: 0, behavior: 'smooth' });
-    } else {
-      navigate('/');
     }
     setMenuOpen(false);
   };
@@ -82,8 +58,7 @@ export default function Navbar() {
   const isLinkActive = (link) => {
     if (location.pathname === link.path) return true;
     if (link.id === 'achievements' && (location.pathname === '/students' || location.pathname === '/achievements')) return true;
-    if (link.id === 'studentlife' && (location.pathname === '/student-life' || (location.pathname === '/' && activeSection === 'studentlife'))) return true;
-    if (location.pathname === '/' && activeSection === link.id) return true;
+    if (link.id === 'studentlife' && location.pathname === '/student-life') return true;
     return false;
   };
 
@@ -109,34 +84,40 @@ export default function Navbar() {
           <div className="navbar__nav">
             <div className="navbar__links-left">
               {leftLinks.map((link) => (
-                <button
+                <Link
                   key={link.id}
+                  to={link.path}
                   className={`navbar__link ${isLinkActive(link) ? 'active' : ''}`}
-                  onClick={() => handleNav(link)}
+                  onClick={(e) => handleLinkClick(e, link.path)}
                 >
                   {link.label}
-                </button>
+                </Link>
               ))}
             </div>
 
-            <div className="navbar__logo-wrapper">
+            <Link
+              to="/"
+              className="navbar__logo-wrapper"
+              onClick={handleLogoClick}
+              aria-label="Home"
+            >
               <img
                 src="/images/logo.png"
                 alt="Angren IMI Logo"
                 className="navbar__logo"
-                onClick={handleLogoClick}
               />
-            </div>
+            </Link>
 
             <div className="navbar__links-right">
               {rightLinks.map((link) => (
-                <button
+                <Link
                   key={link.id}
+                  to={link.path}
                   className={`navbar__link ${isLinkActive(link) ? 'active' : ''}`}
-                  onClick={() => handleNav(link)}
+                  onClick={(e) => handleLinkClick(e, link.path)}
                 >
                   {link.label}
-                </button>
+                </Link>
               ))}
             </div>
           </div>
@@ -146,13 +127,16 @@ export default function Navbar() {
       {/* Full-screen Mega Menu (used on mobile, accessible on all) */}
       <div className={`navbar__megamenu ${menuOpen ? 'open' : ''}`}>
         <div className="navbar__megamenu-header">
-          <img
-            src="/images/logo.png"
-            alt="Logo"
-            className="navbar__megamenu-logo"
+          <Link
+            to="/"
             onClick={handleLogoClick}
-            style={{ cursor: 'pointer' }}
-          />
+          >
+            <img
+              src="/images/logo.png"
+              alt="Logo"
+              className="navbar__megamenu-logo"
+            />
+          </Link>
           <button className="navbar__megamenu-close" onClick={() => setMenuOpen(false)}>
             <FiX />
           </button>
@@ -160,13 +144,14 @@ export default function Navbar() {
 
         <div className="navbar__megamenu-nav">
           {navLinks.map((link) => (
-            <button
+            <Link
               key={link.id}
+              to={link.path}
               className={`navbar__megamenu-link ${isLinkActive(link) ? 'active' : ''}`}
-              onClick={() => handleNav(link)}
+              onClick={(e) => handleLinkClick(e, link.path)}
             >
               {link.label}
-            </button>
+            </Link>
           ))}
         </div>
 

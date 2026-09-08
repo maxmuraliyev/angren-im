@@ -4,9 +4,13 @@
 
 const DEFAULT_ALLOWED_ORIGINS = [
   "https://angren-im.uz",
+  "http://angren-im.uz",
+  "https://www.angren-im.uz",
+  "http://www.angren-im.uz",
   "http://localhost:5173",
   "http://localhost:3000",
-  "http://127.0.0.1:5173"
+  "http://127.0.0.1:5173",
+  "http://127.0.0.1:3000"
 ];
 
 function getCorsOrigin(request, env) {
@@ -20,6 +24,13 @@ function getCorsOrigin(request, env) {
   if (DEFAULT_ALLOWED_ORIGINS.includes(reqOrigin)) {
     return reqOrigin;
   }
+
+  try {
+    const parsed = new URL(reqOrigin);
+    if (parsed.hostname === "angren-im.uz" || parsed.hostname.endsWith(".angren-im.uz") || parsed.hostname.endsWith(".vercel.app")) {
+      return reqOrigin;
+    }
+  } catch {}
 
   return configuredOrigin || "https://angren-im.uz";
 }

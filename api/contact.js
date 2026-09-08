@@ -37,10 +37,42 @@ function isRateLimited(ip) {
 
 const ALLOWED_ORIGINS = [
   'https://angren-im.uz',
+  'http://angren-im.uz',
+  'https://www.angren-im.uz',
+  'http://www.angren-im.uz',
   'http://localhost:5173',
   'http://localhost:3000',
   'http://127.0.0.1:5173',
+  'http://127.0.0.1:3000',
 ];
+
+function isOriginAllowed(origin, host) {
+  if (!origin) return true;
+
+  const configuredOrigin = process.env.ALLOWED_ORIGIN?.replace(/\/$/, '');
+  if (configuredOrigin && origin === configuredOrigin) return true;
+  if (ALLOWED_ORIGINS.includes(origin)) return true;
+
+  try {
+    const parsedOrigin = new URL(origin);
+    // Allow same-origin / same host
+    if (host && (parsedOrigin.host === host || parsedOrigin.hostname === host.split(':')[0])) {
+      return true;
+    }
+    // Allow angren-im.uz and all subdomains (e.g. www.angren-im.uz)
+    if (parsedOrigin.hostname === 'angren-im.uz' || parsedOrigin.hostname.endsWith('.angren-im.uz')) {
+      return true;
+    }
+    // Allow Vercel preview and production deployments
+    if (parsedOrigin.hostname.endsWith('.vercel.app')) {
+      return true;
+    }
+  } catch {
+    return false;
+  }
+
+  return false;
+}
 
 export default async function handler(req, res) {
   // Only allow POST requests
@@ -57,12 +89,9 @@ export default async function handler(req, res) {
 
   // Verify Origin / Referer if present
   const origin = req.headers['origin'];
-  const configuredOrigin = process.env.ALLOWED_ORIGIN?.replace(/\/$/, '');
-  if (origin) {
-    const isAllowed = ALLOWED_ORIGINS.includes(origin) || (configuredOrigin && origin === configuredOrigin);
-    if (!isAllowed) {
-      return res.status(403).json({ error: 'Forbidden: invalid origin' });
-    }
+  const host = req.headers['host'];
+  if (origin && !isOriginAllowed(origin, host)) {
+    return res.status(403).json({ error: 'Forbidden: invalid origin' });
   }
 
   // Rate limiting by client IP

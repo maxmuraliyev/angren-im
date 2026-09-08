@@ -6,7 +6,7 @@ export default function Footer() {
   const { t } = useTranslation();
 
   return (
-    <footer className="footer" id="contact">
+    <footer className="footer">
       {/* Social Subscribe Section — matching newuu.uz */}
       <div className="footer__subscribe">
         <div className="footer__subscribe-inner">

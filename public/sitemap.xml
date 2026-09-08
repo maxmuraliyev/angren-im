@@ -36,6 +36,16 @@
     <changefreq>weekly</changefreq>
   </url>
   <url>
+    <loc>https://angren-im.uz/timetable</loc>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://angren-im.uz/student-life</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
     <loc>https://angren-im.uz/gallery</loc>
     <priority>0.6</priority>
     <changefreq>monthly</changefreq>
