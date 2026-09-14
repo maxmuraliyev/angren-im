@@ -10,6 +10,7 @@ import ManageStudents from './ManageStudents';
 import ManageGallery from './ManageGallery';
 import ManageStudentLife from './ManageStudentLife';
 import ManageSettings from './ManageSettings';
+import ManageStatistics from './ManageStatistics';
 
 const DashboardHome = () => (
   <div>
@@ -17,6 +18,11 @@ const DashboardHome = () => (
     <p style={{ color: '#64748b', marginBottom: '2rem' }}>Welcome to the admin panel. Select an option from the sidebar or choose a section below to manage content.</p>
     
     <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(240px, 1fr))', gap: '1.5rem' }}>
+      <Link to="/admin/dashboard/statistics" style={{ textDecoration: 'none', backgroundColor: 'white', padding: '1.5rem', borderRadius: '8px', boxShadow: '0 2px 6px rgba(0,0,0,0.06)', display: 'block', borderLeft: '4px solid #3b82f6' }}>
+        <h3 style={{ margin: '0 0 0.5rem', color: '#0f172a' }}>📊 Tashriflar statistikasi</h3>
+        <p style={{ margin: 0, color: '#64748b', fontSize: '0.9rem' }}>Saytga tashrif buyuruvchilar, ularning IP manzili, qurilmasi va tashrif vaqti.</p>
+      </Link>
+
       <Link to="/admin/dashboard/news" style={{ textDecoration: 'none', backgroundColor: 'white', padding: '1.5rem', borderRadius: '8px', boxShadow: '0 2px 6px rgba(0,0,0,0.06)', display: 'block', borderLeft: '4px solid #00357A' }}>
         <h3 style={{ margin: '0 0 0.5rem', color: '#0f172a' }}>📰 Manage News</h3>
         <p style={{ margin: 0, color: '#64748b', fontSize: '0.9rem' }}>Publish, edit, or delete school news with photo and video uploads.</p>
@@ -84,6 +90,9 @@ export default function AdminDashboard() {
             <Link to="/admin/dashboard" style={{ color: 'white', textDecoration: 'none', fontSize: '1.1rem' }}>Dashboard Home</Link>
           </li>
           <li style={{ marginBottom: '1rem' }}>
+            <Link to="/admin/dashboard/statistics" style={{ color: '#60a5fa', textDecoration: 'none', fontSize: '1.1rem', fontWeight: 'bold' }}>📊 Statistika</Link>
+          </li>
+          <li style={{ marginBottom: '1rem' }}>
             <Link to="/admin/dashboard/news" style={{ color: 'white', textDecoration: 'none', fontSize: '1.1rem' }}>Manage News</Link>
           </li>
           <li style={{ marginBottom: '1rem' }}>
@@ -129,6 +138,7 @@ export default function AdminDashboard() {
       <div style={{ flex: 1, padding: '2rem', backgroundColor: '#ecf0f1' }}>
         <Routes>
           <Route path="/" element={<DashboardHome />} />
+          <Route path="/statistics" element={<ManageStatistics />} />
           <Route path="/news" element={<ManageNews />} />
           <Route path="/timetable" element={<ManageTimetable />} />
           <Route path="/events" element={<ManageEvents />} />
@@ -142,3 +152,4 @@ export default function AdminDashboard() {
     </div>
   );
 }
+

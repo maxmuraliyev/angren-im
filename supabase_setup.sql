@@ -147,3 +147,52 @@ CREATE POLICY "Admins can delete from gallery"
 ON storage.objects FOR DELETE
 TO authenticated
 USING (bucket_id = 'gallery' AND public.is_admin());
+
+-- ==============================================================================
+-- 8. Visitor Logs Table & Security Policies (Visitor Statistics)
+-- ==============================================================================
+
+CREATE TABLE IF NOT EXISTS public.visitor_logs (
+  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  ip_address TEXT,
+  device_type TEXT,
+  browser TEXT,
+  os TEXT,
+  user_agent TEXT,
+  screen_resolution TEXT,
+  language TEXT,
+  country TEXT,
+  city TEXT,
+  visited_url TEXT,
+  referrer TEXT,
+  created_at TIMESTAMPTZ NOT NULL DEFAULT now()
+);
+
+-- Performance Indexes
+CREATE INDEX IF NOT EXISTS idx_visitor_logs_created_at ON public.visitor_logs (created_at DESC);
+CREATE INDEX IF NOT EXISTS idx_visitor_logs_ip ON public.visitor_logs (ip_address);
+
+-- Enable RLS on visitor_logs
+ALTER TABLE public.visitor_logs ENABLE ROW LEVEL SECURITY;
+
+-- Allow public (anyone) to insert their visitor log
+DROP POLICY IF EXISTS "Public can insert visitor_logs" ON public.visitor_logs;
+CREATE POLICY "Public can insert visitor_logs"
+ON public.visitor_logs FOR INSERT
+TO public
+WITH CHECK (true);
+
+-- Only authenticated admins can read visitor statistics
+DROP POLICY IF EXISTS "Admins can view visitor_logs" ON public.visitor_logs;
+CREATE POLICY "Admins can view visitor_logs"
+ON public.visitor_logs FOR SELECT
+TO authenticated
+USING (public.is_admin());
+
+-- Admins can delete or clear visitor logs
+DROP POLICY IF EXISTS "Admins can delete visitor_logs" ON public.visitor_logs;
+CREATE POLICY "Admins can delete visitor_logs"
+ON public.visitor_logs FOR DELETE
+TO authenticated
+USING (public.is_admin());
+

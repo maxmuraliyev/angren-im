@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import { useScrollAnimation } from './hooks/useAnimations';
+import { useVisitorTracker } from './hooks/useVisitorTracker';
 
 /* Layout Components */
 import TopBar from './components/TopBar';
@@ -55,6 +56,9 @@ function App() {
 
   /* Initialize scroll animations globally */
   useScrollAnimation();
+
+  /* Track site visitors for analytics */
+  useVisitorTracker();
 
   /* Re-run scroll observer after route changes / content updates */
   useEffect(() => {
